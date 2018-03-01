@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "4.0"
+env:
+  global:
+    secure: "XXMflt9NrcoLQb+u4voLkJQ2Oc9STAzlYeTiaZ76jagsGABYLhLAySmTs6POQs1yA3cUmhMA6DXS8PBUKR+zOna0Tz3RwnTxAGxmp0gMqcTnhAtjkhFhG/gnih9ngb+9Hh7TELHMxLoq5BUix/tCwsQF4OXjs0uG54eQUABVMX1lFx4x+h31OKJ8uMZ5wLMEUKDq8ses5kDZrjJOFXhtHfGfwV06CeAgkTtJ3fJshGB1qvVKTREfm4G+wqxaNzLXIDXgGlISq5rTt+Hz/HB9sYQGXR02I035Uylq9gqduvN5smUmUbQUZfOmM5xph/lFTy/2Iypv9x5qGJ9+WD0BvDtLC7HC9JJgU/Ag5tRmFA6cJuaKL08QClb/lFYx/cKb74bWG3JL0oulIjer6uzBwDGIXbuKTb2vMTjosruz57vDJqGHWYIXGD9jYuaIsr1htbsZgqS36rql9OafAFpSpQ/uQiQDoDrCpDQRQpIsShlsCFw16Rq0zjlBwfCUDQketf4SpC3VuhC0MdS+L1qZ0Fz5R13doRF3Lt516NtsvqgWuH2h28ZLLA3lWQtbJvXaRyg77EzQpVqpYnFre9W2lmGqP4h74bkoTqLmG1JIRSGMN2e+vMVAI0d0I2zc1A69iG8NpSrym26KUJ/UmsduP6uK3RP2lQSQTBZr2Ee9+88="
+cache:
+  directories:
+  - $HOME/calibre-bin
+sudo: false
+before_script:
+  - export PATH=$PATH:$HOME/calibre-bin/calibre
+  - >
+    which calibre ||
+    wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py |
+    python -c "import sys; main=lambda x,y:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main('~/calibre-bin', True)"
+script:
+  - npm run archive
+after_success:
+  - ./.ci/update-gh-pages.sh > /dev/null 2>&1
+notifications:
+  email:
+    on_success: never
+    on_failure: never

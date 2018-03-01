@@ -1,0 +1,36 @@
+{
+  "name": "geoserver-introduction-ws",
+  "private": true,
+  "version": "0.0.1",
+  "description": "The materials for the geoserver-introduction workshop",
+  "scripts": {
+    "start": "mkdir -p src/_book && npm run doc:serve",
+    "test": "npm run build",
+    "clean": "rm -rf src/_book build",
+    "doc:help": "gitbook help",
+    "doc:serve": "gitbook serve src",
+    "doc:build": "gitbook build src build/geoserver-introduction-ws",
+    "doc:epub": "gitbook epub src build/geoserver-introduction-ws.epub",
+    "doc:pdf": "gitbook pdf src build/geoserver-introduction-ws.pdf",
+    "postinstall": "gitbook install src/",
+    "build": "npm run clean && npm run doc:build && npm run doc:pdf && npm run doc:epub && cd build/geoserver-introduction-ws",
+    "archive": "npm run build && cd build && zip -x geoserver-introduction-ws/materials/* -r geoserver-introduction-ws.zip geoserver-introduction-ws geoserver-introduction-ws_*.pdf geoserver-introduction-ws_*.epub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrestris/geoserver-introduction-ws.git"
+  },
+  "keywords": [
+    "workshop",
+    "geoserver"
+  ],
+  "author": "terrestris GmbH & Co.KG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terrestris/geoserver-introduction-ws/issues"
+  },
+  "homepage": "https://github.com/terrestris/geoserver-introduction-ws#readme",
+  "dependencies": {
+    "gitbook-cli": "2.3.2"
+  }
+}
