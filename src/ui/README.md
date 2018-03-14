@@ -20,32 +20,32 @@ einer Ansicht ähnlich der folgenden Abbildung.
 
 ## Übersicht der Funktionselemente
 
-Die Oberfläche des GeoServers ist in zwei Elemente aufgeteilt: Im linken
-Navigationsmenü erscheinen sortiert nach Subkategorie alle Einstellungsmöglichkeiten
-sowie Listen. Im Zentrum erscheinen je nach Auswahl der Kategorie die zugehörigen
+Die Oberfläche des GeoServers ist in zwei Bereiche aufgeteilt:
+Links das Navigationsmenü, in dem sortiert nach Subkategorie alle Einstellungsmöglichkeiten
+und Listen erscheinen. Im zentralen Bereich erscheinen je nach Auswahl der Kategorie die zugehörigen
 Formularfelder. Je nach Auswahl können diese Formulare in mehrere Reiter unterteilt
-sein. In Folge werden die wichtigsten Subkategorien und Anwendungsfälle aufgeführt.
+sein. Im Folgendem werden nun die wichtigsten Subkategorien und Anwendungsfälle aufgeführt und erläutert.
 
 ### Server
 
 #### Serverstatus
 
-![Server status](../assets/ui_server_status.png)
+![Serverstatus](../assets/ui_server_status.png)
 
-Unter Serverstatus befinden sich Angaben zum aktuellen Zustand des Kartenservers
-(s. Abb. 12). Hierzu gehören neben diversen Systemangaben (z.B. verfügbare
+Unter **Serverstatus** befinden sich Angaben zum aktuellen Zustand des Kartenservers.
+Hierzu gehören neben diversen Systemangaben (z.B. verfügbare
 Schriftarten, verwendete Java-Version oder aktuell verwendetem Arbeitsspeicher)
 Installationsspezifika wie das aktuell genutzte Datenverzeichnis. Die Statusseite
 ist die erste Anlaufstelle, falls die Performance eines Layers nicht der üblichen
 Geschwindigkeit entspricht oder Änderungen auf Dateiebene des GeoServers vorgenommen
-wurden (z.B. Installation neuer Schriftarten, Verändern von Konfigurationsdateien).
+wurden (z.B. Installation neuer Schriftarten, Änderungen in Konfigurationsdateien).
 Zwar sind Änderungen auf Dateiebene nicht zu empfehlen, lassen sich jedoch ggf.
-nicht Verändern, wenn z.B. die Konfiguration eines anderen GeoServers übernommen
-werden soll. In diesem Fall muss die Konfiguration über den Button Neu laden
-unter Konfiguration und Katalog betätigt werden. Reagiert die Benutzeroberfläche
+nicht verhindern, wenn z.B. die Konfiguration eines anderen GeoServers übernommen
+werden soll. In diesem Fall muss die Konfiguration über den Button **Neu laden**
+unter **Konfiguration und Katalog** betätigt werden. Reagiert die Benutzeroberfläche
 sehr träge oder erscheinen Layer nur sehr langsam in der Applikation kann es oft
-hilfreich sein, den Ressourcen Cache über den Button Leeren und/oder den verwendeten
-Arbeitsspeicher über Arbeitsspeicher freigeben freizugeben.
+hilfreich sein, den Ressourcen Cache über den Button **Leeren** und/oder den verwendeten
+Arbeitsspeicher über **Arbeitsspeicher freigeben** freizugeben.
 
 #### Protokollierung
 
@@ -59,7 +59,7 @@ aufrufen. Ist die Fehlerausgabe zu kurz, kann die Länge der Ausgabe über das F
 Maximale Anzahl von Zeilen in der Konsole gesteuert werden. Die Fehlerausgabe von
 Java/vom GeoServer ist in aller Regel sehr ausführlich, sodass die Fehler verursachende
 Komponente schnell ausfindig gemacht werden kann. Schwerwiegende Fehler werden
-dabei meist mit dem Kürzel ERROR vorgestellt. Beispielsweise würde sich die Fehlerausgabe
+dabei meist mit dem Kürzel `ERROR` vorgestellt. Beispielsweise würde sich die Fehlerausgabe
 
 ```
 2014-10-06 09:16:33,492 ERROR [geoserver.wms] - Getting feature source: featureType: GEOSERVER:EXAMPLE_LAYER does not have a properly configured datastore
@@ -69,21 +69,21 @@ beim Abrufen der Datenquelle für einen Layer auf einen unsauber konfigurierten
 Datenspeicher zurückführen lassen. Dies kann entweder tatsächlich einer fehlerhaften
 Konfiguration oder z.B. einem Ausfall der Quelldatenbank geschuldet sein.
 
-Hinweis: Es existieren mehrere Protokollmodi, die eine unterschiedlich empfindliche
+**Hinweis:** Es existieren mehrere Protokollmodi, die eine unterschiedlich empfindliche
 Ausgabe erzeugen. Nähere Informationen hierzu s. Kap. 6.2.1.13.
 
 #### Kontaktangaben
 
 ![Kontaktinformationen](../assets/ui_contact_information.png)
 
-Die obige Abbildung zeigt die Möglichkeiten zur Angabe von Kontaktdaten im GeoServer.
-Diese Daten sind in erster Linie relevant für die Kartendienste dieses Servers,
-da diese im GetCapabilities Dokument des Servers erscheinen.
+Die obige Abbildung zeigt die Möglichkeiten zur Angabe von Kontaktdaten im GeoServer,
+die in erster Linie für die Kartendienste des Servers relevant sind,
+da diese im GetCapabilities Dokument erscheinen.
 
-Aufgabe:
+**Aufgabe:**
 
-1. Rufen Sie das `GetCapabilities` Dokument des GeoServers auf. Startseite WMS -> 1.1.0 klicken  Bitte geben Sie unter
-`Contact information` Ihre Kontaktinformationen an.  Rufen Sie anschließend nochmals das GetCapabilities auf. Was fällt Ihnen auf?
+1. Rufen Sie das `GetCapabilities` Dokument des GeoServers auf. Klicken Sie hierzu auf der Startsteite rechts unter `Service Capabilities` auf WMS -> 1.3.0.
+Bitte geben Sie nun unter `Contact information` Ihre Kontaktinformationen an. Rufen Sie anschließend nochmals das `GetCapabilities` auf. Was fällt Ihnen auf?
 
 ### Daten
 
@@ -94,12 +94,12 @@ des GeoServers, die Schritte zur Veröffentlichung eines Dienstes.
 
 ![Layervorschau](../assets/ui_layer_preview.png)
 
-Die Layer-Vorschau bietet eine Übersicht aller über diesen GeoServer veröffentlichten
+Die **Layer-Vorschau** bietet eine Übersicht aller über diesen GeoServer veröffentlichten
 Layer. Damit ein Layer in dieser Übersicht erscheint (und auch im GetCapabilities
-Dokument der Instanz erscheint), muss der Layer als Angekündigt (s. Kap. 6.2.1.7)
+Dokument der Instanz erscheint), muss der Layer als `Angekündigt` (s. Kap. 6.2.1.7)
 gekennzeichnet sein.
-Jeder Layer besitzt über eine Angabe des Typs (s. Tab. 2), den internen Layernamen
-(inklusive Name des Arbeitsbereichs), den Layertitel (Kurzbeschreibung) und eine
+Jeder Layer verfügt über eine Angabe des Typs (s. Tab. 2), einen internen Layernamen
+(inklusive Name des Arbeitsbereichs), einen Layertitel (Kurzbeschreibung) und eine
 Auswahlbox von möglichen Vorschauformaten.
 
 | Typ | Beschreibung |
@@ -112,9 +112,9 @@ Auswahlbox von möglichen Vorschauformaten.
 | ![](../assets/ui_type_group.png) | Gruppenlayer |
 | ![](../assets/ui_type_wms.png) | Kaskadierter WMS |
 
-Die Liste der Layer kann über einen Linksklick auf die Spaltennamen Typ, Name
-oder Titel auf-/absteigend sortiert werden. Neben einer Übersicht aller
-verfügbaren Layer, kann eine Vorschau eines Layer in verschiedenen Formaten
+Die Layerliste kann per Linksklick auf die Spaltennamen `Typ`, `Name`
+oder `Titel` auf- und absteigend sortiert werden. Neben einer Übersicht aller
+verfügbaren Layer, kann eine Vorschau eines Layers in verschiedenen Formaten
 vorgenommen werden. Dies empfiehlt sich insbesondere für eine schnelle und
 komfortable Überprüfung eines neu angelegten Layers. Der schnellste Weg zu einer
 Vorschau ist das „Format“ OpenLayers, wodurch ein neues Fenster mit einer
@@ -124,29 +124,30 @@ Vorschaukarte des ausgewählten Layers geöffnet wird.
 
 Die OpenLayers Map erlaubt eine freie Navigation innerhalb des Layers und eine
 GetFeatureInfo-Abfrage durch einen Linksklick in den Layer. Über den Button
-„toggle options toolbar“ oberhalb des Navigationskreuzes kann weiter die obere
-Werkzeugleiste geöffnet werden, welche Optionen zur Manipulation des GetMap-Aufrufs
+**toggle options toolbar** oberhalb des Navigationskreuzes kann eine
+Werkzeugleiste eingeblendet werden, die Optionen zur Manipulation des GetMap-Aufrufs
 ermöglicht (Bildformat und -größe, Antialiasing etc.).
-Unter der Auswahlbox Alle Formate sind weitere Formate aufgelistet, die nach WMS
+Unter der Auswahlbox **Alle Formate** sind weitere Formate aufgelistet, die nach WMS
 und WFS gegliedert sind. Für die Vorschau eines WMS wird dabei jedoch das obige
-Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.
-Hinweis: Über die Auswahlbox ist auch der Export als Shapefile möglich, welche
+Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.   
+**Hinweis:** Über die Auswahlbox ist auch der Export als Shapefile möglich, das
 in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
 
-Aufgabe:
+**Aufgabe:**
 
 2. Rufen Sie die OpenLayers Layervorschau eines beliebigen Layers auf und ändern Sie die
-Requestparamter `Tiling` und `Format` zu einem Parameter Ihrer Wahl. GetFeatureInfo abrufen
+Requestparamter `Tiling` und `Format` zu einem Parameter Ihrer Wahl. Rufen Sie anschließend
+die GetFeatureInfo ab.
 
 #### Arbeitsbereiche
 
-Über den Eintrag Arbeitsbereiche kann die Übersicht aller verfügbaren Arbeitsbereiche
-des GeoServers aufgerufen werden. Über die GUI kann im Folgenden ein neuer
-Arbeitsbereich erstellt oder ein bestehender Arbeitsbereich editiert werden.
+Über den Menüeintrag **Arbeitsbereiche** kann die Übersicht aller verfügbaren Arbeitsbereiche
+des GeoServers aufgerufen werden. Über die GUI können neue Arbeitsbereiche erstellt oder
+bestehende editiert werden.
 
 ![Arbeitsbereiche](../assets/ui_workspaces.png)
 
-Der GeoServer legt einen Layer über folgende Hierarchie ab:
+Der GeoServer legt Layer über folgende Hierarchie ab:
 
 ```
 Arbeitsbereich
@@ -163,33 +164,33 @@ Abteilung oder eines bestimmten Themas.
 Jedem Arbeitsbereich können nun weitere Konfigurationselemente zugeordnet werden.
 Hierzu zählen u.a. der Datenspeicher, die (Gruppen-) Layer, Stile und übergeordnete
 Einstellungen des GeoServers wie Kontaktdaten oder globale WMS-Einstellungen.
-Wichtig: Wird ein GeoServer initial in Betrieb genommen, muss genau die oben
-skizzierte Reihenfolge beim Anlegen eines Layers beachtet werden, d.h. zunächst
+**Wichtig:** Wird ein GeoServer initial in Betrieb genommen, muss die oben
+skizzierte Reihenfolge beim Anlegen eines Layers genauestens beachtet werden, d.h. zunächst
 wird ein Arbeitsbereich, danach ein Datenspeicher und anschließend ein Layer
 (inklusive Stil) angelegt.
 
-Hinweis: Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
-(cite, it.geosolutions, nurc, sde, sf, tiger, topp). Diese können im
+**Hinweis:** Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
+(*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). Diese können im
 Produktivbetrieb ohne Bedenken gelöscht werden.
 
-Aufgabe:
+**Aufgabe:**
 
-Legen Sie einen neuen Arbeitsbereich mit dem Namen `FOSSGIS` an. Markieren Sie diesen
-Arbeitsbereich als Standardarbeitsbereich.
+Legen Sie einen neuen Arbeitsbereich mit dem Namen `FOSSGIS` an. Als Namespace URI geben Sie
+`http://geoserver.org/fossgis`. Markieren Sie diesen Arbeitsbereich als Standardarbeitsbereich.
 
 #### Datenspeicher
 
 ![Datenspeicher](../assets/ui_datastores.png)
 
-Der Datenspeicher ist eine Referenz zu einer Datenquelle, die Vektor- oder Rasterdaten
+Der **Datenspeicher** ist eine Referenz zu einer Datenquelle, die Vektor- oder Rasterdaten
 zur Veröffentlichung enthält. Jeder Datenspeicher wird dabei genau einem Arbeitsbereich
-zugeordnet. Ein Datenspeicher beinhaltet dabei z.B. die Verbindungsparameter
-zu einer Datenbank oder den Pfad zu einer Shapefile.
+zugeordnet. Ein Datenspeicher beinhaltet dabei z.B. Verbindungsparameter
+zu einer Datenbank oder den Pfad zu einem Shapefile.
 Die obige Abbildung zeigt die Übersicht aller verfügbaren Datenspeicher, die über
 das Feld Datenspeicher im linken Navigationsmenü aufgerufen werden kann. Die
-Übersicht besteht aus den Spalten Datentyp, Arbeitsbereich, Name für Datenspeicher,
-Typ und Aktiv. Der Datentyp beschreibt den Typ der des Datenspeichers, dabei kann
-es sich um einen der in Tabelle 3 aufgelisteten Datentypen handeln. Arbeitsbereich
+Übersicht besteht aus den Spalten *Datentyp, Arbeitsbereich, Name für Datenspeicher,
+Typ* und *Aktiv*. Der Datentyp beschreibt den Typ des Datenspeichers, wobei es sich
+um einen der in *Tab. 3* aufgelisteten Datentypen handeln kann. Arbeitsbereich
 beinhaltet den übergeordneten Namen des Arbeitsbereichs, Name für Datenspeicher den
 Namen des Datenspeichers, Typ den konkreten Speichertyp (z.B. die Datenbank) und
 Aktiv den Status des Datenspeichers.
@@ -215,7 +216,8 @@ Layer sind die Repräsentationen von Geodaten (Vektor- oder Raster). Jeder Layer
 enthält dabei mehrere Kartenelemente (Features), die als gerenderte Rasterdaten
 (WMS) oder als Rohdaten (WFS bzw. WCS) abgerufen werden können. Jedem Layer ist im GeoServer
 gemein, dass sie genau einem Arbeitsbereich und genau einem Datenspeicher zugehörig
-sind. Wichtiger Hinweis: Der GeoServer legt automatisch für jeden Layer einen
+sind.
+**Wichtiger Hinweis:** Der GeoServer legt automatisch für jeden Layer einen
 WMS und WFS an, ein getrenntes Anlegen ist nicht möglich. Es ist ausschließlich
 möglich im Arbeitsbereich zu definieren, ob alle Layer in diesem Arbeitsbereich
 sowohl per WMS als auch per WFS, nur als WMS oder nur als WFS abfragbar sind.
@@ -224,7 +226,7 @@ Die Übersicht besitzt Spalten zur Angabe des jeweiligen Typs, dem Namen des
 Arbeitsbereichs, Datenspeichers sowie des Layers (Name), Status (Aktiv) und
 Koordinatenreferenzsystem im EPSG Code. Wie bei den anderen Listentypen auch,
 kann die Liste nach den entsprechenden Spalten durch einen Linksklick auf den
-Spaltentitel auf- /abwärts sortiert werden. Über die Liste ist ebenfalls ein
+Spaltentitel auf-  und abwärts sortiert werden. Über die Liste ist ebenfalls ein
 direkter Aufruf der Parameter des Arbeitsbereichs sowie des Datenspeichers
 durch einen Linksklick auf die entsprechenden Titel möglich.
 
@@ -237,7 +239,7 @@ Hier keine Aufgabe später
 Gruppenlayer sind eine Sammlung von bereits im GeoServer veröffentlichten Layern,
 die gemeinsam über nur einen Layer angefordert werden.
 
-Für das Anlegen eines Gruppenlayers über das Formular Gruppenlayer sind mindestens
+Für das Anlegen eines Gruppenlayers über das Formular **Gruppenlayer hinzufügen** sind mindestens
 die folgenden Einstellungen notwendig:
 
 * `Name`: Name des Layers.
@@ -246,13 +248,13 @@ die folgenden Einstellungen notwendig:
   werden soll.
 * `Ausdehnung`: Die vier Felder (Min X, Min Y, Max X, Max Y) beinhalten die BoundingBox
   der Daten dieses Gruppenlayers im nativen Koordinatenreferenzsystem. Die Eingabe
-  kann manuell oder automatisch über Ausdehnung generieren (empfohlen) erfolgen.
-  Wichtig: Ohne Angabe einer BoundingBox kann der Layer nicht erfolgreich angelegt
+  kann manuell oder automatisch über **Ausdehnung generieren** (empfohlen) erfolgen.
+  **Wichtig:** Ohne Angabe einer BoundingBox kann der Layer nicht erfolgreich angelegt
   werden und die Werte sollten immer den kompletten Datenbestand beinhalten, da
   diese über den GetCapabilities-Request abgefragt und beim Einladen eines WMS
   (z.B. mit QGIS) relevant für den initialen Kartenausschnitt sind.
 * `Koordinatenreferenzsystem`: Koordinatenreferenzsystem im EPSG-Code.
-* `Layer`: Über den Button Layer hinzufügen oder Layergruppe hinzufügen können dem
+* `Layer`: Über den Button **Layer hinzufügen** oder **Layergruppe hinzufügen** können dem
   Gruppenlayer einzelne Layer oder andere Gruppenlayer hinzugefügt werden.
   Durch einen Klick auf den entsprechenden Button öffnet sich das Fenster Layer
   auswählen, in dem alle verfügbaren Layer der GeoServer Instanz erscheinen.
@@ -372,7 +374,7 @@ ausgewählten Arbeitsbereichs.
 
 #### Global
 
-Unter dem Dialog Globale Einstellungen finden sich folgende relevante
+Unter dem Dialog **Globale Einstellungen** finden sich folgende relevante
 Konfigurationsmöglichkeiten, die unter Umständen für Entwicklungs- oder
 Produktionsbetrieb angepasst werden sollten:
 
@@ -409,6 +411,6 @@ Der Pfad ist in aller Regel auf dem Standard von logs/geoserver.log zu belassen.
 
 ### Sicherheit
 
-Aufgabe:
+**Aufgabe:**
 
 Bitte ändern Sie das Standard-Passwort für den Benutzer `admin` von `geoserver` zu `fossgis`.
