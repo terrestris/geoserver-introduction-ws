@@ -61,3 +61,7 @@ den folgenden Dienst: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VER
 2. Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!
 
 3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!
+
+4. Falls die Darstellung mit OpenLayers nicht funktioniert, prüfen Sie die Einstellungen des Layers im Reiter `Publishing`.
+GeoServer ist nicht immer in der Lage den passenden Stil für die Geodaten automatisch zu erkennen. Falls der *Default Style*
+auf *generic* voreingestellt ist, ändern sie diesen in *Polygon*, *Point* oder *Line* (ja nach Art der Geodaten des WFS).
