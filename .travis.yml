@@ -3,7 +3,7 @@ node_js:
   - "4.0"
 env:
   global:
-    secure: "XXMflt9NrcoLQb+u4voLkJQ2Oc9STAzlYeTiaZ76jagsGABYLhLAySmTs6POQs1yA3cUmhMA6DXS8PBUKR+zOna0Tz3RwnTxAGxmp0gMqcTnhAtjkhFhG/gnih9ngb+9Hh7TELHMxLoq5BUix/tCwsQF4OXjs0uG54eQUABVMX1lFx4x+h31OKJ8uMZ5wLMEUKDq8ses5kDZrjJOFXhtHfGfwV06CeAgkTtJ3fJshGB1qvVKTREfm4G+wqxaNzLXIDXgGlISq5rTt+Hz/HB9sYQGXR02I035Uylq9gqduvN5smUmUbQUZfOmM5xph/lFTy/2Iypv9x5qGJ9+WD0BvDtLC7HC9JJgU/Ag5tRmFA6cJuaKL08QClb/lFYx/cKb74bWG3JL0oulIjer6uzBwDGIXbuKTb2vMTjosruz57vDJqGHWYIXGD9jYuaIsr1htbsZgqS36rql9OafAFpSpQ/uQiQDoDrCpDQRQpIsShlsCFw16Rq0zjlBwfCUDQketf4SpC3VuhC0MdS+L1qZ0Fz5R13doRF3Lt516NtsvqgWuH2h28ZLLA3lWQtbJvXaRyg77EzQpVqpYnFre9W2lmGqP4h74bkoTqLmG1JIRSGMN2e+vMVAI0d0I2zc1A69iG8NpSrym26KUJ/UmsduP6uK3RP2lQSQTBZr2Ee9+88="
+    secure: "p8U1p1e/cEvgDo+rE6PK3+M/A4htbPSE2Np7DBPok3KZZItuI0amI7ttSnPGhRtTDO5wwfJtGk5WZod6dcOtH9G6TEZUi2Fa9za/9JVLsumGM8wUFLxwAnZu23I0oXn4BPZQ2rkx6ThjrV7kmWroYPBu9gFM911+mORiNzDrn67RH7GMnSBYzXsuMZGh4NjIJLriogdLUtCgQJHYJ7D/Qlcwz7gRKBZcs8gdgZNk5/gA9Ajh9iw4DBnPOsISZVq7aZ0bxQsLxCfsDFb/Sh2pfTF55Vhbm1euBPsVHiUBiPFryfKHrEET3AkUXLTPuxhB+WsDNrmf7ntGG4BvDVxXHc2hx+tPcGjPD7TBBrJvQD4atv17S94JcqSGCoxWrDWtohp1mhl0eZbNqPJy0bmg/+KxP0npZ99QL/DJignlk+j4m/3y5Smr2E6FUQqx+SqjF0tK+/QlplnDrDqdhQ7Uum5hxhY/oQSYjDip6byCLVgAGFfaTkCW3eI1UsK6MlATXZ+wRUAi//P+97ppZoMOVJIkq738TurC3tcdOrZaTY2HnP1pRu8IMnj7oG5DE1AyN3y3FzW6ixm+/WL5shjb0skB6lYZbLvPZaHDLXwTDncJJTj5NY5Ha9Ry2E3X8mLRekeCwb+hIPaDx8k7t2WmduaUwUOFqEkuYihy5c/SdWs="
 cache:
   directories:
   - $HOME/calibre-bin
@@ -15,6 +15,7 @@ before_script:
     wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py |
     python -c "import sys; main=lambda x,y:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main('~/calibre-bin', True)"
 script:
+  - npm i
   - npm run archive
 after_success:
   - ./.ci/update-gh-pages.sh > /dev/null 2>&1
