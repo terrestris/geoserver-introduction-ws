@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html lang="de" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Rasterdatenquellen | GeoServer introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-sectionx/sectionx.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../group/index.html" />
+    
+    
+    <link rel="prev" href="../../data/vector/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="Rasterdatenquellen"
+        data-filepath="data/raster/README.md"
+        data-basepath="../.."
+        data-revision="Fri Mar 16 2018 16:26:18 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Einleitung
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="environment/index.html">
+            
+                
+                    <a href="../../environment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Vorarbeiten und generelle Informationen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="basics/index.html">
+            
+                
+                    <a href="../../basics/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Basiswissen GeoServer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="ui/index.html">
+            
+                
+                    <a href="../../ui/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Administrationsoberfläche
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="ui/server/index.html">
+            
+                
+                    <a href="../../ui/server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Serverstatus
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ui/data/index.html">
+            
+                
+                    <a href="../../ui/data/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Daten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ui/settings/index.html">
+            
+                
+                    <a href="../../ui/settings/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Einstellungen und Sicherheit
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="data/index.html">
+            
+                
+                    <a href="../../data/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Datenveröffentlichung
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="data/vector/index.html">
+            
+                
+                    <a href="../../data/vector/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Vektordatenquellen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="data/raster/index.html">
+            
+                
+                    <a href="../../data/raster/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Rasterdatenquellen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="group/index.html">
+            
+                
+                    <a href="../../group/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Gruppenlayer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="styling/index.html">
+            
+                
+                    <a href="../../styling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Styling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Veröffentlicht mit GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >GeoServer introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="rasterdatenquellen">Rasterdatenquellen</h1>
+<h2 id="geotiff">GeoTIFF</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Das GeoTIFF ist ein g&#xE4;ngiges Rasterdaten-Format, da es sich aufgrund seiner verlustfreien Speicherung gut zur Verarbeitung
+von Geodaten eignet. Zus&#xE4;tzlich zum TIFF-Bildformat enth&#xE4;lt das GeoTIFF Koordinaten zur Georeferenzierung und Informationen
+zur verwendeten Kartenprojektion.</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, &#xFC;ber den ein GeoTIFF &#xFC;ber den GeoServer
+ver&#xF6;ffentlicht werden kann. Nutzen Sie hierf&#xFC;r <code>data/sf/sfdem.tiff</code>.</p>
+</li>
+<li><p>Ver&#xF6;ffentlichen Sie dieses GeoTIFF &#xFC;ber den GeoServer! Unter dem Reiter <code>Publishing</code> und weiter <code>WMS Settings</code> lassen sich
+vorgefertigte Layer-Stile ausw&#xE4;hlen. Bei dem GeoTIFF handelt es sich um ein digitales H&#xF6;henmodell (DEM) aus South Dakota.
+W&#xE4;hlen Sie daher den Stil <code>dem</code> f&#xFC;r diesen Layer.</p>
+</li>
+<li><p>&#xD6;ffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<h2 id="imagemosaic">ImageMosaic</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Ein Datenspeicher der Art ImageMosaic bietet die M&#xF6;glichkeit mehrere georeferenzierte Rasterdaten zu einem Mosaik zusammenzuf&#xFC;gen.
+Somit k&#xF6;nnen beispielsweise zwei oder mehr sich &#xFC;berlappende Satellitenaufnahmen als ein zusammenh&#xE4;ngendes Raster ver&#xF6;ffentlicht werden.</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, &#xFC;ber den ein ImageMosaic &#xFC;ber den GeoServer
+ver&#xF6;ffentlicht werden kann. Nutzen Sie hierf&#xFC;r <code>coverages/mosaic_sample</code>.</p>
+</li>
+<li><p>Ver&#xF6;ffentlichen Sie dieses Mosaik &#xFC;ber den GeoServer!</p>
+</li>
+<li><p>&#xD6;ffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<figure id="fig4.2.1"><img src="../../assets/raster2.png" alt="Mosaik aus mehreren Satellitenaufnahmen"><figcaption>Mosaik aus mehreren Satellitenaufnahmen</figcaption></figure>
+<h2 id="wms">WMS</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Das Kaskadieren eines externen WMS-Dienstes zu GeoServer kann in vielen Situationen &#xE4;u&#xDF;erst n&#xFC;tzlich sein, da Sie nun den vollen Zugriff
+auf die Spezifika des Dienstes haben. Auch wenn der entfernte WMS-Dienst nicht mit GeoServer ver&#xF6;ffentlicht wurde, haben sie nun lokal
+die M&#xF6;glichkeit, den vollen Umfang von GeoServer auf den WMS-Dienst anzuwenden.</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, &#xFC;ber den ein bereits existierender WMS
+&#xFC;ber den GeoServer kaskadiert ver&#xF6;ffentlicht werden kann. Nutzen Sie hierf&#xFC;r z.B.
+den folgenden Dienst: <a href="http://www.wms.nrw.de/geobasis/DGM_Relief?" target="_blank">http://www.wms.nrw.de/geobasis/DGM_Relief?</a></p>
+</li>
+<li><p>Ver&#xF6;ffentlichen Sie einen Dienst Ihrer Wahl &#xFC;ber den GeoServer!</p>
+</li>
+<li><p>&#xD6;ffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<figure id="fig4.2.2"><img src="../../assets/raster3.png" alt="Hochaufl&#xF6;sendes DGM-Relief von Bonn (GeoBasis NRW 2017)"><figcaption>Hochaufl&#xF6;sendes DGM-Relief von Bonn (GeoBasis NRW 2017)</figcaption></figure>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../data/vector/index.html" class="navigation navigation-prev " aria-label="Previous page: Vektordatenquellen"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../group/index.html" class="navigation navigation-next " aria-label="Next page: Gruppenlayer"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+    
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sectionx/sectionx.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/terrestris/geoserver-introduction-ws/edit/master/src","label":"Edit…"},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"},"richquotes":{"task":{"alert":"info","picto":"fa-file-code-o"},"exercise":{"alert":"info","picto":"fa-file-code-o"}},"advanced-emoji":{"embedEmojis":false},"expandable-chapters":{},"sectionx":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
