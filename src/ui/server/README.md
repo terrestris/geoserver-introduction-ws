@@ -42,7 +42,7 @@ Datenspeicher zurückführen lassen. Dies kann entweder tatsächlich einer fehle
 Konfiguration oder z.B. einem Ausfall der Quelldatenbank geschuldet sein.
 
 **Hinweis:** Es existieren mehrere Protokollmodi, die eine unterschiedlich empfindliche
-Ausgabe erzeugen. Nähere Informationen hierzu s. Kap. 6.2.1.13.
+Ausgabe erzeugen. Nähere Informationen hierzu s. Kap. [Einstellungen](../settings/README.md).
 
 #### Kontaktangaben
 
