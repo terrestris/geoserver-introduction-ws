@@ -28,6 +28,15 @@ Basiswissen Geoserver, Kompilieren auf Basis des Source-Codes mit Maven, Install
 * [Administrationsoberfläche](ui/README.md)
 Konfiguration des GeoServers über die Weboberläche
 
+* [Datenveröffentlichung](data/README.md)
+Veröffentlichung von Geodaten aus verschiedenen Datenquellen
+
+* [Gruppenlayer](group/README.md)
+Veröffentlichung eines Gruppenlayers
+
+* [Styling](styling/README.md)
+Styling eines Layers über SLD
+
 # Autoren
 
 {% for author in book.authors %}
