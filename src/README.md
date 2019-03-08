@@ -2,8 +2,8 @@
 
 # Einführung in GeoServer
 
-Herzlich Willkommen beim **Einführung in GeoServer** Workshop auf der FOSSGIS 2018
-in Bonn.
+Herzlich Willkommen beim **Einführung in GeoServer** Workshop auf der FOSSGIS 2019
+in Dresden.
 
 Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über den GeoServer als Web-Mapping-Lösung geben.
 
