@@ -16,7 +16,7 @@ Produktionsbetrieb angepasst werden sollten:
 * `Zeichensatz`: Welche Zeichenkodierung soll der GeoServer verwenden? Der Standardwert von
   UTF-8 sollte nicht geändert werden, um Kodierungsfehler in den Antworten des
   GeoServers zu vermeiden.
-* `Proxy URL`: Ist der GeoServer über einen reverse-proxy (http://httpd.apache.org/docs/2.2/mod/mod_proxy.html)
+* `Proxy URL`: Ist der GeoServer über einen reverse-proxy (https://httpd.apache.org/docs/2.2/mod/mod_proxy.html)
   erreichbar gemacht worden, kann in diesem Feld die Adresse des Proxy eingetragen werden.
   Im Normalfall ist dieses Feld auf einen leeren String zu setzen.
 * `Profil für die Protokollierung`: Der GeoServer besitzt per default fünf Protokollprofile,

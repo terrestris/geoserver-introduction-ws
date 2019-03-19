@@ -41,7 +41,7 @@ Werkzeugleiste eingeblendet werden, die Optionen zur Manipulation des GetMap-Auf
 ermöglicht (Bildformat und -größe, Antialiasing etc.).
 Unter der Auswahlbox **Alle Formate** sind weitere Formate aufgelistet, die nach WMS
 und WFS gegliedert sind. Für die Vorschau eines WMS wird dabei jedoch das obige
-Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.   
+Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.
 **Hinweis:** Über die Auswahlbox ist auch der Export als Shapefile möglich, das
 in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
 
@@ -202,10 +202,10 @@ Formular Neuer Stil bzw. Stil Editor. Das Formular bietet folgende Optionen:
 * `SLD Eingabefeld`: Im Eingabefeld erfolgt die Eingabe des Layerstils. Eine vollständige
   Erläuterung der SLD-Syntax würde den Rahmen dieses Workshops sprengen, daher wird
   an dieser Stelle auf die GeoServer Dokumentation, gegliedert nach Einsatzzwecken, verwiesen:
-    * Inhaltsverzeichnis: http://docs.geoserver.org/latest/en/user/styling/index.html
-    * Punktstile: http://docs.geoserver.org/latest/en/user/styling/sld-cookbook/points.html
-    * Linienstile: http://docs.geoserver.org/latest/en/user/styling/sld-cookbook/lines.html
-    * Polygonstile: http://docs.geoserver.org/latest/en/user/styling/sld-cookbook/polygons.html
+    * Inhaltsverzeichnis: https://docs.geoserver.org/stable/en/user/styling/index.html
+    * Punktstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/points.html
+    * Linienstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/lines.html
+    * Polygonstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/polygons.html
 * `Datei auswählen`: Wurde das SLD in einem externen Editor erstellt, kann diese Datei
    direkt in das Formular geladen werden.
 
