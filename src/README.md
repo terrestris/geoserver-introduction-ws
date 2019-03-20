@@ -20,10 +20,10 @@ Der Workshop ist aus einer Reihe von Modulen zusammengestellt. In jedem Modul we
 Die folgenden Module werden in diesem Workshop behandelt:
 
 * [Vorarbeiten und generelle Informationen](environment/README.md)
-Grundlegende Informationen zur Workshop-Umgebung (OSGeoLive, Pfade, URLs, Credentials) und notwendige Installationen (Maven)
+Grundlegende Informationen zur Workshop-Umgebung (OSGeoLive, Pfade, URLs, Credentials)
 
 * [Basiswissen GeoServer](basics/README.md)
-Basiswissen Geoserver, Kompilieren auf Basis des Source-Codes mit Maven, Installation von Plugins
+Basisinformationen zum Geoserver
 
 * [Administrationsoberfläche](ui/README.md)
 Konfiguration des GeoServers über die Weboberläche
