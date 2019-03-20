@@ -8,7 +8,7 @@ des ausgewählten Arbeitsbereichs.
 * `Service Metadaten`: Die Angaben im Bereich Service Metadaten sind relevant für die
   Capabilities des Kartenservers und sind an die gegebenen Umstände anzupassen
   (Ist z.B. eine Zugriffsbeschränkung der Dienste vorhanden?, Welche Schlüsselworte sind vergeben?).
-  Für eine Übersicht aller Felder siehe auch http://docs.geoserver.org/latest/en/user/webadmin/services/WCS.html#service-metadata.
+  Für eine Übersicht aller Felder siehe auch https://docs.geoserver.org/stable/en/user/services/wfs/webadmin.html#service-metadata.
   Wichtiger Hinweis: Ist die Checkbox WFS aktiv nicht bestätigt, sind keine WFS Abfragen möglich.
 * `Max. Anzahl von Features`: Soll die maximale Anzahl der über ein WFS GetFeature
   Request ausgegeben Features begrenzt werden, kann diese Anzahl in dem Feld erfolgen.
@@ -31,7 +31,7 @@ ausgewählten Arbeitsbereichs.
 * `Service Metadaten`: Die Angaben im Bereich Service Metadaten sind relevant für die
   Capabilities des Kartenservers und sind an die gegebenen Umstände anzupassen
   (Ist z.B. eine Zugriffsbeschränkung der Dienste vorhanden?, Welche Schlüsselworte
-  sind vergeben?). Für eine Übersicht aller Felder siehe auch http://docs.geoserver.org/latest/en/user/webadmin/services/WCS.html#service-metadata.
+  sind vergeben?). Für eine Übersicht aller Felder siehe auch https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#service-metadata.
   Wichtiger Hinweis: Ist die Checkbox WMS aktiv nicht bestätigt, sind keine WMS
   Abfragen möglich.
 * `Eingeschränkte Liste der Koordinatenreferenzsysteme`: Per Default ist es möglich,
@@ -44,7 +44,7 @@ ausgewählten Arbeitsbereichs.
   Methoden beim Zeichnen eines WMS, die sich in dem Einbezug benachbarter Zellen
   bei der Berechnung des Zellenwerts eines Rasterbildes äußern: Nächster Nachbar,
   Bilinear und Bicubic. Für einen optimale Performance sollte der Standardwert
-  von Nächster Nachbar nicht geändert werden. Siehe auch: http://docs.geoserver.org/stable/en/user/webadmin/services/WMS.html#raster-rendering-options.
+  von Nächster Nachbar nicht geändert werden. Siehe auch: https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#raster-rendering-options
 * `Wasserzeichen Einstellungen`: Über ein Wasserzeichen kann z.B. ein
   Copyright-Hinweis in jedes Kartenbild gezeichnet werden. Soll ein Wasserzeichen
   eingebunden werden, muss die Checkbox Aktiviere Wasserzeichen sowie ein
