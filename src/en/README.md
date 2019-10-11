@@ -1,6 +1,6 @@
 ![](./assets/geoserver-logo.png)
 
-# Einführung in GeoServer
+# Introduction to GeoServer
 
 Herzlich Willkommen beim **Einführung in GeoServer** Workshop auf der FOSSGIS 2019
 in Dresden.
