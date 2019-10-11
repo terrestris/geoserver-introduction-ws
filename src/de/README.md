@@ -1,4 +1,4 @@
-![](assets/geoserver-logo.png)
+![](./assets/geoserver-logo.png)
 
 # Einführung in GeoServer
 
