@@ -1,215 +1,147 @@
-### Daten
+### Data
 
-Die folgenden Abschnitte beschreiben den umfangreichsten Konfigurationsbereich
-des GeoServers, die Schritte zur Veröffentlichung eines Dienstes.
+The following sections describe the most comprehensive configuration area of GeoServer, the steps for publishing a service.
 
-#### Layervorschau
+#### Layer preview
 
-![Layervorschau](../../assets/ui_layer_preview.png)
+![Layer preview.](../../assets/ui_layer_preview.png)
 
-Die **Layer-Vorschau** bietet eine Übersicht aller über diesen GeoServer veröffentlichten
-Layer. Damit ein Layer in dieser Übersicht erscheint (und auch im GetCapabilities
-Dokument der Instanz erscheint), muss der Layer als `Angekündigt` gekennzeichnet sein.
-Jeder Layer verfügt über eine Angabe des Typs (s. nachfolgende Tabelle), einen internen Layernamen
-(inklusive Name des Arbeitsbereichs), einen Layertitel (Kurzbeschreibung) und eine
-Auswahlbox von möglichen Vorschauformaten.
+The **layer preview** provides an overview of all layers published on this GeoServer. For a layer to appear in this overview (and also in the GetCapabilities document of the instance), it must be marked as `prefigured`.
+Each layer has a specification of the type (see table below), a internal layer name
+(including name of the work space), a layer title (short description) and a selection box of possible preview formats.
 
-| Typ | Beschreibung |
+<!--englische begriffe-->
+
+| type | description |
 |:---:|--------------|
-| ![](../../assets/ui_type_unknown.png) | Vektorlayer (Typ unbekannt) |
-| ![](../../assets/ui_type_point.png) | Vektorlayer ((Multi-)Punkt) |
-| ![](../../assets/ui_type_line.png) | Vektorlayer ((Multi-)Linie) |
-| ![](../../assets/ui_type_polygon.png) | Vektorlayer ((Multi-)Polygon) |
-| ![](../../assets/ui_type_raster.png) | Rasterlayer |
-| ![](../../assets/ui_type_group.png) | Gruppenlayer |
-| ![](../../assets/ui_type_wms.png) | Kaskadierter WMS |
+| ![](../../assets/ui_type_unknown.png) | vector layer (type unknown) |
+| ![](../../assets/ui_type_point.png) | vector layer ((Multi-)Point) |
+| ![](../../assets/ui_type_line.png) | vector layer ((Multi-)Line) |
+| ![](../../assets/ui_type_polygon.png) | vector layer ((Multi-)Polygon) |
+| ![](../../assets/ui_type_raster.png) | raster layer |
+| ![](../../assets/ui_type_group.png) | layer group |
+| ![](../../assets/ui_type_wms.png) | cascaded WMS |
 
-Die Layerliste kann per Linksklick auf die Spaltennamen `Typ`, `Name`
-oder `Titel` auf- und absteigend sortiert werden. Neben einer Übersicht aller
-verfügbaren Layer, kann eine Vorschau eines Layers in verschiedenen Formaten
-vorgenommen werden. Dies empfiehlt sich insbesondere für eine schnelle und
-komfortable Überprüfung eines neu angelegten Layers. Der schnellste Weg zu einer
-Vorschau ist das „Format“ OpenLayers, wodurch ein neues Fenster mit einer
-Vorschaukarte des ausgewählten Layers geöffnet wird.
+The layer list can be sorted ascending and descending by left-clicking on the column names `type`, `name`
+or `title`. In addition to an overview of all available layers, a preview of a layer can be displayed in various formats. This is recommended in particular for a quick and easy comfortable checking of a new created layer. The fastest way to get a preview is to use the "Format" OpenLayers, which creates a new window with a preview map of the selected layer.
 
-![OpenLayers Layervorschau](../../assets/ui_layer_preview_openlayers.png)
+![Layer preview with OpenLayers.](../../assets/ui_layer_preview_openlayers.png)
 
-Die OpenLayers Map erlaubt eine freie Navigation innerhalb des Layers und eine
-GetFeatureInfo-Abfrage durch einen Linksklick in den Layer. Über den Button
-**toggle options toolbar** oberhalb des Navigationskreuzes kann eine
-Werkzeugleiste eingeblendet werden, die Optionen zur Manipulation des GetMap-Aufrufs
-ermöglicht (Bildformat und -größe, Antialiasing etc.).
-Unter der Auswahlbox **Alle Formate** sind weitere Formate aufgelistet, die nach WMS
-und WFS gegliedert sind. Für die Vorschau eines WMS wird dabei jedoch das obige
-Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.
-**Hinweis:** Über die Auswahlbox ist auch der Export als Shapefile möglich, das
-in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
+The OpenLayers map allows a free navigation within the layer and a GetFeatureInfo query by a left click inside the layer.
+The button **toggle options toolbar** above the navigation allows you to display a toolbar with the options to manipulate the GetMap call (format and size, Antialiasing etc.).
+Further formats are listed below the selection box **All formats**. They are structured according to WMS and WFS. For the preview of a WMS „OpenLayers“ is recommended, while for a preview of a WFS you should choose the "GML2" format.
+**Hint:** Via the selection box the export as Shapefile is also possible. Shapefiles can be integrated into any standard desktop GIS for further processing.
 
-**Aufgabe:**
+**Task:**
 
-1. Rufen Sie die OpenLayers Layervorschau eines beliebigen Layers auf und ändern Sie die
-Requestparamter `Tiling` und `Format` zu einem Parameter Ihrer Wahl. Rufen Sie anschließend
-die GetFeatureInfo ab.
+1. Call up the OpenLayers layer preview of any layer and change the parameters `Tiling` und `Format` to a parameter of your choice. Afterwards call GetFeatureInfo.
 
-#### Arbeitsbereiche
+#### Workspaces
 
-Über den Menüeintrag **Arbeitsbereiche** kann die Übersicht aller verfügbaren Arbeitsbereiche
-des GeoServers aufgerufen werden. Über die GUI können neue Arbeitsbereiche erstellt oder
-bestehende editiert werden.
+The menu item **Workspaces** provides an overview of all available workspaces of GeoServer. The GUI can be used to create new workspaces or to edit
+existing ones.
 
-![Arbeitsbereiche](../../assets/ui_workspaces.png)
+![Workspaces.](../../assets/ui_workspaces.png)
 
-Der GeoServer legt Layer über folgende Hierarchie ab:
+The GeoServer stores layers using the following hierarchy:
 
 ```
-Arbeitsbereich
- └ Datenspeicher
+Workspace
+ └ Data store
   └ Layer
- └ Gruppenlayer
- └ Stile
+ └ Layer(groups)
+ └ Style
 ```
 
-Zentrales Element ist der sog. Arbeitsbereich, der zunächst als Sammelobjekt für
-Layer verstanden werden kann. Analog zu einem Namensbereich organisiert der
-Arbeitsbereich Objekte eines gemeinsamen Themas, z.B. die Layer einer bestimmten
-Abteilung oder eines bestimmten Themas.
-Jedem Arbeitsbereich können nun weitere Konfigurationselemente zugeordnet werden.
-Hierzu zählen u.a. der Datenspeicher, die (Gruppen-) Layer, Stile und übergeordnete
-Einstellungen des GeoServers wie Kontaktdaten oder globale WMS-Einstellungen.
-**Wichtig:** Wird ein GeoServer initial in Betrieb genommen, muss die oben
-skizzierte Reihenfolge beim Anlegen eines Layers genauestens beachtet werden, d.h. zunächst
-wird ein Arbeitsbereich, danach ein Datenspeicher und anschließend ein Layer
-(inklusive Stil) angelegt.
+The central element is the so-called workspace, which can initially be understood as a collection object for layers. Similar to a namespace, the workspace organizes objects of a common theme, e.g. the layers of a specific department or topic.
+Further configuration elements can now be assigned to each workspace.
+This includes among others the data store, the layer (-group), styles and higher-level settings
+of GeoServer like contact information or global WMS-settings.
+**Important:** If a GeoServer is initially put into operation, the sequence outlined above must be strictly adhered when creating a layer, that means, first a workspace is created, then a data store and then a layer (with styles).
 
-**Hinweis:** Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
-(*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). Diese können im
-Produktivbetrieb ohne Bedenken gelöscht werden.
+**Hint:** The GeoServer has several example workspaces in the delivery state
+(*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). These can be deleted without hesitation in productive operation.
 
-**Aufgabe:**
+**Task:**
 
-1. Legen Sie einen neuen Arbeitsbereich mit dem Namen `FOSSGIS` an. Als Namespace URI geben Sie
-`http://geoserver.org/fossgis`ein. Markieren Sie diesen Arbeitsbereich als Standardarbeitsbereich.
+1. Create a new workspace with the name `FOSSGIS`. For Namespace URI set
+`http://geoserver.org/fossgis`. Select this workspace as the default workspace.
 
-#### Datenspeicher
+#### Data store
 
-![Datenspeicher](../../assets/ui_datastores.png)
+![Data store.](../../assets/ui_datastores.png)
 
-Der **Datenspeicher** ist eine Referenz zu einer Datenquelle, die Vektor- oder Rasterdaten
-zur Veröffentlichung enthält. Jeder Datenspeicher wird dabei genau einem Arbeitsbereich
-zugeordnet. Ein Datenspeicher beinhaltet dabei z.B. Verbindungsparameter
-zu einer Datenbank oder den Pfad zu einem Shapefile.
-Die obige Abbildung zeigt die Übersicht aller verfügbaren Datenspeicher, die über
-das Feld Datenspeicher im linken Navigationsmenü aufgerufen werden kann. Die
-Übersicht besteht aus den Spalten *Datentyp, Arbeitsbereich, Name für Datenspeicher,
-Typ* und *Aktiv*. Der Datentyp beschreibt den Typ des Datenspeichers, wobei es sich
-um einen der in nachfolgenden Tabelle aufgelisteten Datentypen handeln kann. Arbeitsbereich
-beinhaltet den übergeordneten Namen des Arbeitsbereichs, Name für Datenspeicher den
-Namen des Datenspeichers, Typ den konkreten Speichertyp (z.B. die Datenbank) und
-Aktiv den Status des Datenspeichers.
+The **data store** is a reference to a data source, which contains vector or raster data for publication. Each data store is assigned to exactly one workspace. A data store includes connection parameters to a database or the path to a shapefile for example.
+DThe figure above shows an overview of all available data stores, which can be accessed via the data store field in the left-hand navigation menu. The overview contains the columns *data type, workspace, name for data store,
+type* and *active*. The *data type* describes the type of the data store, which can be one of the data types listed in the following table. *Workspace* contains the superior name of the workspace, *name for data store* the name of the data store, *type* the concrete storage type (for example, the database) and
+*active* the status of the data store.
 
-| Typ | Beschreibung |
+| type | description |
 |:---:|--------------|
-| ![](../../assets/ui_datastore_type_shape.png) | Einzeldatei/Verzeichnis (Vektordaten) |
-| ![](../../assets/ui_datastore_type_raster.png) | Einzeldatei/Verzeichnis (Rasterdaten) |
-| ![](../../assets/ui_datastore_type_db.png) | Datenbank (Vektordaten) |
+| ![](../../assets/ui_datastore_type_shape.png) | single file/directory (vector data) |
+| ![](../../assets/ui_datastore_type_raster.png) | single file/directory (raster data) |
+| ![](../../assets/ui_datastore_type_db.png) | database (vector data) |
 | ![](../../assets/ui_datastore_type_wms.png) | WMS |
 | ![](../../assets/ui_datastore_type_wfs.png) | WFS |
 
-Über das Formular kann sowohl einer neuer Datenspeicher angelegt werden als auch
-ein bestehender Datenspeicher editiert werden.
+The form can be either used to create a new data store or to edit an existing one.
 
 #### Layer
 
-![Layer](../../assets/ui_layers.png)
+![Layer.](../../assets/ui_layers.png)
 
-Layer sind die Repräsentationen von Geodaten (Vektor- oder Raster). Jeder Layer
-enthält dabei mehrere Kartenelemente (Features), die als gerenderte Rasterdaten
-(WMS) oder als Rohdaten (WFS bzw. WCS) abgerufen werden können. Jedem Layer ist im GeoServer
-gemein, dass sie genau einem Arbeitsbereich und genau einem Datenspeicher zugehörig
-sind.
-**Wichtiger Hinweis:** Der GeoServer legt automatisch für jeden Layer einen
-WMS und WFS an, ein getrenntes Anlegen ist nicht möglich. Es ist ausschließlich
-möglich im Arbeitsbereich zu definieren, ob alle Layer in diesem Arbeitsbereich
-sowohl per WMS als auch per WFS, nur als WMS oder nur als WFS abfragbar sind.
+Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one data store. 
+**Important Hint:** GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.
 
-Die Übersicht besitzt Spalten zur Angabe des jeweiligen Typs, dem Namen des
-Arbeitsbereichs, Datenspeichers sowie des Layers (Name), Status (Aktiv) und
-Koordinatenreferenzsystem im EPSG Code. Wie bei den anderen Listentypen auch,
-kann die Liste nach den entsprechenden Spalten durch einen Linksklick auf den
-Spaltentitel auf-  und abwärts sortiert werden. Über die Liste ist ebenfalls ein
-direkter Aufruf der Parameter des Arbeitsbereichs sowie des Datenspeichers
-durch einen Linksklick auf die entsprechenden Titel möglich.
+The overview has columns for specifying the respective type, name of the workspace, data store and the layer's name, status (active) and the
+coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the data store directly from the list by left-clicking the corresponding title.
 
-#### <a name="group-layer"></a>Gruppenlayer
+#### <a name="group-layer"></a>Layergroup
 
-![Gruppenlayer](../../assets/ui_layer_groups.png)
+![Layer group](../../assets/ui_layer_groups.png)
 
-Gruppenlayer sind eine Sammlung von bereits im GeoServer veröffentlichten Layern,
-die gemeinsam über nur einen Layer angefordert werden.
+Layer groups are a collection of layers already published in the GeoServer,
+which are requested together via only one layer.
 
-Für das Anlegen eines Gruppenlayers über das Formular **Gruppenlayer hinzufügen** sind mindestens
-die folgenden Einstellungen notwendig:
+For creating a layer group using the form. **Add new layer group** at least the following settings are necessary:
 
-* `Name`: Name des Layers.
-* `Titel`: Titel des Layers.
-* `Arbeitsbereich`: Der Name des Arbeitsbereichs, in dem der Gruppenlayer angelegt
-  werden soll.
-* `Ausdehnung`: Die vier Felder (Min X, Min Y, Max X, Max Y) beinhalten die BoundingBox
-  der Daten dieses Gruppenlayers im nativen Koordinatenreferenzsystem. Die Eingabe
-  kann manuell oder automatisch über **Ausdehnung generieren** (empfohlen) erfolgen.
-  **Wichtig:** Ohne Angabe einer BoundingBox kann der Layer nicht erfolgreich angelegt
-  werden und die Werte sollten immer den kompletten Datenbestand beinhalten, da
-  diese über den GetCapabilities-Request abgefragt und beim Einladen eines WMS
-  (z.B. mit QGIS) relevant für den initialen Kartenausschnitt sind.
-* `Koordinatenreferenzsystem`: Koordinatenreferenzsystem im EPSG-Code.
-* `Layer`: Über den Button **Layer hinzufügen** oder **Layergruppe hinzufügen** können dem
-  Gruppenlayer einzelne Layer oder andere Gruppenlayer hinzugefügt werden.
-  Durch einen Klick auf den entsprechenden Button öffnet sich das Fenster Layer
-  auswählen, in dem alle verfügbaren Layer der GeoServer Instanz erscheinen.
-  Aus dem Fenster kann ein Layer durch einen Klick auf den Layernamen ausgewählt
-  und an den Gruppenlayer übergeben werden. Jeder ausgewählte Layer erscheint
-  anschließend in der Tabelle unterhalb des Formularelements Layer.
+* `Name`: Name of the layer.
+* `Title`: Title of the layer.
+* `Workspace`: The name of the workspace in which the group layer should be created.
+* `BoundingBox`: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of **Generate BoundingBox** (recommended).
+  **Important:** Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS 
+  (e.g. in QGIS). There it is relevant for the initial map section.
+* `Coordinate Reference System`: Coordinate Reference System as EPSG-Code.
+* `Layer`: The buttons **Add new layer** or **Add new layer group** can be used to add individual  layers or other group layers to the group layer.
+  A click on the corresponding button opens the *Select Layer* window, in which all available layers of the GeoServer instance appear.
+  A layer can be selected from the window by clicking on the layer's name and is then passed to the layer group. Each selected layer then appears in the table below the layer form element.
 
-In der Übersichtstabelle kann die Zeichenreihenfolge der Layer durch die Pfeilsymbole angegeben
-werden, wobei der oberste Layer als unterster Layer in diesem Gruppenlayer gezeichnet
-wird. Weiter kann dem Layer ein Stil abweichend vom Layer zugewiesen oder der
-Layer aus der Gruppe entfernt werden.
+In the overview table the order of the layers can be determined by the arrow symbols, where the uppermost layer is drawn as the lowest layer in this layer group. You can also assign a different style to the layer or remove the layer from the group.
 
-#### Layerstile
+#### Layer style
+<!--englische Begriffe klären-->
 
-![Layerstile](../../assets/ui_styles.png)
+![Layer style.](../../assets/ui_styles.png)
 
-Die Zeichenvorschrift bestimmt das Aussehen eines Layers in Abhängigkeit von
-Attributeigenschaften. Im GeoServer wird die Symbologie eines Layers über ein SLD
-(Styles Layer Descriptor, ein XML-Dialekt) angeben, welches im Dialog Stile
-erstellt bzw. geändert werden kann.
+The drawing rule determines the appearance of a layer depending on attribute properties. GeoServer displays the symbology of a layer with the help of SLD
+(Styled Layer Descriptor, a XML-dialect), which can be created or changed in the styles dialog.
 
-Die Liste enthält alle verfügbaren Stile dieses GeoServers und erlaubt entweder
-das Erstellen eines neuen Stils durch den Button Hinzufügen eines neuen Stils,
-das Entfernen eines bestehenden Stils (Auswahl des Stils über die Checkbox und
-Klick auf Ausgewählte Stile löschen) oder das Ändern eines bestehenden Stils
-durch einen Klick auf den Stilnamen.
+The list contains all available styles of this GeoServer and allows you to either create a new style by clicking the *Add new Style* button,
+delete an existing style (Select the style using the checkbox and click *Delete selected styles*) or changing an existing style by clicking on the style's name.
+<!--englische begriffe-->
 
-Wird ein neuer Stil erstellt oder ein bestehender Stil editiert, öffnet sich das
-Formular Neuer Stil bzw. Stil Editor. Das Formular bietet folgende Optionen:
+When creating a new style or editing an existing style, the form *New style* respective *Style Editor*. The form offers the following options:
 
-* `Name`: Name des Stils. Ist der Stil genau von einem Layer in Verwendung, sollte der
-  Name dies widerspiegeln (gleicher Name wieder Layer o.ä.).
-* `Arbeitsbereich`: Arbeitsbereich dieses Stils.
-* `Von einem vorhandenen Stil kopieren`: Sind Elemente des neuen Stils bereits in
-  einem bestehende Stil vorhanden, kann ein vorhandener Stil als Vorlage für den
-  neuen Stil ausgewählt werden.
-* `SLD Eingabefeld`: Im Eingabefeld erfolgt die Eingabe des Layerstils. Eine vollständige
-  Erläuterung der SLD-Syntax würde den Rahmen dieses Workshops sprengen, daher wird
-  an dieser Stelle auf die GeoServer Dokumentation, gegliedert nach Einsatzzwecken, verwiesen:
-    * Inhaltsverzeichnis: https://docs.geoserver.org/stable/en/user/styling/index.html
-    * Punktstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/points.html
-    * Linienstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/lines.html
-    * Polygonstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/polygons.html
-* `Datei auswählen`: Wurde das SLD in einem externen Editor erstellt, kann diese Datei
-   direkt in das Formular geladen werden.
+* `Name`: Name of the style. If the style is used by exactly one layer, the style's name should reflect this (e.g. same name as layer).
+* `Workspace`: Workspace of the style.
+* `Copy from an existing style`: If elements of the styles are used by other styles, an existing style can be chosen as a template.
+* `SLD input field`: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop, 
+  therefore the GeoServer documentation will be referred to here, structured according to purposes:
+    * Table of contents: https://docs.geoserver.org/stable/en/user/styling/sld/index.html
+    * points: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html
+    * lines: htthttps://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html
+    * polygons: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html
 
-Wichtiger Hinweis: Bevor der Stil über Speichern gespeichert wird, sollte dieser über
-Validieren auf Korrektheit geprüft werden. Liegt ein Fehler (z.B. in der Syntax)
-vor, erscheint am oberen Rand des Formulars ein Fehler mit einem Hinweis auf die
-Fehlerursache.
+* `Select file`: If the SLD was created in an external editor, this file can be loaded directly into the form.
+
+**Important hint**: Before the style is saved via *Save*, it should be checked for correctness via *Validate*. If there is an error (e.g. syntax error), an error appears at the top of the form with a hint to the cause of the error.

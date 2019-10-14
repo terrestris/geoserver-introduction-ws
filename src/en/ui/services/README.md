@@ -2,58 +2,37 @@
 
 #### WFS
 
-Das Formular Web Feature Service beinhaltet globale Einstellungen zu allen WFS
-des ausgewählten Arbeitsbereichs.
+The Web Feature Service form contains global settings for all WFS of the selected workspace.
 
-* `Service Metadaten`: Die Angaben im Bereich Service Metadaten sind relevant für die
-  Capabilities des Kartenservers und sind an die gegebenen Umstände anzupassen
-  (Ist z.B. eine Zugriffsbeschränkung der Dienste vorhanden?, Welche Schlüsselworte sind vergeben?).
-  Für eine Übersicht aller Felder siehe auch https://docs.geoserver.org/stable/en/user/services/wfs/webadmin.html#service-metadata.
-  Wichtiger Hinweis: Ist die Checkbox WFS aktiv nicht bestätigt, sind keine WFS Abfragen möglich.
-* `Max. Anzahl von Features`: Soll die maximale Anzahl der über ein WFS GetFeature
-  Request ausgegeben Features begrenzt werden, kann diese Anzahl in dem Feld erfolgen.
-* `Dienstgüte`: Der GeoServers implementiert eine voll transaktionale WFS Schnittstelle
-  (WFS-T). Dies bedeutet, dass über den GeoServer Features sowohl abgerufen
-  (WFS GetFeature) als auch editiert (CREATE, UPDATE, DELETE) werden können (WFS Transaction).
-  Die Checkboxen unter Dienstgüte stehen für:
-    * `Basis`: Features können über die WFS Schnittstelle ausschließlich abgefragt werden
-      (GetCapabilities, DescribeFeatureType, GetFeature Operationen möglich).
-    * `Transaktional`: Features können über die WFS Schnittstelle erstellt, geändert und
-      gelöscht werden (zusätzlich zu Basis ist die Operation Transaction möglich).
-    * `Vollständig`: Neben den transaktionen Schnittstellen ist die LockFeature (Sperren
-      eines Features bei Bearbeitung ohne das eine weitere Operation das Feature ändert) Operation erlaubt.
+* `Service Metadata`: The information of Service Metadata is relevant for the
+  Capabilities of the map serverdes Kartenservers and must be adapted to the given circumstances.
+  (e.g. is there an access restriction for the services? Which keywords are assigned?).
+  For an overview of all fields, go to https://docs.geoserver.org/stable/en/user/services/wfs/webadmin.html#service-metadata.
+  Important Hint: If the checkbox WFS active is not checked, no WFS queries are possible.
+* `Max. number of features`: If you want to limit the output of features via a WFS GetFeature Request, the maximum number of features can be set here.
+* `Quality of service`: The GeoServer implements a fully transactional WFS interface (WFS-T). DThis means that features either can be both accessed
+  (WFS GetFeature) and edited (CREATE, UPDATE, DELETE - WFS Transaction).
+  The checkboxes under Quality of Service offer the following options:
+    * `Base`: Features can only be queried via the WFS interface (GetCapabilities, DescribeFeatureType, GetFeature are allowed).
+    * `Transactional`: eatures can be created, modified and deleted via the WFS interface (WFS - Transaction is also possible in addition to the base features).
+    * `Complete`: NBeside the transaction interfaces LockFeature is allowed (Locking a feature when editing without another operation changing the feature).
 
 #### WMS
 
-Das Formular Web Map Service beinhaltet globale Einstellungen zu allen WMS des
-ausgewählten Arbeitsbereichs.
+The Web Map Service form contains global settings for all WMS of the selected workspace.
 
-* `Service Metadaten`: Die Angaben im Bereich Service Metadaten sind relevant für die
-  Capabilities des Kartenservers und sind an die gegebenen Umstände anzupassen
-  (Ist z.B. eine Zugriffsbeschränkung der Dienste vorhanden?, Welche Schlüsselworte
-  sind vergeben?). Für eine Übersicht aller Felder siehe auch https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#service-metadata.
-  Wichtiger Hinweis: Ist die Checkbox WMS aktiv nicht bestätigt, sind keine WMS
-  Abfragen möglich.
-* `Eingeschränkte Liste der Koordinatenreferenzsysteme`: Per Default ist es möglich,
-  WMS- und WFS Dienste in allen dem GeoServer zur Verfügung stehenden
-  Koordinatenreferenzsystemen abzufragen. Soll die Verfügbarkeit eingeschränkt werden,
-  wird eine Komma separierte Liste der EPSG-Coes in der Liste angegeben (z.B. 4326, 25833).
-  Um eine maximale Kompatibilität der Dienste zu gewährleisten, empfiehlt es sich
-  jedoch, alle verfügbaren Systeme anzubieten.
-* `Raster Rendering Optionen`: Der GeoServer erlaubt die Auswahl von drei Rendering
-  Methoden beim Zeichnen eines WMS, die sich in dem Einbezug benachbarter Zellen
-  bei der Berechnung des Zellenwerts eines Rasterbildes äußern: Nächster Nachbar,
-  Bilinear und Bicubic. Für einen optimale Performance sollte der Standardwert
-  von Nächster Nachbar nicht geändert werden. Siehe auch: https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#raster-rendering-options
-* `Wasserzeichen Einstellungen`: Über ein Wasserzeichen kann z.B. ein
-  Copyright-Hinweis in jedes Kartenbild gezeichnet werden. Soll ein Wasserzeichen
-  eingebunden werden, muss die Checkbox Aktiviere Wasserzeichen sowie ein
-  entsprechende Grafikdatei ausgewählt werden. Wichtiger Hinweis: Wird ein
-  Wasserzeichen in die Kartenkachel gezeichnet, erscheint diese in jeder Kachel.
-  Dies resultiert bei einer Kachelung des Dienstes, d.h. der Zerlegung des angeforderten
-  Kartenausschnitts in gleich große Kacheln, in eine mehrfache Aufführung des
-  Wasserzeichens im aufrufenden Client.
-* `PNG/JPEG Optionen`: Um den HTTP-Traffic zu minimieren, ist es möglich die Kartenkacheln
-  im Ausgabeformat PNG oder JPEG zu komprimieren. Die Kompression wird über einen
-  Ganzzahlenwert zwischen 0 und 100 angegeben (0 = keine Kompression, 100 = maximale Kompression).
-  Der Standardwert von 25 stellt hierbei einen guten Kompromiss dar.
+* `Service Metadaten`: ervice Metadata`: The information of Service Metadata is relevant for the
+  Capabilities of the map serverdes Kartenservers and must be adapted to the given circumstances.
+  (e.g. is there an access restriction for the services? Which keywords are assigned?).
+  For an overview of all fields, go to https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#service-metadata.
+  Important Hint: If the checkbox WMS active is not checked, no WMS queries are possible.
+* `Restricted list of coordinate reference systems`: By default it is possible to query WMS and WFS services in all coordinate reference systems available on GeoServer. If the availability should be restricted, a comma separated list of the EPSG-Codes is determined in the list (e.g. 4326, 25833).
+  In order to ensure maximum compatibility of the services, it is recommended to offer all available coordinate reference systems.
+* `Raster Rendering Options`: The GeoServer allows the selection of three rendering methods when drawing a WMS, which are reflected in the inclusion of neighboring cells in the calculation of the cell value of a raster image: Nearest neighbour,
+  bilinear und bicubic. For optimal performance, the default value of *Nearest neighbour* should not be changed. See also: https://docs.geoserver.org/stable/en/user/services/wms/webadmin.html#raster-rendering-options
+* `Watermark Settings`: A watermark can be used e.g. for a Copyright notice to be drawn in each map image. If a watermark is to be integrated, the checkbox Activate watermark as well as
+  a corresponding graphic file has to be selected. Important Hint: WIf a watermark is drawn in the map tile, it will appear in every tile.
+  This is caused by the tiling of the service respectively the division of the requested map section into tiles of equal size, into a multiple performance of the watermark in the calling client.
+* `PNG/JPEG Options`: To minimize HTTP traffic, it is possible to compress the map tiles in PNG or JPEG output format. The compression is determined by an integer value between 0 and 100. (0 = no compression, 100 = max. compression).
+  The default value of 25 represents a good compromise.
+  

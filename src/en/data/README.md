@@ -1,12 +1,8 @@
-# Datenveröffentlichung
+# Data publishing
 
-Geodaten können im Raster- und Vektorformat vorliegen. Diese beiden Formate unterscheiden sich
-hinsichtlich der Methode, wie räumliche Informationen gespeichert sind. Während Vektordaten die Informationen
-mit Hilfe mathematischer Vertices und Pfade, beispielsweise eine Serie von x,y Koordinaten bei Linien, abbildet,
-liegen die Informationen beim Rasterformat in Zellen vor. Je nach Maßstab und Anwendungsfall empfiehlt es sich
-entweder das ein oder andere Format für die Visualisierung der Geodaten zu verwenden. Die nachfolgende Grafik zeigt
-einen Überblick über die möglichen Input und Output Formate von GeoServer.
+Geodata can be available in raster and vector format. These two formats differ in the way spatial information is stored. While vector data displays the information via mathematical vertices and paths, for example a sequence of x,y coordinates for a line feature, raster data stores its information in cells.
+Depending on the scale and application, it is recommended to use one or the other format for the visualization of the geodata. The following graphic shows an overview of the possible input and output formats of GeoServer.
 
-![Überblick Datenformate](../assets/formats_geoserver.png)
+![Overview data formats.](../assets/formats_geoserver.png)
 
-Im [Folgenden](./vector/index.html) wird zunächst die Veröffentlichung von Layern aus einer Vektordatenquelle erläutert.
+In [the following](./vector/index.html), the publication of layers from a vector data source is explained first.

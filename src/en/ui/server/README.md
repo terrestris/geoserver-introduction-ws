@@ -1,58 +1,41 @@
 ### Server
 
-#### Serverstatus
+#### Server Status
 
-![Serverstatus](../../assets/ui_server_status.png)
+![Server Status](../../assets/ui_server_status.png)
 
-Unter **Serverstatus** befinden sich Angaben zum aktuellen Zustand des Kartenservers.
-Hierzu gehören neben diversen Systemangaben (z.B. verfügbare
-Schriftarten, verwendete Java-Version oder aktuell verwendetem Arbeitsspeicher)
-Installationsspezifika wie das aktuell genutzte Datenverzeichnis. Die Statusseite
-ist die erste Anlaufstelle, falls die Performance eines Layers nicht der üblichen
-Geschwindigkeit entspricht oder Änderungen auf Dateiebene des GeoServers vorgenommen
-wurden (z.B. Installation neuer Schriftarten, Änderungen in Konfigurationsdateien).
-Zwar sind Änderungen auf Dateiebene nicht zu empfehlen, lassen sich jedoch ggf.
-nicht verhindern, wenn z.B. die Konfiguration eines anderen GeoServers übernommen
-werden soll. In diesem Fall muss die Konfiguration über den Button **Neu laden**
-unter **Konfiguration und Katalog** betätigt werden. Reagiert die Benutzeroberfläche
-sehr träge oder erscheinen Layer nur sehr langsam in der Applikation kann es oft
-hilfreich sein, den Ressourcen Cache über den Button **Leeren** und/oder den verwendeten
-Arbeitsspeicher über **Arbeitsspeicher freigeben** freizugeben.
+Under **Server Status** you can find information about the current state of the map server.
+In addition to various system specifications 
+(e.g. available fonts, Java version used or memory currently in use), this includes installation specifics such as the currently used data directory. The status page is the first port of call if the performance of a layer does not match the usual speed or changes were made at the file level of GeoServer (e.g. installation of new fonts, changes in configuration files).
+Changes at file level are not recommended, but they cannot be prevented if, for example, the configuration of another GeoServer is adopted. In this case, the configuration must be set with the button **Load new**
+under **Configuration and Catalog**. If the user interface responds
+very sluggish or layers appear only very slowly in the application it can often be helpful to clear the resource cache with the button **Clear** and/or release the working memory via **Free memory**.
+<!--englische Begriffe?-->
+#### Logging
 
-#### Protokollierung
+![Logging.](../../assets/ui_logs.png)
 
-![Protokollierung](../../assets/ui_logs.png)
-
-Bei jeglichen Fehlern, die sich eindeutig dem GeoServer zuordnen lassen (wie z.B.
-keine oder eine falsche Antwort eines Kartendienstes) ist das Protokoll die erste
-Anlaufstelle. Das GeoServer Protokoll lässt sich dabei entweder direkt über die
-GUI (s. obige Abbildung) oder direkt vom Dateisystem ({{ book.geoServerPhysicalPath }}/logs/geoserver.log)
-aufrufen. Ist die Fehlerausgabe zu kurz, kann die Länge der Ausgabe über das Feld
-Maximale Anzahl von Zeilen in der Konsole gesteuert werden. Die Fehlerausgabe von
-Java/vom GeoServer ist in aller Regel sehr ausführlich, sodass die Fehler verursachende
-Komponente schnell ausfindig gemacht werden kann. Schwerwiegende Fehler werden
-dabei meist mit dem Kürzel `ERROR` vorgestellt. Beispielsweise würde sich die Fehlerausgabe
+For any errors that can be clearly assigned to GeoServer (e.g. no or false response of a map server) the protocol is the first
+point of contact. The GeoServer protocol can either be directly accessed via the GUI (see illustration above) or directly from the file system ({{ book.geoServerPhysicalPath }}/logs/geoserver.log). If the error output is too short, you can change the length of the output using the field *Maximum number of rows* via the console.
+The error output of Java/GeoServer is usually very detailed, so that the error-causing
+component can be quickly located. Serious errors are usually designated with the abbreviation  `ERROR`. For example, the error output
 
 ```
 2014-10-06 09:16:33,492 ERROR [geoserver.wms] - Getting feature source: featureType: GEOSERVER:EXAMPLE_LAYER does not have a properly configured datastore
 ```
 
-beim Abrufen der Datenquelle für einen Layer auf einen unsauber konfigurierten
-Datenspeicher zurückführen lassen. Dies kann entweder tatsächlich einer fehlerhaften
-Konfiguration oder z.B. einem Ausfall der Quelldatenbank geschuldet sein.
+when retrieving the data source for a layer is caused by an uncleanly configured data store. This can either be caused by a false configuration or a failure of the source database, for example.
 
-**Hinweis:** Es existieren mehrere Protokollmodi, die eine unterschiedlich empfindliche
-Ausgabe erzeugen. Nähere Informationen hierzu s. Kap. [Einstellungen](../settings/README.md).
+**Hint:** There are several protocol modes, each with a different sensitivity generating output. Further information in the section [Settings](../settings/README.md).
 
-#### Kontaktangaben
+#### Contact
 
-![Kontaktinformationen](../../assets/ui_contact_information.png)
+![Contact information.](../../assets/ui_contact_information.png)
 
-Die obige Abbildung zeigt die Möglichkeiten zur Angabe von Kontaktdaten im GeoServer,
-die in erster Linie für die Kartendienste des Servers relevant sind,
-da diese im GetCapabilities Dokument erscheinen.
+The figure above shows the options for entering contact data in GeoServer, which are primarily relevant for the map services of the server,
+because they appear in the GetCapabilities document.
 
-**Aufgabe:**
+**Task:**
 
-1. Rufen Sie das `GetCapabilities` Dokument des GeoServers auf. Klicken Sie hierzu auf der Startsteite rechts unter `Service Capabilities` auf WMS -> 1.3.0.
-Bitte geben Sie nun unter `Contact information` Ihre Kontaktinformationen an. Rufen Sie anschließend nochmals das `GetCapabilities` auf. Was fällt Ihnen auf?
+1. Call the `GetCapabilities` document of GeoServer. To do this, click WMS -> 1.3.0 on the start page on the right under `Service Capabilities`.
+Please enter your `Contact information` under contact information. Call again the `GetCapabilities` document. What do you notice?

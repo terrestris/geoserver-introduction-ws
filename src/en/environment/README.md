@@ -1,39 +1,38 @@
-# Vorarbeiten und generelle Informationen
+# Preparatory work and general information
 
-Bevor wir mit dem Workshop starten können, führen Sie bitte die folgenden Schritte
-aus:
+Before you can start with the workshop, please complete the following steps:
 
-* Rechner mit OSGeoLive-Medium hochfahren
-* Sprache auswählen (Deutsch für korrekte Tastaturbelegung)
-* *Lubuntu ohne Installation ausprobieren* auswählen
-* Benutzer: user; Passwort: user (wird vermutlich nicht benötigt)
+* Boot your computer including OSGeoLive-Medium
+* Choose your language
+* Choose *try ubuntu without installation* <!--in englisch richtig?-->
+* User: user; Password: user (probably not necessary)
 
-![Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.](../assets/startview.png)
+![Home screen of OSGeo Live {{ book.osGeoLiveVersion }} on your computer.](../assets/startview.png)
 
-## Pfade, URLs und Zugangsdaten
+## Paths, URLs, Credentials
 
-* GeoServer: {{ book.geoServerBaseUrl }} (muss zunächst gestartet werden, siehe unten)
-* Zugangsdaten GeoServer:
-  * Benutzer: <code>{{ book.geoServerUser }}</code>
-  * Passwort: <code>{{ book.geoServerPassword }}</code>
-* GeoServer (Dateisystem): <code>{{ book.geoServerPhysicalPath }}</code>
+* GeoServer: {{ book.geoServerBaseUrl }} (first has to be started, see below)
+* Credentials GeoServer:
+  * User: <code>{{ book.geoServerUser }}</code>
+  * Password: <code>{{ book.geoServerPassword }}</code>
+* GeoServer (file system): <code>{{ book.geoServerPhysicalPath }}</code>
 
-# Starten des GeoServers
+# Start GeoServer
 
-Der GeoServer kann durch einen Doppelklick auf **Start GeoServer** im Ordner
-**Web Services** auf dem Desktop der OSGeoLive gestartet werden:
+GeoServer is launched by double-clicking **Start GeoServer** in the folder
+**Web Services** on OSGeoLive desktop:
 
 > **note**
 >
-> Kann der GeoServer **nicht** über den o.g. Weg gestart werden, kann er auch
-> über den folgenden Befehl im Terminal gestartet werden:
+> If GeoServer can **not** be launched this way, you can try
+> following command in the terminal:
 > ```
 > sudo /usr/local/lib/geoserver/bin/startup.sh
 > ```
-> Das Terminal bzw. der Prozess muss dabei während des Workshops geöffnet bleiben!
+> The terminal/process has to remain open during the workshop!
 
-![GeoServer starten.](../assets/start_geoserver.png)
+![Start GeoServer.](../assets/start_geoserver.png)
 
-![GeoServer-Weboberfläche nach erfolgreichem Start](../assets/geoserver_gui.png)
+![GeoServer web interface after successful launch.](../assets/geoserver_gui.png)
 
-Im [folgenden Abschnitt](../basics/README.md) werden wir mit GeoServer-Basiswissen fortfahren.
+In the [following chapter](../basics/README.md) we will continue with basic knowledge about GeoServer.

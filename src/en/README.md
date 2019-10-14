@@ -2,45 +2,43 @@
 
 # Introduction to GeoServer
 
-Herzlich Willkommen beim **Einführung in GeoServer** Workshop auf der FOSSGIS 2019
-in Dresden.
+Welcome to the **Introduction of GeoServer - Workshop**.
 
-Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über den GeoServer als Web-Mapping-Lösung geben.
+This workshop was developed for use on [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) and is intended to give you a comprehensive overview of GeoServer as a web mapping solution. <!---Hinweis auf DVD? -->
 
 > **info**
 >
-> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrl }}) heruntergeladen werden.
+> The workshop can be downloaded [as PDF here]({{ book.workshopPdfUrl }}).  <!---PDF auf englisch? -->
 
-Bitte stellen Sie sicher, dass Sie die Schritte der
-[Vorarbeiten und generelle Informationen](environment/README.md)-Seite ausgeführt
-haben, um einen reibungslosen Ablauf zu gewährleisten.
+Please make sure that you have completed the steps of the 
+[preparatory work and general information](environment/README.md)-chapter to ensure a smooth and frictionless process.
 
-Der Workshop ist aus einer Reihe von Modulen zusammengestellt. In jedem Modul werden Sie eine Reihe von Aufgaben lösen, um ein bestimmtes Ziel zu erreichen. Jedes Modul baut Ihre Wissensbasis iterativ auf.
+The workshop is based on a number of modules. In each module you will solve a series of tasks to achieve a specific goal. Each module will expand and strengthen your knowledge about GeoServer.
 
-Die folgenden Module werden in diesem Workshop behandelt:
+The following modules will be part of the workshop:
 
-* [Vorarbeiten und generelle Informationen](environment/README.md)
-Grundlegende Informationen zur Workshop-Umgebung (OSGeoLive, Pfade, URLs, Credentials)
+* [Preparatory work and general information:](environment/README.md)
+Basic knowledge about the workshop environment (OSGeoLive, paths, URLs, Credentials)
 
-* [Basiswissen GeoServer](basics/README.md)
-Basisinformationen zum Geoserver
+* [Basic knowledge about GeoServer:](basics/README.md)
+General information about GeoServer
 
-* [Administrationsoberfläche](ui/README.md)
-Konfiguration des GeoServers über die Weboberläche
+* [Administration interface:](ui/README.md)
+Configuration of GeoServer via the web interface
 
-* [Datenveröffentlichung](data/README.md)
-Veröffentlichung von Geodaten aus verschiedenen Datenquellen
+* [Data publishing:](data/README.md)
+Publish geodata from different data sources
 
-* [Gruppenlayer](group/README.md)
-Veröffentlichung eines Gruppenlayers
+* [Layer groups:](group/README.md)
+Publish a layer group
 
-* [Styling](styling/README.md)
-Styling eines Layers über SLD
+* [Styling:](styling/README.md)
+Style a layer with SLD (Styled Layer Descriptor)
 
-# Autoren
+# Authors
 
 {% for author in book.authors %}
   - {{ author.name }} ([{{ author.mail }}](mailto:{{ author.mail }}))
-{% endfor %}
+{% endfor %} <!--alle Autoren aktuell?-->
 
-###### (Die Autoren sind alphabetisch nach ihrem Nachnamen sortiert.)
+###### (Authors are sorted alphabetically by their last name.)

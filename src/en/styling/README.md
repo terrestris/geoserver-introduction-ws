@@ -1,28 +1,26 @@
 # Styling
 
-## Einführung in SLD
+## Introduction to SLD
 
-In den vorangehenden Kapiteln wurde bereits deutlich, dass den Geodaten eigene Stile hinzugefügt werden können.
-Hierzu bietet GeoServer verschiedene Style-Formate an: *SLD, CSS, YSLD und MBStyle*.
-SLD steht für Styled Layer Descriptor und ist ein OGC-Standard. Versuchen Sie die folgenden Aufgaben mit Hilfe
-des [GeoServer User Manuals](https://docs.geoserver.org/stable/en/user/styling/sld/index.html) zu lösen.
+In the preceding chapters it was already mentioned that own styles can be added to the geodata.
+For this GeoServer offers different style formats: *SLD, CSS, YSLD and MBStyle*.
+SLD is an abbreviation for *Styled Layer Descriptor* and is an OGC standard. Try to solve the following tasks with the help of [GeoServer User Manuals](https://docs.geoserver.org/stable/en/user/styling/sld/index.html).
 
-**Aufgaben:**
+**Tasks:**
 
-1. Definieren Sie für den States Layer (siehe Aufgabe Vector -> Shape) einen
-eigenen Stil, der:
-  * Alle Flächen in einer Farbe Ihrer Wahl (und mit einer Transparenz von 50%) darstellt.
-  * Alle Umrandungen in einer Farbe Ihrer Wahl darstellt.
-  * Alle Flächen mit dem Namen des Bundesstaats darstellt.
+1. Define an own style for the States layer (see Task Vector -> Shape), which:
+  * displays all surfaces in a color of your choice (and with a transparency of 50%)
+  * displays all borders in a color of your choice
+  * represents all areas with the name of the state.
 
-2. Passen Sie den Beschriftungsstil so an, dass die Beschriftung erst ab einem Maßstab von > 10.000.000 gezeichnet wird.
+2. Adjust the label style so the label is only drawn from a scale of > 10,000,000.
 
-3. Bonus: Lassen Sie alle Staaten in Abhängigkeit ihrer Bevölkerunganzahl einfärben. Wählen Sie hierfür eigene Klassengrenzen.
+3. Bonus: Color all states according to its population size. You can choose your own class limits.
 
-![Eigener GeoServer-Style](../assets/style1.png)
+![Own GeoServer-Style](../assets/style1.png)
 
 Lösungen:
-  * [Aufgabe 1](../assets/style-example-1.sld)
-  * [Aufgabe 2](../assets/style-example-2.sld)
-  * [Aufgabe 3 (Möglichkeit A)](../assets/style-example-3a.sld)
-  * [Aufgabe 3 (Möglichkeit B)](../assets/style-example-3b.sld)
+  * [Task 1](../assets/style-example-1.sld)
+  * [Task 2](../assets/style-example-2.sld)
+  * [Task 3 (Possibility A)](../assets/style-example-3a.sld)
+  * [Task 3 (Possibility B)](../assets/style-example-3b.sld)

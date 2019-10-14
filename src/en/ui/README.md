@@ -1,25 +1,19 @@
-# Administrationsoberfläche
+# Administration interface
 
-Öffnen Sie, sofern noch nicht geschehen, die Startseite der GeoServers Weboberfläche
-in einem Browser Ihrer Wahl über die folgende URL:
+If not already done, please open the GeoServer web interface with a browser of your choice via the following URL:
 
 {{ book.geoServerBaseUrl }}
 
-Melden Sie sich im oberen Bereich mit den folgenden Anmeldedaten ein:
+Log in with the following credentials:
 
-* Benutzer: <code>{{ book.geoServerUser }}</code>
-* Passwort: <code>{{ book.geoServerPassword }}</code>
+* User: <code>{{ book.geoServerUser }}</code>
+* Password: <code>{{ book.geoServerPassword }}</code>
 
-Mit erfolgreicher Anmeldung (als Administrator) wurde der Zugang zu allen
-Funktionen des Kartenservers freigeschaltet und der Startbildschirm ändert sich
-einer Ansicht ähnlich der folgenden Abbildung.
+After successful login (as administrator) the access to all the functions of the map server are activated and the start screen changes. The view should be similar to the following figure.
 
-![GeoServer Willkommensseite.](../assets/ui_welcome_page.png)
+![GeoServer welcome page.](../assets/ui_welcome_page.png)
 
-## Übersicht der Funktionselemente
+## Overview of function elements
 
-Die Oberfläche des GeoServers ist in zwei Bereiche aufgeteilt:
-Links das Navigationsmenü, in dem sortiert nach Subkategorie alle Einstellungsmöglichkeiten und
-Listen erscheinen. Im zentralen Bereich erscheinen je nach Auswahl der Kategorie die zugehörigen
-Formularfelder. Je nach Auswahl können diese Formulare in mehrere Reiter unterteilt sein.
-Im Folgendem werden nun die wichtigsten Subkategorien und Anwendungsfälle aufgeführt und erläutert.
+The interface of the GeoServer is divided into two sections:
+On the left, the navigation menu, in which all setting options and lists appear, sorted by subcategory. In the central section the corresponding form fields are displayed, depending on the category selected. Depending on the selection, these forms can be divided into several tabs. In the following, the most important subcategories and use cases are listed and explained.

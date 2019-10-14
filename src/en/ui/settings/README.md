@@ -1,48 +1,31 @@
-### Einstellungen
+### Settings
 
 #### Global
 
-Unter dem Dialog **Globale Einstellungen** finden sich folgende relevante
-Konfigurationsmöglichkeiten, die unter Umständen für Entwicklungs- oder
-Produktionsbetrieb angepasst werden sollten:
+The **Global Settings** dialog contains the following relevant 
+configuration options, which may need to be adapted for development or production purposes:
 
-* `Ausführliche Meldungen`: Ist die Checkbox gesetzt, sind die XML-Antworten des
-  GeoServers möglichst lesbar (durch Leerzeichen, Zeilenumbrüche etc.). Da hierdurch
-  größere Dateien verursacht werden, ist diese Einstellung nur für den Testbetrieb
-  ratsam.
-* `Ausführliche Fehlerausgaben`: Ist die Checkbox gesetzt, wird das volle Java Stacktrace
-  in die Log-Datei geschrieben. Da hierdurch eine größere Log-Dateien verursacht werden,
-  ist diese Einstellung nur für das Debuggen ratsam.
-* `Zeichensatz`: Welche Zeichenkodierung soll der GeoServer verwenden? Der Standardwert von
-  UTF-8 sollte nicht geändert werden, um Kodierungsfehler in den Antworten des
-  GeoServers zu vermeiden.
-* `Proxy URL`: Ist der GeoServer über einen reverse-proxy (https://httpd.apache.org/docs/2.2/mod/mod_proxy.html)
-  erreichbar gemacht worden, kann in diesem Feld die Adresse des Proxy eingetragen werden.
-  Im Normalfall ist dieses Feld auf einen leeren String zu setzen.
-* `Profil für die Protokollierung`: Der GeoServer besitzt per default fünf Protokollprofile,
-  die eine unterschiedliche Sensitivität der Log-Ausgabe besitzen. Die Wahl ist
-  immer abhängig von der Umgebung (Entwicklung oder Produktion):
-    * `DEFAULT_LOGGING`: Mittleres Protokolllevel auf fast allen Modulebenen des GeoServers.
-    * `GEOSERVER_DEVELOPER_LOGGING`: Ausführliche Protokollierung auf Ebene des
-      Moduls GeoServer. Nur sinnvoll, wenn der GeoServer debuggt wird.
-    * `GEOTOOLS_DEVELOPER_LOGGING`: Ausführliche Protokollierung auf Ebene des
-      Moduls GeoTools. Diese Auswahl kann nützlich sein, wenn überprüft werden
-      soll, welche SQL Statements (z.B. bei einer GetFeature Abfrage) an die
-      Datenbank gesendet werden.
-    * `PRODUCTION_LOGGING`: Minimale Protokollierung, nur Fehler werden ausgegeben.
-      Diese Einstellung ist für den Produktiveinsatz zu wählen.
-    * `VERBOSE_LOGGING`: Ausführliche Protokollierung auf allen Ebenen des GeoServes.
-      Nur sinnvoll, wenn der GeoServer debuggt wird.
-* `Speicherort für Protkolldatei`: Angabe des Speicherorts für die Logging-Dateien
-relativ zum GeoServer data-Verzeichnis (meist /usr/share/tomcat7/webapps/geoserver/data/).
-Der Pfad ist in aller Regel auf dem Standard von logs/geoserver.log zu belassen.
+* `Detailed messages`: If the checkbox is set, the XML responses of GeoServer are as readable as possible (by blanks, line breaks etc.). Since this causes larger files, this setting is only advisable for test purposes.
+* `Detailed error output`: If the checkbox is set, the full Java stack trace is written to the log file. This causes huge log files, so this setting is only recommended for debugging.
+* `Charset`: Which character encoding should GeoServer use? The default value *UTF-8* should not be changed to avoid encoding errors in the GeoServer's responses.
+* `Proxy URL`: If the GeoServer is connected via a reverse-proxy (https://httpd.apache.org/docs/2.2/mod/mod_proxy.html), the address of the proxy can be entered in this field.
+  Normally this field is set to an empty string. 
+* `Logging profile`: By default, GeoServer has five protocol profiles. They differ regarding their sensitivity of the log output. The choice always depends on the environment (development or production):
+    * `DEFAULT_LOGGING`: Medium protocol level on almost all module levels of GeoServer.
+    * `GEOSERVER_DEVELOPER_LOGGING`: Detailed logging at the GeoServer module level. Only useful if the GeoServer is debugged.
+    * `GEOTOOLS_DEVELOPER_LOGGING`: Detailed logging at the GeoTools module level. This selection can be useful if you want to check which SQL statements (e.g. in a GetFeature query) are sent to the database.
+    * `PRODUCTION_LOGGING`: Minimal logging, only errors are logged.
+      This setting should be selected for productive use.
+    * `VERBOSE_LOGGING`: Detailed logging on all levels of GeoServer.
+      Only useful if GeoServer is debugged.
+* `Storage location for log file`: Specifies the storage location for the logging files relative to GeoServer data directory (normally /usr/share/tomcat7/webapps/geoserver/data/).
+The path is usually to be left at the default of logs/geoserver.log.
 
-### Sicherheit
+### Security
 
-In diesem Menüblock befinden sich sämtliche Einstellungsmöglichkeiten zur Sicherheit des Geoservers.
-Neben den üblichen Einstellungen wie z.B. Usermanagement und Passworterverwaltung, gibt es die Möglichkeit
-den Zugriff auf Datenspeicher für bestimmte User einzuschränken.
+This menu item contains all possible settings for the security of GeoServer.
+In addition to the usual settings like User- and password management, there is the possibility to restrict access to data storage for certain users.
 
-**Aufgabe:**
+**Task:**
 
-1. Bitte ändern Sie das Standard-Passwort für den Benutzer `admin` von `geoserver` zu `fossgis`.
+1. Please change the default password for user `admin` from `geoserver` to `fossgis`.

@@ -1,14 +1,13 @@
-# Gruppenlayer
+# Layer groups
 
-Gruppenlayer sind eine Sammlung von bereits im GeoServer veröffentlichten Layern, die gemeinsam über nur einen Layer angefordert werden. [(siehe Kapitel 3.2)](../ui/data/index.html#group-layer)
+Layer groups are a collection of layers already published in GeoServer, which are requested together for only one layer. [(see chapter 3.2)](../ui/data/index.html#group-layer)
 
-**Aufgabe:**
+**Task:**
 
-1. Erstellen Sie einen neuen Gruppenlayer mit verschiedenen Einzellayern ihrer Wahl.
+1. Create a new layer group with different individual layers of your choice.
 
-2. Bearbeiten Sie die Layer-Hierachie, so dass Flächenlayer im Hintergrund liegen (z.B. administrative Daten oder Satellitendaten)
-und kleinere Einheiten (Straßen, Orte oder Flüsse) im Vordergrund.
+2. Edit the layer hierarchy. Surface layers (e.g. administrative areas or satellite data) should be displayed in the background and smaller units (streets, towns or rivers) in the foreground.
 
-3. Veröffentlichen Sie den Gruppenlayer.
+3. Publish the layer group.
 
-![Gruppenlayer bestehend aus DEM und Flüssen](../assets/grouplayer1.png)
+![Layer group including DEM and rivers.](../assets/grouplayer1.png)

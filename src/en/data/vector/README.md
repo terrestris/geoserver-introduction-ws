@@ -1,36 +1,30 @@
-# Vektordatenquellen
+# Vector data sources
 
 ## Shapefile
 
-Das Shapefile-Format, entwickelt von der Firma *ESRI*, ist das am weitesten verbreitete Vektorformat in der GIS-Welt.
-Shapefiles (auch Shapes) werden sowohl von proprietären als auch von OpenSource Desktop-GIS unterstützt und sind somit
-Industriestandard geworden.
+The Shapefile Format, developed by the company *ESRI*, is the most widely used vector format in the GIS world.
+Shapefiles (also called Shapes) are supported by both proprietary and OpenSource desktop GIS and are thus industry standard.
 
-**Aufgabe:**
+**Task:**
 
-1. Legen Sie einen neuen Datenspeicher an, über den eine Shapefile veröffentlicht werden kann. Wählen Sie `us_states`
-als Namen und wählen Sie anschließend das Shapefile *states.shp* aus dem Verzeichnis `data_dir/data/shapefiles`.
+1. Create a new data store, which can be used to publish a Shapefile via GeoServer. Choose `us_states`
+as name and use *states.shp* from the directory `data_dir/data/shapefiles`.
 
-2. Veröffentlichen Sie das Shapefile über den GeoServer. Hierzu werden Informationen zum Räumlichen Bezugssystem (SRS)
-benötigt, in dem GeoServer die Geodaten veröffentlichen soll. Tragen Sie `EPSG:4326` in das Feld *Declared SRS* ein,
-damit der Layer im WGS 84 Referenzsystem veröffentlicht wird. Zudem muss die BoundingBox angegeben werden, die sich das
-per Klick auf **Compute from data** und **Compute from native bounds** automatisch berechnen lässt.
+2. Publish your shapefile via GeoServer. This requires information on the spatial reference system (SRS) in which GeoServer should publish the geodata. Enter `EPSG:4326` into the field *Declared SRS*, so the layer is published in the WGS 84 reference system. The BoundingBox must also be specified. It can be calculated automatically by clicking on **Compute from data** and **Compute from native bounds**.
 
-3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau als OpenLayers "Format" und schauen Sie das Ergebnis an.
+3. Open the newly created layer. Choose OpenLayers as Format for the preview and see your result.
 
-![Ihr erstes mit GeoServer veröffentlichtes Shapefile](../../assets/vector1.png)
+![Your first Shapefile published with GeoServer.](../../assets/vector1.png)
 
 ## PostGIS
 
-PostGIS ist eine räumliche Erweiterung für das populäre objekt-relationale OpenSource Datenbanksystem PostgreSQL.
-Die Erweiterung ermöglicht es räumliche Daten per SQL abzufragen und bietet zudem eine Vielzahl an Möglichkeiten
-zur Bearbeitung von Geodaten. Auf OSGeoLive ist das Datenbanksystem bereits installiert und mit einer Test-Datenbank
-eingerichtet.
+PostGIS is a spatial extension for the popular object-relational open source database system PostgreSQL.
+The extension makes it possible to query spatial data via SQL and moreover offers a variety of options for processing geodata.
+On OSGeoLive the database system is already installed and set up with a test database.
 
-**Aufgabe:**
+**Task:**
 
-1. Legen Sie einen neuen Datenspeicher an, über den eine Tabelle einer PostgreSQL/PostGIS Tabelle veröffentlicht
-werden kann. Nutzen Sie hierzu die folgenden Verbindungsparameter:
+1. Create a new data store, which can be used to publish a PostgreSQL/PostGIS table. Choose the following connection settings:
 
   * host: <code>localhost</code>
   * port: <code>5432</code>
@@ -39,29 +33,26 @@ werden kann. Nutzen Sie hierzu die folgenden Verbindungsparameter:
   * user: <code>user</code>
   * passwd: <code>user</code>
 
-  Nun haben Sie erfolgreich eine Verbindung zu einer PostGIS Datenbank aufgebaut, die Geodaten aus dem *Natural Earth*
-  Datensatz enthält.
+  Now you have successfully established a connection to a PostGIS database which contains geodata from the *Natural Earth* dataset.
 
-2. Veröffentlichen Sie eine Tabelle Ihrer Wahl über den GeoServer! Bitte geben Sie als Standard-Ausgabe SRS `EPSG:54009` an.
+2. Publish a table of your choice via GeoServer! Please enter SRS `EPSG:54009` as Standard.
 
-3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!
+3. Open the newly created layer in the layer preview!
 
 ## WFS
 
-GeoServer bietet auch die Möglichkeit entfernte Web-Services als Quelle für Datenspeicher zu nehmen.
-Ein WFS (Web Feature Service) bietet Internet-gestützten Zugriff auf Vektordaten. Neben dem *Basis WFS*, der nur-lesenden
-Zugriff ermöglicht, bietet der *Transaction WFS* auch einen schreibenden Zugriff auf die Daten an.
+GeoServer also offers the possibility to use remote web services as a source for data storage.
+A WFS (Web Feature Service) offers internet-based access to vector data. In addition to *Basis WFS*, which provides read-only access, *Transaction WFS* also provides written access.
 
-**Aufgabe:**
+**Task:**
 
-1. Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WFS
-über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.
-den folgenden Dienst: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities
+1. Add a new data store, which can be used to publish an already existing WFS cascaded via GeoServer. Use for example
+the following service: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities
 
-2. Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!
+2. Publish a service of your choice via GeoServer!
 
-3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!
+3. Open the newly created layer in the layer preview.
 
-4. Falls die Darstellung mit OpenLayers nicht funktioniert, prüfen Sie die Einstellungen des Layers im Reiter `Publishing`.
-GeoServer ist nicht immer in der Lage den passenden Stil für die Geodaten automatisch zu erkennen. Falls der *Default Style*
-auf *generic* voreingestellt ist, ändern sie diesen in *Polygon*, *Point* oder *Line* (ja nach Art der Geodaten des WFS).
+4. If the display does not work with OpenLayers, check the settings of the layer in the tab `Publishing`.
+GeoServer is not always able to recognize the appropriate style for the geodata automatically.  If the *Default Style*
+is set to *generic*, change it to *Polygon*, *Point* or *Line* (depending on the type of geodata of the WFS).
