@@ -47,7 +47,7 @@ The GeoServer stores layers using the following hierarchy:
 
 ```
 Workspace
- └ Data store
+ └ store
   └ Layer
  └ Layer(groups)
  └ Style
@@ -55,9 +55,9 @@ Workspace
 
 The central element is the so-called workspace, which can initially be understood as a collection object for layers. Similar to a namespace, the workspace organizes objects of a common theme, e.g. the layers of a specific department or topic.
 Further configuration elements can now be assigned to each workspace.
-This includes among others the data store, the layer (-group), styles and higher-level settings
+This includes among others the store, the layer (-group), styles and higher-level settings
 of GeoServer like contact information or global WMS-settings.
-**Important:** If a GeoServer is initially put into operation, the sequence outlined above must be strictly adhered when creating a layer, that means, first a workspace is created, then a data store and then a layer (with styles).
+**Important:** If a GeoServer is initially put into operation, the sequence outlined above must be strictly adhered when creating a layer, that means, first a workspace is created, then a store and then a layer (with styles).
 
 **Hint:** The GeoServer has several example workspaces in the delivery state
 (*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). These can be deleted without hesitation in productive operation.
@@ -67,14 +67,14 @@ of GeoServer like contact information or global WMS-settings.
 1. Create a new workspace with the name `FOSSGIS`. For Namespace URI set
 `http://geoserver.org/fossgis`. Select this workspace as the default workspace.
 
-#### Data store
+#### store
 
-![Data store.](../../assets/ui_datastores.png)
+![store.](../../assets/ui_datastores.png)
 
-The **data store** is a reference to a data source, which contains vector or raster data for publication. Each data store is assigned to exactly one workspace. A data store includes connection parameters to a database or the path to a shapefile for example.
-DThe figure above shows an overview of all available data stores, which can be accessed via the data store field in the left-hand navigation menu. The overview contains the columns *data type, workspace, name for data store,
-type* and *active*. The *data type* describes the type of the data store, which can be one of the data types listed in the following table. *Workspace* contains the superior name of the workspace, *name for data store* the name of the data store, *type* the concrete storage type (for example, the database) and
-*active* the status of the data store.
+The **(data) store** is a reference to a data source, which contains vector or raster data for publication. Each store is assigned to exactly one workspace. A store includes connection parameters to a database or the path to a shapefile for example.
+The figure above shows an overview of all available stores, which can be accessed via the store field in the left-hand navigation menu. The overview contains the columns *data type, workspace, store name,
+type* and *enabled*. The *data type* describes the type of the store, which can be one of the data types listed in the following table. *Workspace* contains the superior name of the workspace, *store name* the name of the store, *type* the concrete storage type (for example, the database) and
+*enabled* the status of the store.
 
 | type | description |
 |:---:|--------------|
@@ -84,21 +84,21 @@ type* and *active*. The *data type* describes the type of the data store, which 
 | ![](../../assets/ui_datastore_type_wms.png) | WMS |
 | ![](../../assets/ui_datastore_type_wfs.png) | WFS |
 
-The form can be either used to create a new data store or to edit an existing one.
+The form can be either used to create a new store or to edit an existing one.
 
-#### Layer
+#### Layers
 
-![Layer.](../../assets/ui_layers.png)
+![Layers.](../../assets/ui_layers.png)
 
-Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one data store. 
+Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store. 
 **Important Hint:** GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.
 
-The overview has columns for specifying the respective type, name of the workspace, data store and the layer's name, status (active) and the
-coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the data store directly from the list by left-clicking the corresponding title.
+The overview has columns for specifying the respective type, name of the workspace, store and the layer's name, status and the
+coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the store directly from the list by left-clicking the corresponding title.
 
-#### <a name="group-layer"></a>Layergroup
+#### <a name="group-layer"></a>Layer groups
 
-![Layer group](../../assets/ui_layer_groups.png)
+![Layer groups.](../../assets/ui_layer_groups.png)
 
 Layer groups are a collection of layers already published in the GeoServer,
 which are requested together via only one layer.
@@ -108,11 +108,11 @@ For creating a layer group using the form. **Add new layer group** at least the 
 * `Name`: Name of the layer.
 * `Title`: Title of the layer.
 * `Workspace`: The name of the workspace in which the group layer should be created.
-* `BoundingBox`: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of **Generate BoundingBox** (recommended).
+* `BoundingBox`: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of **Generate Bounds** (recommended).
   **Important:** Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS 
   (e.g. in QGIS). There it is relevant for the initial map section.
 * `Coordinate Reference System`: Coordinate Reference System as EPSG-Code.
-* `Layer`: The buttons **Add new layer** or **Add new layer group** can be used to add individual  layers or other group layers to the group layer.
+* `Layer`: The buttons **Add Layer** or **Add Layer Group** can be used to add individual  layers or other grouped layers to the layer group.
   A click on the corresponding button opens the *Select Layer* window, in which all available layers of the GeoServer instance appear.
   A layer can be selected from the window by clicking on the layer's name and is then passed to the layer group. Each selected layer then appears in the table below the layer form element.
 
@@ -124,7 +124,7 @@ In the overview table the order of the layers can be determined by the arrow sym
 ![Layer style.](../../assets/ui_styles.png)
 
 The drawing rule determines the appearance of a layer depending on attribute properties. GeoServer displays the symbology of a layer with the help of SLD
-(Styled Layer Descriptor, a XML-dialect), which can be created or changed in the styles dialog.
+(Styled Layer Descriptor, a XML based dialect), which can be created or changed in the styles dialog.
 
 The list contains all available styles of this GeoServer and allows you to either create a new style by clicking the *Add new Style* button,
 delete an existing style (Select the style using the checkbox and click *Delete selected styles*) or changing an existing style by clicking on the style's name.

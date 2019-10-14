@@ -34,10 +34,10 @@ Thus, for example, two or more overlapping satellite images can be published as 
 
 Cascading an external WMS service to GeoServer can be extremely useful in many situations, because now you have full access to specify all parameters of the service. Even though the remote WMS service was not published with GeoServer, you have the option of applying the full scope of GeoServer to the WMS service locally.
 
-1. Add a new data store, which can be used to publish an already existing WMS cascaded via GeoServer. For example, use the following service: http://www.wms.nrw.de/geobasis/DGM_Relief?
+1. Add a new data store, which can be used to publish an already existing WMS cascaded via GeoServer. For example, use the following service: https://www.wms.nrw.de/geobasis/DGM_Relief?REQUEST=GetCapabilities&SERVICE=WMS
 
 2. Publish your service of choice via GeoServer!
 
 3. Open the newly created layer in the layer preview!
 
-![High resolution DEM of Bonn (GeoBasis NRW 2017).](../../assets/raster3.png)
+![High resolution DEM (GeoBasis NRW 2017).](../../assets/raster3.png)

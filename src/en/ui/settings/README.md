@@ -28,4 +28,4 @@ In addition to the usual settings like User- and password management, there is t
 
 **Task:**
 
-1. Please change the default password for user `admin` from `geoserver` to `fossgis`.
+1. Please change the default password for user `admin` from `geoserver` to a password of your choice.
