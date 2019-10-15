@@ -7,7 +7,8 @@
     "workshopName": "GeoServer introduction",
     "workshopRawSourceBaseUrl": "https://rawgit.com/terrestris/geoserver-introduction-ws/master/src/",
     "workshopDownloadUrl": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.zip",
-    "workshopPdfUrl": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.pdf",
+    "workshopPdfUrlDe": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_de.pdf",
+    "workshopPdfUrlEn": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_en.pdf",
     "workshopEpubUrl": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.epub",
     "workshopMaterialsDownloadUrl": "https://terrestris.github.io/geoserver-introduction-ws/materials.tar.gz",
     "geoServerPhysicalPath": "/usr/local/lib/geoserver-2.13.2/",
@@ -25,6 +26,9 @@
     }, {
       "name": "Daniel Koch",
       "mail": "koch@terrestris.de"
+    }, {
+      "name": "Fabian Schmidt",
+      "mail": "fschmidt@terrestris.de"
     }]
   },
   "plugins": [

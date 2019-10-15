@@ -119,7 +119,6 @@ For creating a layer group using the form. **Add new layer group** at least the 
 In the overview table the order of the layers can be determined by the arrow symbols, where the uppermost layer is drawn as the lowest layer in this layer group. You can also assign a different style to the layer or remove the layer from the group.
 
 #### Layer style
-<!--englische Begriffe klären-->
 
 ![Layer style.](../../assets/ui_styles.png)
 
@@ -128,7 +127,6 @@ The drawing rule determines the appearance of a layer depending on attribute pro
 
 The list contains all available styles of this GeoServer and allows you to either create a new style by clicking the *Add new Style* button,
 delete an existing style (Select the style using the checkbox and click *Delete selected styles*) or changing an existing style by clicking on the style's name.
-<!--englische begriffe-->
 
 When creating a new style or editing an existing style, the form *New style* respective *Style Editor*. The form offers the following options:
 

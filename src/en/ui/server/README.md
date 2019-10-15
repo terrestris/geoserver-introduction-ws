@@ -10,7 +10,7 @@ In addition to various system specifications
 Changes at file level are not recommended, but they cannot be prevented if, for example, the configuration of another GeoServer is adopted. In this case, the configuration must be set with the button **Load new**
 under **Configuration and Catalog**. If the user interface responds
 very sluggish or layers appear only very slowly in the application it can often be helpful to clear the resource cache with the button **Clear** and/or release the working memory via **Free memory**.
-<!--englische Begriffe?-->
+
 #### Logging
 
 ![Logging.](../../assets/ui_logs.png)
