@@ -15,3 +15,6 @@ build
 *.epub
 *.mobi
 *.pdf
+
+# Others
+*.log

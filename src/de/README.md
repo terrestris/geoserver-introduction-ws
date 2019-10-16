@@ -1,4 +1,4 @@
-![](assets/geoserver-logo.png)
+![](./assets/geoserver-logo.png)
 
 # Einführung in GeoServer
 
@@ -9,7 +9,7 @@ Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveV
 
 > **info**
 >
-> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrl }}) heruntergeladen werden.
+> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrlDe }}) heruntergeladen werden.
 
 Bitte stellen Sie sicher, dass Sie die Schritte der
 [Vorarbeiten und generelle Informationen](environment/README.md)-Seite ausgeführt

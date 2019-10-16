@@ -39,8 +39,5 @@ Weitere Details zur klassischen WAR-Installation finden sich
 > (start.jar) ausgeführt wird, welches programmatisch einen Jetty-Server mit dem
 > Geoserver startet. Für die Inhalte des Workshops ist dies aber nicht von Bedeutung.
 
-Im [Folgenden](../ui/index.html) werden wir uns zunächst einen Überblick über die GeoServer-Ordnerstruktur
-verschaffen. Anschließend wird erläutert wie sich GeoServer-Erweiterungen
-installieren lassen. Zum Abschluss dieses Modules wird erklärt, wie sich der
-Quellcode des GeoServers (bzw. einzelner Erweiterungen) mit dem
-*Build-Management-Tool* Maven kompilieren lässt.
+Im [Folgenden](../ui/index.html) erhalten wir zunächst einen Überblick über die Administrationsoberfläche von GeoServer. Dabei werden wir auf allgemeine Informationen zu den Servereinstellungen, zur Protokollierung sowie auf Sicherheitsaspekte eingehen. Des Weiteren werden wir uns mit dem Menüpunkt *Daten* näher beschäftigen.
+
