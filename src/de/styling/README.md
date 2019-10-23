@@ -22,7 +22,7 @@ eigenen Stil, der:
 ![Eigener GeoServer-Style](../assets/style1.png)
 
 Lösungen:
-  * [Aufgabe 1](../assets/style-example-1.sld)
-  * [Aufgabe 2](../assets/style-example-2.sld)
-  * [Aufgabe 3 (Möglichkeit A)](../assets/style-example-3a.sld)
-  * [Aufgabe 3 (Möglichkeit B)](../assets/style-example-3b.sld)
+  * [Aufgabe 1](https://terrestris.github.io/geoserver-introduction-ws/de/assets/style-example-1.sld)
+  * [Aufgabe 2](https://terrestris.github.io/geoserver-introduction-ws/de/assets/style-example-2.sld)
+  * [Aufgabe 3 (Möglichkeit A)](https://terrestris.github.io/geoserver-introduction-ws/de/assets/style-example-3a.sld)
+  * [Aufgabe 3 (Möglichkeit B)](https://terrestris.github.io/geoserver-introduction-ws/de/assets/style-example-3b.sld)
