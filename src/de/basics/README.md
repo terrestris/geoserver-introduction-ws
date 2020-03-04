@@ -1,4 +1,4 @@
-# Basiswissen GeoServer
+# Basiswissen GeoServer 
 
 Der [GeoServer](http://geoserver.org/) ist ein offener, Java-basierter Server,
 der es ermöglicht Geodaten auf Basis der Standards des [Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/)
@@ -40,4 +40,3 @@ Weitere Details zur klassischen WAR-Installation finden sich
 > Geoserver startet. Für die Inhalte des Workshops ist dies aber nicht von Bedeutung.
 
 Im [Folgenden](../ui/index.html) erhalten wir zunächst einen Überblick über die Administrationsoberfläche von GeoServer. Dabei werden wir auf allgemeine Informationen zu den Servereinstellungen, zur Protokollierung sowie auf Sicherheitsaspekte eingehen. Des Weiteren werden wir uns mit dem Menüpunkt *Daten* näher beschäftigen.
-
