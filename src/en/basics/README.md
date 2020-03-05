@@ -10,7 +10,7 @@ GeoServer is well documented. The documentation is divided into a user-documenta
 * Developer-documentation: [https://docs.geoserver.org/stable/en/developer/](https://docs.geoserver.org/stable/en/developer/)
 
 The two links refer to the documentation of the last stable version.
-The *stable* in the respective URL can also be replaced by a version number, if you want to access the documentation of a specific GeoServer version. Within this workshop **Version {{ book.geoServerVersion }}** is used, so the resulting URL for the user-documentation is <https://docs.geoserver.org/{{ book.geoServerVersion }}/user/>.
+The *stable* in the respective URL can also be replaced by a version number, if you want to access the documentation of a specific GeoServer version. Within this workshop **Version {{ book.geoServerVersion }}** is used, so the resulting URL for the user-documentation is <https://docs.geoserver.org/stable/en/user/>.
 
 ![GeoServer web interface after successful login.](../assets/geoserver_login_gui_en.png)
 
@@ -25,10 +25,9 @@ Further information and details about a classic WAR-installation you can find
 > **note**
 >
 > GeoServer is already pre-installed on the OSGeoLive system
-> and can be accessed during the workshop at   {{ book.geoServerBaseUrl }} 
-> (see [here](../environment/README.md)). This variant differs from the classical *deployment* as a .war file, since a Java program 
+> and can be accessed during the workshop at   {{ book.geoServerBaseUrl }}
+> (see [here](../environment/README.md)). This variant differs from the classical *deployment* as a .war file, since a Java program
 > (start.jar) is executed, which programmatically  starts a Jetty-server with
 > Geoserver. This is not important for the contents of the workshop.
 
 In [the following](../ui/index.html) section we will first get an overview about GeoServer's administration interface. This includes general information about the server settings, logging files as well as security issues. We will also take a closer look at the menu item *data*.
-
