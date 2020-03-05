@@ -203,9 +203,9 @@ Formular Neuer Stil bzw. Stil Editor. Das Formular bietet folgende Optionen:
   Erläuterung der SLD-Syntax würde den Rahmen dieses Workshops sprengen, daher wird
   an dieser Stelle auf die GeoServer Dokumentation, gegliedert nach Einsatzzwecken, verwiesen:
     * Inhaltsverzeichnis: https://docs.geoserver.org/stable/en/user/styling/index.html
-    * Punktstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/points.html
-    * Linienstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/lines.html
-    * Polygonstile: https://docs.geoserver.org/stable/en/user/styling/sld-cookbook/polygons.html
+    * Punktstile: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html
+    * Linienstile: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html
+    * Polygonstile: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html
 * `Datei auswählen`: Wurde das SLD in einem externen Editor erstellt, kann diese Datei
    direkt in das Formular geladen werden.
 
