@@ -77,7 +77,7 @@
         data-chapter-title="Data"
         data-filepath="ui/data/README.md"
         data-basepath="../.."
-        data-revision="Wed Oct 23 2019 14:57:15 GMT+0000 (UTC)"
+        data-revision="Mon Mar 09 2020 12:28:29 GMT+0000 (UTC)"
         data-innerlanguage="en">
     
 
@@ -434,7 +434,7 @@ type</em> and <em>enabled</em>. The <em>data type</em> describes the type of the
 <p>The form can be either used to create a new store or to edit an existing one.</p>
 <h4 id="layers">Layers</h4>
 <figure id="fig3.2.5"><img src="../../assets/ui_layers.png" alt="Layers."><figcaption>Layers.</figcaption></figure>
-<p>Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store. 
+<p>Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store.
 <strong>Important Hint:</strong> GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.</p>
 <p>The overview has columns for specifying the respective type, name of the workspace, store and the layer&apos;s name, status and the
 coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the store directly from the list by left-clicking the corresponding title.</p>
@@ -448,7 +448,7 @@ which are requested together via only one layer.</p>
 <li><code>Title</code>: Title of the layer.</li>
 <li><code>Workspace</code>: The name of the workspace in which the group layer should be created.</li>
 <li><code>BoundingBox</code>: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of <strong>Generate Bounds</strong> (recommended).
-<strong>Important:</strong> Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS 
+<strong>Important:</strong> Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS
 (e.g. in QGIS). There it is relevant for the initial map section.</li>
 <li><code>Coordinate Reference System</code>: Coordinate Reference System as EPSG-Code.</li>
 <li><code>Layer</code>: The buttons <strong>Add Layer</strong> or <strong>Add Layer Group</strong> can be used to add individual  layers or other grouped layers to the layer group.
@@ -467,12 +467,12 @@ delete an existing style (Select the style using the checkbox and click <em>Dele
 <li><code>Name</code>: Name of the style. If the style is used by exactly one layer, the style&apos;s name should reflect this (e.g. same name as layer).</li>
 <li><code>Workspace</code>: Workspace of the style.</li>
 <li><code>Copy from an existing style</code>: If elements of the styles are used by other styles, an existing style can be chosen as a template.</li>
-<li><p><code>SLD input field</code>: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop, 
+<li><p><code>SLD input field</code>: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop,
 therefore the GeoServer documentation will be referred to here, structured according to purposes:</p>
 <ul>
 <li>Table of contents: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/index.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/index.html</a></li>
 <li>points: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html</a></li>
-<li>lines: htt<a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html</a></li>
+<li>lines: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html</a></li>
 <li>polygons: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html</a></li>
 </ul>
 </li>
