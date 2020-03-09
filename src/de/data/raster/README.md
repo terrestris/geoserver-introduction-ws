@@ -43,7 +43,7 @@ die Möglichkeit, den vollen Umfang von GeoServer auf den WMS-Dienst anzuwenden.
 
 1. Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WMS
 über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.
-den folgenden Dienst: http://www.wms.nrw.de/geobasis/DGM_Relief?
+den folgenden Dienst: https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung
 
 2. Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!
 
