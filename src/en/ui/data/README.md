@@ -90,7 +90,7 @@ The form can be either used to create a new store or to edit an existing one.
 
 ![Layers.](../../assets/ui_layers.png)
 
-Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store. 
+Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store.
 **Important Hint:** GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.
 
 The overview has columns for specifying the respective type, name of the workspace, store and the layer's name, status and the
@@ -109,7 +109,7 @@ For creating a layer group using the form. **Add new layer group** at least the 
 * `Title`: Title of the layer.
 * `Workspace`: The name of the workspace in which the group layer should be created.
 * `BoundingBox`: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of **Generate Bounds** (recommended).
-  **Important:** Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS 
+  **Important:** Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS
   (e.g. in QGIS). There it is relevant for the initial map section.
 * `Coordinate Reference System`: Coordinate Reference System as EPSG-Code.
 * `Layer`: The buttons **Add Layer** or **Add Layer Group** can be used to add individual  layers or other grouped layers to the layer group.
@@ -133,11 +133,11 @@ When creating a new style or editing an existing style, the form *New style* res
 * `Name`: Name of the style. If the style is used by exactly one layer, the style's name should reflect this (e.g. same name as layer).
 * `Workspace`: Workspace of the style.
 * `Copy from an existing style`: If elements of the styles are used by other styles, an existing style can be chosen as a template.
-* `SLD input field`: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop, 
+* `SLD input field`: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop,
   therefore the GeoServer documentation will be referred to here, structured according to purposes:
     * Table of contents: https://docs.geoserver.org/stable/en/user/styling/sld/index.html
     * points: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html
-    * lines: htthttps://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html
+    * lines: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html
     * polygons: https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html
 
 * `Select file`: If the SLD was created in an external editor, this file can be loaded directly into the form.

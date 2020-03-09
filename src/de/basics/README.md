@@ -15,7 +15,7 @@ Die beiden Links verweisen auf die Dokumentationen der letzten stabilen Version.
 Das *stable* in der URL kann auch durch eine Versionsnummer ersetzt werden, falls
 man die Dokumentation einer bestimmten GeoServer-Version aufrufen möchte. Im Rahmen
 dieses Workshops wird die **Version {{ book.geoServerVersion }}** behandelt, die resultierende
-URL der Benutzerdokumentation würde also <https://docs.geoserver.org/{{ book.geoServerVersion }}/user/>
+URL der Benutzerdokumentation würde also <https://docs.geoserver.org/stable/en/user/>
 lauten.
 
 ![GeoServer-Weboberfläche nach erfolgreichem Login](../assets/geoserver_login_gui.png)
@@ -40,4 +40,3 @@ Weitere Details zur klassischen WAR-Installation finden sich
 > Geoserver startet. Für die Inhalte des Workshops ist dies aber nicht von Bedeutung.
 
 Im [Folgenden](../ui/index.html) erhalten wir zunächst einen Überblick über die Administrationsoberfläche von GeoServer. Dabei werden wir auf allgemeine Informationen zu den Servereinstellungen, zur Protokollierung sowie auf Sicherheitsaspekte eingehen. Des Weiteren werden wir uns mit dem Menüpunkt *Daten* näher beschäftigen.
-
