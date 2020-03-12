@@ -56,7 +56,7 @@ Zugriff ermöglicht, bietet der *Transaction WFS* auch einen schreibenden Zugrif
 
 1. Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WFS
 über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.
-den folgenden Dienst: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities
+den folgenden Dienst: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetCapabilities
 
 2. Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!
 

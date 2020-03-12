@@ -47,7 +47,7 @@ A WFS (Web Feature Service) offers internet-based access to vector data. In addi
 **Task:**
 
 1. Add a new store, which can be used to publish an already existing WFS cascaded via GeoServer. Use for example
-the following service: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities
+the following service: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetCapabilities
 
 2. Publish a service of your choice via GeoServer!
 
