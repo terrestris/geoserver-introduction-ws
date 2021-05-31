@@ -37,9 +37,7 @@ veröffentlicht werden kann. Nutzen Sie hierfür `coverages/mosaic_sample`.
 
 **Aufgabe:**
 
-Das Kaskadieren eines externen WMS-Dienstes zu GeoServer kann in vielen Situationen äußerst nützlich sein, da Sie nun den vollen Zugriff
-auf die Spezifika des Dienstes haben. Auch wenn der entfernte WMS-Dienst nicht mit GeoServer veröffentlicht wurde, haben sie nun lokal
-die Möglichkeit, den vollen Umfang von GeoServer auf den WMS-Dienst anzuwenden.
+Das Kaskadieren eines externen WMS-Dienstes zu GeoServer kann in vielen Situationen äußerst nützlich sein, um diesen z.B. über integrierte GeoServer Methoden zu cachen (GeoWebCache, GWC).
 
 1. Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WMS
 über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.

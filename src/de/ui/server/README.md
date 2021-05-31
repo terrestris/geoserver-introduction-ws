@@ -26,7 +26,7 @@ Arbeitsspeicher über **Arbeitsspeicher freigeben** freizugeben.
 Bei jeglichen Fehlern, die sich eindeutig dem GeoServer zuordnen lassen (wie z.B.
 keine oder eine falsche Antwort eines Kartendienstes) ist das Protokoll die erste
 Anlaufstelle. Das GeoServer Protokoll lässt sich dabei entweder direkt über die
-GUI (s. obige Abbildung) oder direkt vom Dateisystem ({{ book.geoServerPhysicalPath }}/logs/geoserver.log)
+GUI (s. obige Abbildung) oder direkt vom Dateisystem ({{ book.geoServerPhysicalPath }}logs/geoserver.log)
 aufrufen. Ist die Fehlerausgabe zu kurz, kann die Länge der Ausgabe über das Feld
 Maximale Anzahl von Zeilen in der Konsole gesteuert werden. Die Fehlerausgabe von
 Java/vom GeoServer ist in aller Regel sehr ausführlich, sodass die Fehler verursachende
