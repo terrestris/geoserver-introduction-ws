@@ -2,7 +2,7 @@
 
 # Einführung in GeoServer
 
-Herzlich Willkommen beim **Einführung in GeoServer** Workshop auf der FOSSGIS 2020 in Freiburg.
+Herzlich Willkommen beim **Einführung in GeoServer** Workshop.
 
 Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über den GeoServer als Web-Mapping-Lösung geben.
 
@@ -41,5 +41,3 @@ Styling eines Layers über SLD
 {% for author in book.authors %}
   - {{ author.name }} ([{{ author.mail }}](mailto:{{ author.mail }}))
 {% endfor %}
-
-###### (Die Autoren sind alphabetisch nach ihrem Nachnamen sortiert.)

@@ -47,7 +47,7 @@ in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
 
 **Aufgabe:**
 
-1. Rufen Sie die OpenLayers Layervorschau eines beliebigen Layers auf und ändern Sie die
+1. Rufen Sie die OpenLayers Layervorschau eines beliebigen Layers auf (sofern vorhanden) und ändern Sie die
 Requestparamter `Tiling` und `Format` zu einem Parameter Ihrer Wahl. Rufen Sie anschließend
 die GetFeatureInfo ab.
 

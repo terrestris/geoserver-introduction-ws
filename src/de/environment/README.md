@@ -25,8 +25,9 @@ Der GeoServer kann durch einen Doppelklick auf **Start GeoServer** im Ordner
 
 > **note**
 >
-> Kann der GeoServer **nicht** über den o.g. Weg gestart werden, kann er auch
-> über den folgenden Befehl im Terminal gestartet werden:
+> Kann der GeoServer **nicht** über den o.g. Weg gestart werden oder verhält sich zur Laufzeit unerwartet
+> (wenn z.B. das Speichern eines Arbeitsbereichs nicht möglich ist), sollte er stattdessen über den
+> folgenden Befehl im Terminal gestartet werden:
 > ```
 > sudo /usr/local/lib/geoserver/bin/startup.sh
 > ```
