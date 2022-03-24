@@ -44,7 +44,7 @@ werden kann. Nutzen Sie hierzu die folgenden Verbindungsparameter:
 
 2. Veröffentlichen Sie eine Tabelle Ihrer Wahl über den GeoServer! Bitte geben Sie als Standard-Ausgabe SRS `EPSG:54009` an.
 
-3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!
+3. Öffnen Sie den neu angelegten Layer in der Layer-Vorschau!
 
 ## WFS
 

@@ -9,7 +9,7 @@ des GeoServers, die Schritte zur Veröffentlichung eines Dienstes.
 
 Die **Layer-Vorschau** bietet eine Übersicht aller über diesen GeoServer veröffentlichten
 Layer. Damit ein Layer in dieser Übersicht erscheint (und auch im GetCapabilities
-Dokument der Instanz erscheint), muss der Layer als `Angekündigt` gekennzeichnet sein.
+Dokument der Instanz erscheint), muss der Layer als `Veröffentlicht` gekennzeichnet sein.
 Jeder Layer verfügt über eine Angabe des Typs (s. nachfolgende Tabelle), einen internen Layernamen
 (inklusive Name des Arbeitsbereichs), einen Layertitel (Kurzbeschreibung) und eine
 Auswahlbox von möglichen Vorschauformaten.

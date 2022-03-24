@@ -16,13 +16,14 @@ Das *stable* in der URL kann auch durch eine Versionsnummer ersetzt werden, fall
 man die Dokumentation einer bestimmten GeoServer-Version aufrufen möchte. Im Rahmen
 dieses Workshops wird die **Version {{ book.geoServerVersion }}** behandelt, die resultierende
 URL der Benutzerdokumentation würde also <https://docs.geoserver.org/stable/en/user/>
-lauten.
+lauten. Die Entwicklung von GeoServer verläuft in einen 6-monatigen Release Zyklus,
+der in der [Roadmap](http://geoserver.org/roadmap/) gut beschrieben ist.
 
 ![GeoServer-Weboberfläche nach erfolgreichem Login](../assets/geoserver_login_gui.png)
 
 Üblicherweise wird der GeoServer für einen Produktivbetrieb als (Java-)Standalone-Servlet
 in Form einer `.war` - Datei bereitgestellt, welche unter <http://geoserver.org/download/>
-heruntergeladen werden kann. Die `.war` - Datei muss anschließend auf einem
+heruntergeladen werden kann. Die `.war` - Datei muss anschließend in einem
 Servlet-Container (bspw. [Tomcat](https://tomcat.apache.org/) oder
 [Jetty](https://eclipse.org/jetty/)) veröffentlicht werden (häufig auch *deploy* genannt). Anschließend
 kann die Weboberfläche des GeoServers über den Browser aufgerufen werden.
