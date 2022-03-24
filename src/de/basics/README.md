@@ -30,7 +30,8 @@ kann die Weboberfläche des GeoServers über den Browser aufgerufen werden.
 Weitere Details zur klassischen WAR-Installation finden sich
 [hier](https://docs.geoserver.org/stable/en/user/installation/war.html).
 
-> **note**
+
+> **INFO**
 >
 > Der GeoServer ist auf dem OSGeoLive-System bereits vorinstalliert und kann im
 > Rahmen des Workshops unter {{ book.geoServerBaseUrl }} aufgerufen werden
