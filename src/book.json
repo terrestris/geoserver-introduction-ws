@@ -48,16 +48,6 @@
     },
     "image-captions": {
       "caption": "_CAPTION_"
-    },
-    "richquotes": {
-      "task": {
-        "alert": "info",
-        "picto": "fa-file-code-o"
-      },
-      "exercise": {
-        "alert": "info",
-        "picto": "fa-file-code-o"
-      }
     }
   }
 }
