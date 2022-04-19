@@ -22,7 +22,7 @@ Before you can start with the workshop, please complete the following steps:
 GeoServer is launched by double-clicking **Start GeoServer** in the folder
 **Web Services** on OSGeoLive desktop:
 
-> **note**
+> **INFO**
 >
 > If GeoServer can **not** be launched this way, you can try
 > following command in the terminal:

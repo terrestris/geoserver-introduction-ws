@@ -4,17 +4,11 @@
   "version": "0.0.1",
   "description": "The materials for the geoserver-introduction workshop",
   "scripts": {
-    "start": "mkdir -p src/_book && npm run doc:serve",
-    "test": "npm run build",
+    "dev": "honkit serve src",
     "clean": "rm -rf src/_book build",
-    "doc:help": "gitbook help",
-    "doc:serve": "gitbook serve src",
-    "doc:build": "gitbook build src build/geoserver-introduction-ws",
-    "doc:epub": "gitbook epub src build/geoserver-introduction-ws.epub",
-    "doc:pdf": "gitbook pdf src build/geoserver-introduction-ws.pdf",
-    "postinstall": "gitbook install src/",
-    "build": "npm run clean && npm run doc:build && npm run doc:pdf && npm run doc:epub && cd build/geoserver-introduction-ws",
-    "archive": "npm run build && cd build && zip -x geoserver-introduction-ws/materials/* -r geoserver-introduction-ws.zip geoserver-introduction-ws geoserver-introduction-ws_*.pdf geoserver-introduction-ws_*.epub"
+    "build": "npm run clean && npm run doc:build && npm run doc:pdf",
+    "doc:build": "honkit build src build/geoserver-introduction-ws",
+    "doc:pdf": "honkit pdf src ./build/geoserver-introduction-ws/geoserver-introduction-ws.pdf"
   },
   "repository": {
     "type": "git",
@@ -30,7 +24,11 @@
     "url": "https://github.com/terrestris/geoserver-introduction-ws/issues"
   },
   "homepage": "https://github.com/terrestris/geoserver-introduction-ws#readme",
-  "dependencies": {
-    "gitbook-cli": "2.3.2"
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-image-captions": "^3.1.0",
+    "honkit": "^3.7.1"
   }
 }

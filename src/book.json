@@ -1,5 +1,5 @@
 {
-  "gitbook": "^2.3.2",
+  "honkit": ">= 3.0.0",
   "title": "GeoServer introduction",
   "description": "GeoServer introduction workshop materials",
   "language": "de",
@@ -17,27 +17,29 @@
     "geoServerPassword": "geoserver",
     "geoServerVersion": "2.18.1",
     "osGeoLiveVersion": "14.0",
-    "authors": [{
-      "name": "Nils Bühner",
-      "mail": "buehner@terrestris.de"
-    }, {
-      "name": "André Henn",
-      "mail": "henn@terrestris.de"
-    }, {
-      "name": "Daniel Koch",
-      "mail": "koch@terrestris.de"
-    }, {
-      "name": "Fabian Schmidt",
-      "mail": "fschmidt@terrestris.de"
-    }]
+    "authors": [
+      {
+        "name": "Nils Bühner",
+        "mail": "buehner@terrestris.de"
+      },
+      {
+        "name": "André Henn",
+        "mail": "henn@terrestris.de"
+      },
+      {
+        "name": "Daniel Koch",
+        "mail": "koch@terrestris.de"
+      },
+      {
+        "name": "Fabian Schmidt",
+        "mail": "fschmidt@terrestris.de"
+      }
+    ]
   },
   "plugins": [
-    "advanced-emoji",
     "edit-link",
     "expandable-chapters",
-    "image-captions",
-    "richquotes",
-    "sectionx"
+    "image-captions"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -46,16 +48,6 @@
     },
     "image-captions": {
       "caption": "_CAPTION_"
-    },
-    "richquotes": {
-      "task": {
-        "alert": "info",
-        "picto": "fa-file-code-o"
-      },
-      "exercise": {
-        "alert": "info",
-        "picto": "fa-file-code-o"
-      }
     }
   }
 }
