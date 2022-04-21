@@ -31,7 +31,7 @@ aufrufen. Ist die Fehlerausgabe zu kurz, kann die Länge der Ausgabe über das F
 Maximale Anzahl von Zeilen in der Konsole gesteuert werden. Die Fehlerausgabe von
 Java/vom GeoServer ist in aller Regel sehr ausführlich, sodass die Fehler verursachende
 Komponente schnell ausfindig gemacht werden kann. Schwerwiegende Fehler werden
-dabei meist mit dem Kürzel `ERROR` vorgestellt. Beispielsweise würde sich die Fehlerausgabe
+dabei meist mit dem Kürzel `ERROR` dargestellt. Beispielsweise würde sich die Fehlerausgabe
 
 ```
 2014-10-06 09:16:33,492 ERROR [geoserver.wms] - Getting feature source: featureType: GEOSERVER:EXAMPLE_LAYER does not have a properly configured datastore
@@ -39,10 +39,10 @@ dabei meist mit dem Kürzel `ERROR` vorgestellt. Beispielsweise würde sich die 
 
 beim Abrufen der Datenquelle für einen Layer auf einen unsauber konfigurierten
 Datenspeicher zurückführen lassen. Dies kann entweder tatsächlich einer fehlerhaften
-Konfiguration oder z.B. einem Ausfall der Quelldatenbank geschuldet sein.
+Konfiguration oder z.B. einem Ausfall der Datenbank geschuldet sein.
 
 **Hinweis:** Es existieren mehrere Protokollmodi, die eine unterschiedlich empfindliche
-Ausgabe erzeugen. Nähere Informationen hierzu s. Kap. [Einstellungen](../settings/README.md).
+Ausgabe erzeugen. Nähere Informationen hierzu siehe Kapitel [Einstellungen](../settings/README.md).
 
 #### Kontaktangaben
 
@@ -54,5 +54,5 @@ da diese im GetCapabilities Dokument erscheinen.
 
 **Aufgabe:**
 
-1. Rufen Sie das `GetCapabilities` Dokument des GeoServers auf. Klicken Sie hierzu auf der Startsteite rechts unter `Service Capabilities` auf WMS -> 1.3.0.
+1. Rufen Sie das `GetCapabilities` Dokument des GeoServers auf. Klicken Sie hierzu auf der Startseite rechts unter `Service Capabilities` auf WMS -> 1.3.0.
 Bitte geben Sie nun unter `Contact information` Ihre Kontaktinformationen an. Rufen Sie anschließend nochmals das `GetCapabilities` auf. Was fällt Ihnen auf?

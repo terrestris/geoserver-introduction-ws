@@ -6,7 +6,7 @@ aus:
 * Rechner mit OSGeoLive-Medium hochfahren
 * Sprache auswählen (Deutsch für korrekte Tastaturbelegung)
 * *Lubuntu ohne Installation ausprobieren* auswählen
-* Benutzer: user; Passwort: user (wird vermutlich nicht benötigt)
+* Benutzer: `user`; Passwort: `user` (wird vermutlich nicht benötigt)
 
 ![Die Startansicht der OSGeo Live {{ book.osGeoLiveVersion }} auf Ihrem Rechner.](../assets/startview.png)
 
@@ -25,7 +25,7 @@ Der GeoServer kann durch einen Doppelklick auf **Start GeoServer** im Ordner
 
 > **INFO**
 >
-> Kann der GeoServer **nicht** über den o.g. Weg gestart werden oder verhält sich zur Laufzeit unerwartet
+> Kann der GeoServer **nicht** über den oben genannten Weg gestartet werden oder verhält sich zur Laufzeit unerwartet
 > (wenn z.B. das Speichern eines Arbeitsbereichs nicht möglich ist), sollte er stattdessen über den
 > folgenden Befehl im Terminal gestartet werden:
 > ```

@@ -17,7 +17,7 @@ eigenen Stil, der:
 
 2. Passen Sie den Beschriftungsstil so an, dass die Beschriftung erst ab einem Maßstab von > 10.000.000 gezeichnet wird.
 
-3. Bonus: Lassen Sie alle Staaten in Abhängigkeit ihrer Bevölkerunganzahl einfärben. Wählen Sie hierfür eigene Klassengrenzen.
+3. Bonus: Lassen Sie alle Staaten in Abhängigkeit ihrer Bevölkerungsanzahl einfärben. Wählen Sie hierfür eigene Klassengrenzen.
 
 ![Eigener GeoServer-Style](../assets/style1.png)
 
