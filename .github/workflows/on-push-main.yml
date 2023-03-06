@@ -27,6 +27,11 @@ jobs:
       - name: Build artifacts 🏗️
         run: npm run build
 
+      - name: Release 🚀
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./node_modules/semantic-release/bin/semantic-release.js
+
       - name: Get package version 🏷️
         run: |
           echo "VERSION=$(node -pe "require('./package.json').version")" >> $GITHUB_ENV
@@ -43,4 +48,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           folder: build/geoserver-introduction-ws
-          target-folder: docs/v${{ env.VERSION }}
+          target-folder: docs/latest
