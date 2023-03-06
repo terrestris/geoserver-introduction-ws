@@ -12,14 +12,16 @@ in eine Benutzer- und eine Entwicklerdokumentation:
 * Entwicklerdokumentation: [https://docs.geoserver.org/stable/en/developer/](https://docs.geoserver.org/stable/en/developer/)
 
 Die beiden Links verweisen auf die Dokumentationen der letzten stabilen Version.
-Das *stable* in der URL kann auch durch eine Versionsnummer ersetzt werden, falls
-man die Dokumentation einer bestimmten GeoServer-Version aufrufen möchte. Im Rahmen
-dieses Workshops wird die **Version {{ book.geoServerVersion }}** behandelt, die resultierende
-URL der Benutzerdokumentation würde also <https://docs.geoserver.org/stable/en/user/>
-lauten. Die Entwicklung von GeoServer verläuft in einen 6-monatigen Release Zyklus,
-der in der [Roadmap](http://geoserver.org/roadmap/) gut beschrieben ist.
+Das *stable* in der URL kann auch durch eine Versionsnummer (der minor Versionsreihe) ersetzt
+werden, falls man die Dokumentation einer bestimmten GeoServer-Version aufrufen möchte. Beispielsweise
+würde die URL für die Benutzerdokumentation der Version 2.19.0 [https://docs.geoserver.org/2.19.x/en/user/](https://docs.geoserver.org/2.19.x/en/user/) lauten.
 
-![GeoServer-Weboberfläche nach erfolgreichem Login](../assets/geoserver_login_gui.png)
+Alternativ kann die Dokumentation auch für die gewünschte Version heruntergeladen werden. Der
+Download findet sich jeweils auf der Download-Seite des GeoServers, für Version 2.19.0
+beispielsweise unter [https://geoserver.org/release/2.19.0/](https://geoserver.org/release/2.19.0/).
+
+Die Entwicklung von GeoServer verläuft in einen 6-monatigen Release Zyklus,
+der in der [Roadmap](http://geoserver.org/roadmap/) gut beschrieben ist.
 
 Üblicherweise wird der GeoServer für einen Produktivbetrieb als (Java-)Standalone-Servlet
 in Form einer `.war` - Datei bereitgestellt, welche unter <http://geoserver.org/download/>
@@ -32,7 +34,7 @@ Weitere Details zur klassischen WAR-Installation finden sich
 [hier](https://docs.geoserver.org/stable/en/user/installation/war.html).
 
 
-> **INFO**
+> ℹ️ **Information**
 >
 > Der GeoServer ist auf dem OSGeoLive-System bereits vorinstalliert und kann im
 > Rahmen des Workshops unter {{ book.geoServerBaseUrl }} aufgerufen werden

@@ -22,7 +22,7 @@ Wählen Sie daher den Stil `dem` für diesen Layer.
 **Aufgabe:**
 
 Ein Datenspeicher der Art ImageMosaic bietet die Möglichkeit mehrere georeferenzierte Rasterdaten zu einem Mosaik zusammenzufügen.
-Somit können beispielsweise zwei oder mehr sich überlappende Satellitenaufnahmen als ein zusammenhängendes Raster veröffentlicht werden.
+Somit können beispielsweise mehrere nebeneinander liegende Satellitenaufnahmen als ein zusammenhängendes Raster veröffentlicht werden.
 
 1. Legen Sie einen neuen Datenspeicher an, über den ein ImageMosaic über den GeoServer
 veröffentlicht werden kann. Nutzen Sie hierfür `coverages/mosaic_sample`.

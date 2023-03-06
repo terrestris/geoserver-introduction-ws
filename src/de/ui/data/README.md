@@ -42,8 +42,11 @@ ermöglicht (Bildformat und -größe, Antialiasing etc.).
 Unter der Auswahlbox **Alle Formate** sind weitere Formate aufgelistet, die nach WMS
 und WFS gegliedert sind. Für die Vorschau eines WMS wird dabei jedoch das obige
 Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.
-**Hinweis:** Über die Auswahlbox ist auch der Export als Shapefile möglich, das
-in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
+
+> ℹ️ **Information**
+>
+> Über die Auswahlbox ist auch der Export als Shapefile möglich, das
+> in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.
 
 **Aufgabe:**
 
@@ -76,14 +79,17 @@ Abteilung oder eines bestimmten Themas.
 Jedem Arbeitsbereich können nun weitere Konfigurationselemente zugeordnet werden.
 Hierzu zählen u.a. der Datenspeicher, die (Gruppen-) Layer, Stile und übergeordnete
 Einstellungen des GeoServers wie Kontaktdaten oder globale WMS-Einstellungen.
+
 **Wichtig:** Wird ein GeoServer initial in Betrieb genommen, muss die oben
 skizzierte Reihenfolge beim Anlegen eines Layers genauestens beachtet werden, d.h. zunächst
 wird ein Arbeitsbereich, danach ein Datenspeicher und anschließend ein Layer
 (inklusive Stil) angelegt.
 
-**Hinweis:** Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
-(*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). Diese können im
-Produktivbetrieb ohne Bedenken gelöscht werden.
+> ℹ️ **Information**
+>
+> Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
+> (*cite, it.geosolutions, nurc, sde, sf, tiger, topp*). Diese können im
+> Produktivbetrieb ohne Bedenken gelöscht werden.
 
 **Aufgabe:**
 
@@ -127,10 +133,12 @@ enthält dabei mehrere Kartenelemente (Features), die als gerenderte Rasterdaten
 (WMS) oder als Rohdaten (WFS bzw. WCS) abgerufen werden können. Jedem Layer ist im GeoServer
 gemein, dass sie genau einem Arbeitsbereich und genau einem Datenspeicher zugehörig
 sind.
-**Wichtiger Hinweis:** Der GeoServer legt automatisch für jeden Layer einen
-WMS und WFS an, ein getrenntes Anlegen ist nicht möglich. Es ist ausschließlich
-möglich im Arbeitsbereich zu definieren, ob alle Layer in diesem Arbeitsbereich
-sowohl per WMS als auch per WFS, nur als WMS oder nur als WFS abfragbar sind.
+
+> ℹ️ **Information**
+>
+> Der GeoServer legt automatisch für jeden Layer einen
+> WMS und WFS bzw. WCS an. Nach Erstellung kann ein Servicetyp auf Layer- oder Arbeitsbereichsebene
+> deaktiviert werden.
 
 Die Übersicht besitzt Spalten zur Angabe des jeweiligen Typs, dem Namen des
 Arbeitsbereichs, Datenspeichers sowie des Layers (Name), Status (Aktiv) und
@@ -209,7 +217,9 @@ Formular Neuer Stil bzw. Stil Editor. Das Formular bietet folgende Optionen:
 * `Datei auswählen`: Wurde das SLD in einem externen Editor erstellt, kann diese Datei
    direkt in das Formular geladen werden.
 
-Wichtiger Hinweis: Bevor der Stil über Speichern gespeichert wird, sollte dieser über
-Validieren auf Korrektheit geprüft werden. Liegt ein Fehler (z.B. in der Syntax)
-vor, erscheint am oberen Rand des Formulars ein Fehler mit einem Hinweis auf die
-Fehlerursache.
+> ℹ️ **Information**
+>
+> Bevor der Stil über Speichern gespeichert wird, sollte dieser über
+> Validieren auf Korrektheit geprüft werden. Liegt ein Fehler (z.B. in der Syntax)
+> vor, erscheint am oberen Rand des Formulars ein Fehler mit einem Hinweis auf die
+> Fehlerursache.

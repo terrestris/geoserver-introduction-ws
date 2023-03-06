@@ -1,6 +1,6 @@
 # Gruppenlayer
 
-Gruppenlayer sind eine Sammlung von bereits im GeoServer veröffentlichten Layern, die gemeinsam über nur einen Layer angefordert werden. [(siehe Kapitel 3.2)](../ui/data/index.html#group-layer)
+Gruppenlayer sind eine Sammlung von bereits im GeoServer veröffentlichten Layern, die gemeinsam über nur einen Layer angefordert werden [(siehe Kapitel 3.2)](../ui/data/README.md#gruppenlayer).
 
 **Aufgabe:**
 
