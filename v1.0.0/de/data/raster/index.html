@@ -1,0 +1,577 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Rasterdatenquellen · GeoServer introduction</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 4.0.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../group/" />
+    
+    
+    <link rel="prev" href="../vector/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Einführung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../environment/">
+            
+                <a href="../../environment/">
+            
+                    
+                    Vorarbeiten und generelle Informationen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../basics/">
+            
+                <a href="../../basics/">
+            
+                    
+                    Basiswissen GeoServer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../ui/">
+            
+                <a href="../../ui/">
+            
+                    
+                    Administrationsoberfläche
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../ui/server/">
+            
+                <a href="../../ui/server/">
+            
+                    
+                    Serverstatus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../ui/data/">
+            
+                <a href="../../ui/data/">
+            
+                    
+                    Daten
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../ui/settings/">
+            
+                <a href="../../ui/settings/">
+            
+                    
+                    Einstellungen und Sicherheit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Datenveröffentlichung
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../vector/">
+            
+                <a href="../vector/">
+            
+                    
+                    Vektordatenquellen
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../vector/">
+            
+                <a href="../vector/#shapefile">
+            
+                    
+                    Shapefile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../vector/">
+            
+                <a href="../vector/#postgis">
+            
+                    
+                    PostGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../vector/">
+            
+                <a href="../vector/#wfs">
+            
+                    
+                    WFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Rasterdatenquellen
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="./">
+            
+                <a href="./#geotiff">
+            
+                    
+                    GeoTIFF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="./">
+            
+                <a href="./#imagemosaic">
+            
+                    
+                    ImageMosaic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="./">
+            
+                <a href="./#wms">
+            
+                    
+                    WMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../group/">
+            
+                <a href="../../group/">
+            
+                    
+                    Gruppenlayer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../styling/">
+            
+                <a href="../../styling/">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../styling/">
+            
+                <a href="../../styling/">
+            
+                    
+                    SLD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Veröffentlicht mit HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Rasterdatenquellen</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rasterdatenquellen">Rasterdatenquellen</h1>
+<h2 id="geotiff">GeoTIFF</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Das GeoTIFF ist ein gängiges Rasterdaten-Format, da es sich aufgrund seiner verlustfreien Speicherung gut zur Verarbeitung
+von Geodaten eignet. Zusätzlich zum TIFF-Bildformat enthält das GeoTIFF Koordinaten zur Georeferenzierung und Informationen
+zur verwendeten Kartenprojektion.</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, über den ein GeoTIFF über den GeoServer
+veröffentlicht werden kann. Nutzen Sie hierfür <code>data/sf/sfdem.tiff</code>.</p>
+</li>
+<li><p>Veröffentlichen Sie dieses GeoTIFF über den GeoServer! Unter dem Reiter <code>Publishing</code> und weiter <code>WMS Settings</code> lassen sich
+vorgefertigte Layer-Stile auswählen. Bei dem GeoTIFF handelt es sich um ein digitales Höhenmodell (DEM) aus South Dakota.
+Wählen Sie daher den Stil <code>dem</code> für diesen Layer.</p>
+</li>
+<li><p>Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<h2 id="imagemosaic">ImageMosaic</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Ein Datenspeicher der Art ImageMosaic bietet die Möglichkeit mehrere georeferenzierte Rasterdaten zu einem Mosaik zusammenzufügen.
+Somit können beispielsweise mehrere nebeneinander liegende Satellitenaufnahmen als ein zusammenhängendes Raster veröffentlicht werden.</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, über den ein ImageMosaic über den GeoServer
+veröffentlicht werden kann. Nutzen Sie hierfür <code>coverages/mosaic_sample</code>.</p>
+</li>
+<li><p>Veröffentlichen Sie dieses Mosaik über den GeoServer!</p>
+</li>
+<li><p>Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<p><img src="../../assets/raster2.png" alt="Mosaik aus mehreren Satellitenaufnahmen"></p>
+<h2 id="wms">WMS</h2>
+<p><strong>Aufgabe:</strong></p>
+<p>Das Kaskadieren eines externen WMS-Dienstes zu GeoServer kann in vielen Situationen äußerst nützlich sein, um diesen z.B. über integrierte GeoServer Methoden zu cachen (GeoWebCache, GWC).</p>
+<ol>
+<li><p>Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WMS
+über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.
+den folgenden Dienst: <a href="https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung" target="_blank">https://www.wms.nrw.de/geobasis/wms_nw_dgm-schummerung</a></p>
+</li>
+<li><p>Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!</p>
+</li>
+<li><p>Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!</p>
+</li>
+</ol>
+<p><img src="../../assets/raster3.png" alt="Hochauflösendes DGM-Relief von Bonn (GeoBasis NRW 2017)"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../vector/" class="navigation navigation-prev " aria-label="Previous page: Vektordatenquellen">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../group/" class="navigation navigation-next " aria-label="Next page: Gruppenlayer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Rasterdatenquellen","level":"1.5.2","depth":2,"next":{"title":"Gruppenlayer","level":"1.6","depth":1,"path":"group/README.md","ref":"group/README.md","articles":[]},"previous":{"title":"Vektordatenquellen","level":"1.5.1","depth":2,"path":"data/vector/README.md","ref":"data/vector/README.md","articles":[{"title":"Shapefile","level":"1.5.1.1","depth":3,"anchor":"#shapefile","path":"data/vector/README.md","ref":"data/vector/README.md#shapefile","articles":[]},{"title":"PostGIS","level":"1.5.1.2","depth":3,"anchor":"#postgis","path":"data/vector/README.md","ref":"data/vector/README.md#postgis","articles":[]},{"title":"WFS","level":"1.5.1.3","depth":3,"anchor":"#wfs","path":"data/vector/README.md","ref":"data/vector/README.md#wfs","articles":[]}]},"articles":[{"title":"GeoTIFF","level":"1.5.2.1","depth":3,"anchor":"#geotiff","path":"data/raster/README.md","ref":"data/raster/README.md#geotiff","articles":[]},{"title":"ImageMosaic","level":"1.5.2.2","depth":3,"anchor":"#imagemosaic","path":"data/raster/README.md","ref":"data/raster/README.md#imagemosaic","articles":[]},{"title":"WMS","level":"1.5.2.3","depth":3,"anchor":"#wms","path":"data/raster/README.md","ref":"data/raster/README.md#wms","articles":[]}],"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"geoServerVersion":"2.21.0","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.21.0/","workshopName":"GeoServer introduction","workshopPdfNameDe":"geoserver-introduction-ws_de.pdf","osGeoLiveVersion":"15.0","workshopPdfNameEn":"geoserver-introduction-ws_en.pdf","geoServerUser":"admin"},"title":"GeoServer introduction","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"data/raster/README.md","mtime":"2023-03-06T15:25:39.726Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-03-06T15:28:03.502Z"},"basePath":"../..","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
