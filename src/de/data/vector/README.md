@@ -2,9 +2,7 @@
 
 ## Shapefile
 
-Das Shapefile-Format, entwickelt von der Firma *ESRI*, ist das am weitesten verbreitete Vektorformat in der GIS-Welt.
-Shapefiles (auch Shapes) werden sowohl von proprietären als auch von OpenSource Desktop-GIS unterstützt und sind somit
-Industriestandard geworden.
+Das Shapefile-Format ist das (noch) am weitesten verbreitete Vektorformat in der GIS-Welt.
 
 **Aufgabe:**
 
@@ -24,7 +22,7 @@ per Klick auf **Compute from data** und **Compute from native bounds** automatis
 
 PostGIS ist eine räumliche Erweiterung für das populäre objekt-relationale OpenSource Datenbanksystem PostgreSQL.
 Die Erweiterung ermöglicht es räumliche Daten per SQL abzufragen und bietet zudem eine Vielzahl an Möglichkeiten
-zur Bearbeitung von Geodaten. Auf OSGeoLive ist das Datenbanksystem bereits installiert und mit einer Test-Datenbank
+zur Bearbeitung von Geodaten. Auf der OSGeoLive ist das Datenbanksystem bereits installiert und mit einer Test-Datenbank
 eingerichtet.
 
 **Aufgabe:**

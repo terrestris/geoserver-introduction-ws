@@ -9,7 +9,7 @@ des [GeoServer User Manuals](https://docs.geoserver.org/stable/en/user/styling/s
 
 **Aufgaben:**
 
-1. Definieren Sie für den States Layer (siehe Aufgabe Vector -> Shape) einen
+1. Definieren Sie für den States Layer (siehe [Aufgabe Vector -> Shape](../data/vector/README.md#shapefile)) einen
 eigenen Stil, der:
   * Alle Flächen in einer Farbe Ihrer Wahl (und mit einer Transparenz von 50%) darstellt.
   * Alle Umrandungen in einer Farbe Ihrer Wahl darstellt.

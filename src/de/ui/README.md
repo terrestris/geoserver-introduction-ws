@@ -1,6 +1,6 @@
 # Administrationsoberfläche
 
-Öffnen Sie, sofern noch nicht geschehen, die Startseite der GeoServers Weboberfläche
+Öffnen Sie, sofern noch nicht geschehen, die Startseite der GeoServer Weboberfläche
 in einem Browser Ihrer Wahl über die folgende URL:
 
 {{ book.geoServerBaseUrl }}
