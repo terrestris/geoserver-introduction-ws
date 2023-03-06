@@ -28,4 +28,3 @@ jobs:
 
     - name: Build artifacts 🏗️
       run: npm run build
-
