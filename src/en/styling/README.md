@@ -20,7 +20,7 @@ SLD is an abbreviation for *Styled Layer Descriptor* and is an OGC standard. Try
 ![Own GeoServer-Style](../assets/style1.png)
 
 Lösungen:
-  * [Task 1](https://terrestris.github.io/geoserver-introduction-ws/en/assets/style-example-1.sld)
-  * [Task 2](https://terrestris.github.io/geoserver-introduction-ws/en/assets/style-example-2.sld)
-  * [Task 3 (Possibility A)](https://terrestris.github.io/geoserver-introduction-ws/en/assets/style-example-3a.sld)
-  * [Task 3 (Possibility B)](https://terrestris.github.io/geoserver-introduction-ws/en/assets/style-example-3b.sld)
+  * [Task 1](../assets/style-example-1.sld)
+  * [Task 2](../assets/style-example-2.sld)
+  * [Task 3 (Possibility A)](../assets/style-example-3a.sld)
+  * [Task 3 (Possibility B)](../assets/style-example-3b.sld)
