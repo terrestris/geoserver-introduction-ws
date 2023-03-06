@@ -1,0 +1,696 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Data · GeoServer introduction</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 4.0.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../settings/" />
+    
+    
+    <link rel="prev" href="../server/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../environment/">
+            
+                <a href="../../environment/">
+            
+                    
+                    Preparatroy work and general information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../basics/">
+            
+                <a href="../../basics/">
+            
+                    
+                    Basic knowledge about GeoServer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Administration interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../server/">
+            
+                <a href="../server/">
+            
+                    
+                    Server status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../settings/">
+            
+                <a href="../settings/">
+            
+                    
+                    Settings and Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../data/">
+            
+                <a href="../../data/">
+            
+                    
+                    Data publishing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../data/vector/">
+            
+                <a href="../../data/vector/">
+            
+                    
+                    Vector data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../data/vector/">
+            
+                <a href="../../data/vector/">
+            
+                    
+                    Shapefile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../data/vector/">
+            
+                <a href="../../data/vector/">
+            
+                    
+                    PostGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../../data/vector/">
+            
+                <a href="../../data/vector/">
+            
+                    
+                    WFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../data/raster/">
+            
+                <a href="../../data/raster/">
+            
+                    
+                    Raster data sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../data/raster/">
+            
+                <a href="../../data/raster/">
+            
+                    
+                    GeoTIFF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../data/raster/">
+            
+                <a href="../../data/raster/">
+            
+                    
+                    ImageMosaic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../data/vector/">
+            
+                <a href="../../data/vector/">
+            
+                    
+                    WMS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../group/">
+            
+                <a href="../../group/">
+            
+                    
+                    Layer groups
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../styling/">
+            
+                <a href="../../styling/">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../styling/">
+            
+                <a href="../../styling/">
+            
+                    
+                    SLD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Data</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="data">Data</h3>
+<p>The following sections describe the most comprehensive configuration area of GeoServer, the steps for publishing a service.</p>
+<h4 id="layer-preview">Layer preview</h4>
+<p><img src="../../assets/ui_layer_preview.png" alt="Layer preview."></p>
+<p>The <strong>layer preview</strong> provides an overview of all layers published on this GeoServer. For a layer to appear in this overview (and also in the GetCapabilities document of the instance), it must be marked as <code>prefigured</code>.
+Each layer has a specification of the type (see table below), a internal layer name
+(including name of the work space), a layer title (short description) and a selection box of possible preview formats.</p>
+<!--englische begriffe-->
+<table>
+<thead>
+<tr>
+<th style="text-align:center">type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_unknown.png" alt></td>
+<td>vector layer (type unknown)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_point.png" alt></td>
+<td>vector layer ((Multi-)Point)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_line.png" alt></td>
+<td>vector layer ((Multi-)Line)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_polygon.png" alt></td>
+<td>vector layer ((Multi-)Polygon)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_raster.png" alt></td>
+<td>raster layer</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_group.png" alt></td>
+<td>layer group</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_type_wms.png" alt></td>
+<td>cascaded WMS</td>
+</tr>
+</tbody>
+</table>
+<p>The layer list can be sorted ascending and descending by left-clicking on the column names <code>type</code>, <code>name</code>
+or <code>title</code>. In addition to an overview of all available layers, a preview of a layer can be displayed in various formats. This is recommended in particular for a quick and easy comfortable checking of a new created layer. The fastest way to get a preview is to use the &quot;Format&quot; OpenLayers, which creates a new window with a preview map of the selected layer.</p>
+<p><img src="../../assets/ui_layer_preview_openlayers.png" alt="Layer preview with OpenLayers."></p>
+<p>The OpenLayers map allows a free navigation within the layer and a GetFeatureInfo query by a left click inside the layer.
+The button <strong>toggle options toolbar</strong> above the navigation allows you to display a toolbar with the options to manipulate the GetMap call (format and size, Antialiasing etc.).
+Further formats are listed below the selection box <strong>All formats</strong>. They are structured according to WMS and WFS. For the preview of a WMS „OpenLayers“ is recommended, while for a preview of a WFS you should choose the &quot;GML2&quot; format.
+<strong>Hint:</strong> Via the selection box the export as Shapefile is also possible. Shapefiles can be integrated into any standard desktop GIS for further processing.</p>
+<p><strong>Task:</strong></p>
+<ol>
+<li>Call up the OpenLayers layer preview of any layer and change the parameters <code>Tiling</code> und <code>Format</code> to a parameter of your choice. Afterwards call GetFeatureInfo.</li>
+</ol>
+<h4 id="workspaces">Workspaces</h4>
+<p>The menu item <strong>Workspaces</strong> provides an overview of all available workspaces of GeoServer. The GUI can be used to create new workspaces or to edit
+existing ones.</p>
+<p><img src="../../assets/ui_workspaces.png" alt="Workspaces."></p>
+<p>The GeoServer stores layers using the following hierarchy:</p>
+<pre><code>Workspace
+ └ store
+  └ Layer
+ └ Layer(groups)
+ └ Style
+</code></pre><p>The central element is the so-called workspace, which can initially be understood as a collection object for layers. Similar to a namespace, the workspace organizes objects of a common theme, e.g. the layers of a specific department or topic.
+Further configuration elements can now be assigned to each workspace.
+This includes among others the store, the layer (-group), styles and higher-level settings
+of GeoServer like contact information or global WMS-settings.
+<strong>Important:</strong> If a GeoServer is initially put into operation, the sequence outlined above must be strictly adhered when creating a layer, that means, first a workspace is created, then a store and then a layer (with styles).</p>
+<p><strong>Hint:</strong> The GeoServer has several example workspaces in the delivery state
+(<em>cite, it.geosolutions, nurc, sde, sf, tiger, topp</em>). These can be deleted without hesitation in productive operation.</p>
+<p><strong>Task:</strong></p>
+<ol>
+<li>Create a new workspace with the name <code>FOSSGIS</code>. For Namespace URI set
+<code>http://geoserver.org/fossgis</code>. Select this workspace as the default workspace.</li>
+</ol>
+<h4 id="store">store</h4>
+<p><img src="../../assets/ui_datastores.png" alt="store."></p>
+<p>The <strong>(data) store</strong> is a reference to a data source, which contains vector or raster data for publication. Each store is assigned to exactly one workspace. A store includes connection parameters to a database or the path to a shapefile for example.
+The figure above shows an overview of all available stores, which can be accessed via the store field in the left-hand navigation menu. The overview contains the columns <em>data type, workspace, store name,
+type</em> and <em>enabled</em>. The <em>data type</em> describes the type of the store, which can be one of the data types listed in the following table. <em>Workspace</em> contains the superior name of the workspace, <em>store name</em> the name of the store, <em>type</em> the concrete storage type (for example, the database) and
+<em>enabled</em> the status of the store.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_shape.png" alt></td>
+<td>single file/directory (vector data)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_raster.png" alt></td>
+<td>single file/directory (raster data)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_db.png" alt></td>
+<td>database (vector data)</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_wms.png" alt></td>
+<td>WMS</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_wfs.png" alt></td>
+<td>WFS</td>
+</tr>
+</tbody>
+</table>
+<p>The form can be either used to create a new store or to edit an existing one.</p>
+<h4 id="layers">Layers</h4>
+<p><img src="../../assets/ui_layers.png" alt="Layers."></p>
+<p>Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store.
+<strong>Important Hint:</strong> GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.</p>
+<p>The overview has columns for specifying the respective type, name of the workspace, store and the layer&apos;s name, status and the
+coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the store directly from the list by left-clicking the corresponding title.</p>
+<h4 id="layer-groups"><a name="group-layer"></a>Layer groups</h4>
+<p><img src="../../assets/ui_layer_groups.png" alt="Layer groups."></p>
+<p>Layer groups are a collection of layers already published in the GeoServer,
+which are requested together via only one layer.</p>
+<p>For creating a layer group using the form. <strong>Add new layer group</strong> at least the following settings are necessary:</p>
+<ul>
+<li><code>Name</code>: Name of the layer.</li>
+<li><code>Title</code>: Title of the layer.</li>
+<li><code>Workspace</code>: The name of the workspace in which the group layer should be created.</li>
+<li><code>BoundingBox</code>: The four fields (Min X, Min Y, Max X, Max Y) contain the BoundingBox of the data of this layer group in the native coordinate reference system. The input can be done manually or automatically with the help of <strong>Generate Bounds</strong> (recommended).
+<strong>Important:</strong> Without a BoundingBox the layer cannot be created successfully. The values should always contain the complete dataset, because these are queried using the GetCapabilities request when loading a WMS
+(e.g. in QGIS). There it is relevant for the initial map section.</li>
+<li><code>Coordinate Reference System</code>: Coordinate Reference System as EPSG-Code.</li>
+<li><code>Layer</code>: The buttons <strong>Add Layer</strong> or <strong>Add Layer Group</strong> can be used to add individual  layers or other grouped layers to the layer group.
+A click on the corresponding button opens the <em>Select Layer</em> window, in which all available layers of the GeoServer instance appear.
+A layer can be selected from the window by clicking on the layer&apos;s name and is then passed to the layer group. Each selected layer then appears in the table below the layer form element.</li>
+</ul>
+<p>In the overview table the order of the layers can be determined by the arrow symbols, where the uppermost layer is drawn as the lowest layer in this layer group. You can also assign a different style to the layer or remove the layer from the group.</p>
+<h4 id="layer-style">Layer style</h4>
+<p><img src="../../assets/ui_styles.png" alt="Layer style."></p>
+<p>The drawing rule determines the appearance of a layer depending on attribute properties. GeoServer displays the symbology of a layer with the help of SLD
+(Styled Layer Descriptor, a XML based dialect), which can be created or changed in the styles dialog.</p>
+<p>The list contains all available styles of this GeoServer and allows you to either create a new style by clicking the <em>Add new Style</em> button,
+delete an existing style (Select the style using the checkbox and click <em>Delete selected styles</em>) or changing an existing style by clicking on the style&apos;s name.</p>
+<p>When creating a new style or editing an existing style, the form <em>New style</em> respective <em>Style Editor</em>. The form offers the following options:</p>
+<ul>
+<li><code>Name</code>: Name of the style. If the style is used by exactly one layer, the style&apos;s name should reflect this (e.g. same name as layer).</li>
+<li><code>Workspace</code>: Workspace of the style.</li>
+<li><code>Copy from an existing style</code>: If elements of the styles are used by other styles, an existing style can be chosen as a template.</li>
+<li><p><code>SLD input field</code>: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop,
+therefore the GeoServer documentation will be referred to here, structured according to purposes:</p>
+<ul>
+<li>Table of contents: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/index.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/index.html</a></li>
+<li>points: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/points.html</a></li>
+<li>lines: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/lines.html</a></li>
+<li>polygons: <a href="https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html" target="_blank">https://docs.geoserver.org/stable/en/user/styling/sld/cookbook/polygons.html</a></li>
+</ul>
+</li>
+<li><p><code>Select file</code>: If the SLD was created in an external editor, this file can be loaded directly into the form.</p>
+</li>
+</ul>
+<p><strong>Important hint</strong>: Before the style is saved via <em>Save</em>, it should be checked for correctness via <em>Validate</em>. If there is an error (e.g. syntax error), an error appears at the top of the form with a hint to the cause of the error.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../server/" class="navigation navigation-prev " aria-label="Previous page: Server status">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../settings/" class="navigation navigation-next " aria-label="Next page: Settings and Security">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data","level":"1.4.2","depth":2,"next":{"title":"Settings and Security","level":"1.4.3","depth":2,"path":"ui/settings/README.md","ref":"ui/settings/README.md","articles":[]},"previous":{"title":"Server status","level":"1.4.1","depth":2,"path":"ui/server/README.md","ref":"ui/server/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.zip","workshopMaterialsDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/materials.tar.gz","workshopRawSourceBaseUrl":"https://rawgit.com/terrestris/geoserver-introduction-ws/main/src/","geoServerVersion":"2.18.1","workshopPdfUrlDe":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_de.pdf","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","workshopPdfUrlEn":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_en.pdf","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.18.1/","workshopEpubUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.epub","workshopName":"GeoServer introduction","osGeoLiveVersion":"14.0","geoServerUser":"admin"},"title":"GeoServer introduction","language":"en","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"ui/data/README.md","mtime":"2023-03-06T12:27:47.022Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-03-06T12:30:06.973Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
