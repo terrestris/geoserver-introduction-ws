@@ -1,0 +1,26 @@
+name: Test
+
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout sources 🔰
+      uses: actions/checkout@v2
+
+    - name: Setup Node 🔧
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies ⏬
+      run: npm ci
+
+    - name: Lint commit messages 🧪
+      run: node ./node_modules/@commitlint/cli/cli.js --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
+
+    - name: Build artifacts 🏗️
+      run: npm run build
+
