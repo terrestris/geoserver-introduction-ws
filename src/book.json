@@ -35,19 +35,5 @@
         "mail": "fschmidt@terrestris.de"
       }
     ]
-  },
-  "plugins": [
-    "edit-link",
-    "expandable-chapters",
-    "image-captions"
-  ],
-  "pluginsConfig": {
-    "edit-link": {
-      "base": "https://github.com/terrestris/geoserver-introduction-ws/edit/main/src",
-      "label": "Edit…"
-    },
-    "image-captions": {
-      "caption": "_CAPTION_"
-    }
   }
 }

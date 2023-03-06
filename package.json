@@ -29,9 +29,6 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "gitbook-plugin-edit-link": "^2.0.2",
-    "gitbook-plugin-expandable-chapters": "^0.2.0",
-    "gitbook-plugin-image-captions": "^3.1.0",
     "honkit": "^4.0.4",
     "semantic-release": "^20.1.1"
   }
