@@ -6,8 +6,9 @@ Herzlich Willkommen beim **Einführung in GeoServer** Workshop.
 
 Dieser Workshop wurde für die Verwendung auf der [OSGeo-Live {{ book.osGeoLiveVersion }} DVD](https://live.osgeo.org) entwickelt und soll Ihnen einen umfassenden Überblick über den GeoServer als Web-Mapping-Lösung geben.
 
-> **INFO**
-> Der Workshop kann [hier als PDF-Version]({{ book.workshopPdfUrlDe }}) heruntergeladen werden.
+> ℹ️ **Information**
+>
+> Der Workshop kann [hier als PDF-Version](../{{ book.workshopPdfNameDe }}) heruntergeladen werden.
 
 Bitte stellen Sie sicher, dass Sie die Schritte der
 [Vorarbeiten und generelle Informationen](environment/README.md)-Seite ausgeführt
