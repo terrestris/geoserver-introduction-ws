@@ -5,7 +5,7 @@
   "language": "de",
   "variables": {
     "workshopName": "GeoServer introduction",
-    "workshopRawSourceBaseUrl": "https://rawgit.com/terrestris/geoserver-introduction-ws/master/src/",
+    "workshopRawSourceBaseUrl": "https://rawgit.com/terrestris/geoserver-introduction-ws/main/src/",
     "workshopDownloadUrl": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.zip",
     "workshopPdfUrlDe": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_de.pdf",
     "workshopPdfUrlEn": "https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_en.pdf",
@@ -35,19 +35,5 @@
         "mail": "fschmidt@terrestris.de"
       }
     ]
-  },
-  "plugins": [
-    "edit-link",
-    "expandable-chapters",
-    "image-captions"
-  ],
-  "pluginsConfig": {
-    "edit-link": {
-      "base": "https://github.com/terrestris/geoserver-introduction-ws/edit/master/src",
-      "label": "Edit…"
-    },
-    "image-captions": {
-      "caption": "_CAPTION_"
-    }
   }
 }

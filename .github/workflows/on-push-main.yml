@@ -1,0 +1,46 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources 🔰
+        uses: actions/checkout@v3
+
+      - name: Setup Node 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies ⏬
+        run: npm ci
+
+      - name: Install calibre ⏬
+        run: sudo apt-get update && sudo apt install calibre
+
+      - name: Build artifacts 🏗️
+        run: npm run build
+
+      - name: Get package version 🏷️
+        run: |
+          echo "VERSION=$(node -pe "require('./package.json').version")" >> $GITHUB_ENV
+
+      - name: Deploy (to docs/v${{ env.VERSION }}) 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: build/geoserver-introduction-ws
+          target-folder: docs/v${{ env.VERSION }}
+
+      - name: Deploy (to docs/latest) 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: build/geoserver-introduction-ws
+          target-folder: docs/v${{ env.VERSION }}
