@@ -16,7 +16,7 @@
     "url": "git+https://github.com/terrestris/geoserver-introduction-ws.git"
   },
   "license": "MIT",
-  "author": "terrestris GmbH & Co.KG",
+  "author": "terrestris GmbH & Co. KG",
   "scripts": {
     "build": "npm run clean && npm run doc:build && npm run doc:pdf",
     "clean": "rm -rf src/_book build",
