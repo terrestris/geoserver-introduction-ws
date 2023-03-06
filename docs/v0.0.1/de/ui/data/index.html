@@ -215,7 +215,7 @@
     
         <li class="chapter " data-level="1.5.1.1" data-path="../../data/vector/">
             
-                <a href="../../data/vector/">
+                <a href="../../data/vector/#shapefile">
             
                     
                     Shapefile
@@ -228,7 +228,7 @@
     
         <li class="chapter " data-level="1.5.1.2" data-path="../../data/vector/">
             
-                <a href="../../data/vector/">
+                <a href="../../data/vector/#postgis">
             
                     
                     PostGIS
@@ -241,7 +241,7 @@
     
         <li class="chapter " data-level="1.5.1.3" data-path="../../data/vector/">
             
-                <a href="../../data/vector/">
+                <a href="../../data/vector/#wfs">
             
                     
                     WFS
@@ -273,7 +273,7 @@
     
         <li class="chapter " data-level="1.5.2.1" data-path="../../data/raster/">
             
-                <a href="../../data/raster/">
+                <a href="../../data/raster/#geotiff">
             
                     
                     GeoTIFF
@@ -286,7 +286,7 @@
     
         <li class="chapter " data-level="1.5.2.2" data-path="../../data/raster/">
             
-                <a href="../../data/raster/">
+                <a href="../../data/raster/#imagemosaic">
             
                     
                     ImageMosaic
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2.3" data-path="../../data/vector/">
+        <li class="chapter " data-level="1.5.2.3" data-path="../../data/raster/">
             
-                <a href="../../data/vector/">
+                <a href="../../data/raster/#wms">
             
                     
                     WMS
@@ -474,9 +474,12 @@ Werkzeugleiste eingeblendet werden, die Optionen zur Manipulation des GetMap-Auf
 ermöglicht (Bildformat und -größe, Antialiasing etc.).
 Unter der Auswahlbox <strong>Alle Formate</strong> sind weitere Formate aufgelistet, die nach WMS
 und WFS gegliedert sind. Für die Vorschau eines WMS wird dabei jedoch das obige
-Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.
-<strong>Hinweis:</strong> Über die Auswahlbox ist auch der Export als Shapefile möglich, das
+Format „OpenLayers“, für die Vorschau eines WFS das Format „GML2“ empfohlen.</p>
+<blockquote>
+<p>ℹ️ <strong>Information</strong></p>
+<p>Über die Auswahlbox ist auch der Export als Shapefile möglich, das
 in jedes gängige Desktop GIS zur Weiterverarbeitung eingebunden werden kann.</p>
+</blockquote>
 <p><strong>Aufgabe:</strong></p>
 <ol>
 <li>Rufen Sie die OpenLayers Layervorschau eines beliebigen Layers auf (sofern vorhanden) und ändern Sie die
@@ -500,14 +503,17 @@ Arbeitsbereich Objekte eines gemeinsamen Themas, z.B. die Layer einer bestimmten
 Abteilung oder eines bestimmten Themas.
 Jedem Arbeitsbereich können nun weitere Konfigurationselemente zugeordnet werden.
 Hierzu zählen u.a. der Datenspeicher, die (Gruppen-) Layer, Stile und übergeordnete
-Einstellungen des GeoServers wie Kontaktdaten oder globale WMS-Einstellungen.
-<strong>Wichtig:</strong> Wird ein GeoServer initial in Betrieb genommen, muss die oben
+Einstellungen des GeoServers wie Kontaktdaten oder globale WMS-Einstellungen.</p>
+<p><strong>Wichtig:</strong> Wird ein GeoServer initial in Betrieb genommen, muss die oben
 skizzierte Reihenfolge beim Anlegen eines Layers genauestens beachtet werden, d.h. zunächst
 wird ein Arbeitsbereich, danach ein Datenspeicher und anschließend ein Layer
 (inklusive Stil) angelegt.</p>
-<p><strong>Hinweis:</strong> Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
+<blockquote>
+<p>ℹ️ <strong>Information</strong></p>
+<p>Der GeoServer besitzt im Auslieferungszustand mehrere Beispiel-Arbeitsbereiche
 (<em>cite, it.geosolutions, nurc, sde, sf, tiger, topp</em>). Diese können im
 Produktivbetrieb ohne Bedenken gelöscht werden.</p>
+</blockquote>
 <p><strong>Aufgabe:</strong></p>
 <ol>
 <li>Legen Sie einen neuen Arbeitsbereich mit dem Namen <code>FOSSGIS</code> an. Als Namespace URI geben Sie
@@ -565,11 +571,13 @@ ein bestehender Datenspeicher editiert werden.</p>
 enthält dabei mehrere Kartenelemente (Features), die als gerenderte Rasterdaten
 (WMS) oder als Rohdaten (WFS bzw. WCS) abgerufen werden können. Jedem Layer ist im GeoServer
 gemein, dass sie genau einem Arbeitsbereich und genau einem Datenspeicher zugehörig
-sind.
-<strong>Wichtiger Hinweis:</strong> Der GeoServer legt automatisch für jeden Layer einen
-WMS und WFS an, ein getrenntes Anlegen ist nicht möglich. Es ist ausschließlich
-möglich im Arbeitsbereich zu definieren, ob alle Layer in diesem Arbeitsbereich
-sowohl per WMS als auch per WFS, nur als WMS oder nur als WFS abfragbar sind.</p>
+sind.</p>
+<blockquote>
+<p>ℹ️ <strong>Information</strong></p>
+<p>Der GeoServer legt automatisch für jeden Layer einen
+WMS und WFS bzw. WCS an. Nach Erstellung kann ein Servicetyp auf Layer- oder Arbeitsbereichsebene
+deaktiviert werden.</p>
+</blockquote>
 <p>Die Übersicht besitzt Spalten zur Angabe des jeweiligen Typs, dem Namen des
 Arbeitsbereichs, Datenspeichers sowie des Layers (Name), Status (Aktiv) und
 Koordinatenreferenzsystem im EPSG Code. Wie bei den anderen Listentypen auch,
@@ -640,10 +648,13 @@ an dieser Stelle auf die GeoServer Dokumentation, gegliedert nach Einsatzzwecken
 <li><code>Datei auswählen</code>: Wurde das SLD in einem externen Editor erstellt, kann diese Datei
  direkt in das Formular geladen werden.</li>
 </ul>
-<p>Wichtiger Hinweis: Bevor der Stil über Speichern gespeichert wird, sollte dieser über
+<blockquote>
+<p>ℹ️ <strong>Information</strong></p>
+<p>Bevor der Stil über Speichern gespeichert wird, sollte dieser über
 Validieren auf Korrektheit geprüft werden. Liegt ein Fehler (z.B. in der Syntax)
 vor, erscheint am oberen Rand des Formulars ein Fehler mit einem Hinweis auf die
 Fehlerursache.</p>
+</blockquote>
 
                                 
                                 </section>
@@ -687,7 +698,7 @@ Fehlerursache.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Daten","level":"1.4.2","depth":2,"next":{"title":"Einstellungen und Sicherheit","level":"1.4.3","depth":2,"path":"ui/settings/README.md","ref":"ui/settings/README.md","articles":[]},"previous":{"title":"Serverstatus","level":"1.4.1","depth":2,"path":"ui/server/README.md","ref":"ui/server/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.zip","workshopMaterialsDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/materials.tar.gz","workshopRawSourceBaseUrl":"https://rawgit.com/terrestris/geoserver-introduction-ws/main/src/","geoServerVersion":"2.18.1","workshopPdfUrlDe":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_de.pdf","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","workshopPdfUrlEn":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_en.pdf","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.18.1/","workshopEpubUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.epub","workshopName":"GeoServer introduction","osGeoLiveVersion":"14.0","geoServerUser":"admin"},"title":"GeoServer introduction","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"ui/data/README.md","mtime":"2023-03-06T12:27:46.994Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-03-06T12:30:06.973Z"},"basePath":"../..","book":{"language":"de"}});
+            gitbook.page.hasChanged({"page":{"title":"Daten","level":"1.4.2","depth":2,"next":{"title":"Einstellungen und Sicherheit","level":"1.4.3","depth":2,"path":"ui/settings/README.md","ref":"ui/settings/README.md","articles":[]},"previous":{"title":"Serverstatus","level":"1.4.1","depth":2,"path":"ui/server/README.md","ref":"ui/server/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"workshopDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.zip","workshopMaterialsDownloadUrl":"https://terrestris.github.io/geoserver-introduction-ws/materials.tar.gz","workshopRawSourceBaseUrl":"https://rawgit.com/terrestris/geoserver-introduction-ws/main/src/","geoServerVersion":"2.21.0","workshopPdfUrlDe":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_de.pdf","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","workshopPdfUrlEn":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws_en.pdf","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.21.0/","workshopEpubUrl":"https://terrestris.github.io/geoserver-introduction-ws/geoserver-introduction-ws.epub","workshopName":"GeoServer introduction","osGeoLiveVersion":"15.0","geoServerUser":"admin"},"title":"GeoServer introduction","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"ui/data/README.md","mtime":"2023-03-06T15:01:08.819Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-03-06T15:03:40.558Z"},"basePath":"../..","book":{"language":"de"}});
         });
     </script>
 </div>
