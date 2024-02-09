@@ -10,7 +10,7 @@ Das Shapefile-Format ist das (noch) am weitesten verbreitete Vektorformat in der
 als Namen und wählen Sie anschließend das Shapefile *states.shp* aus dem Verzeichnis `data_dir/data/shapefiles`.
 
 2. Veröffentlichen Sie das Shapefile über den GeoServer. Hierzu werden Informationen zum Räumlichen Bezugssystem (SRS)
-benötigt, in dem GeoServer die Geodaten veröffentlichen soll. Tragen Sie `EPSG:4326` in das Feld *Declared SRS* ein,
+benötigt, in dem der GeoServer die Geodaten veröffentlichen soll. Tragen Sie `EPSG:4326` in das Feld *Declared SRS* ein,
 damit der Layer im WGS 84 Referenzsystem veröffentlicht wird. Zudem muss die BoundingBox angegeben werden, die sich das
 per Klick auf **Compute from data** und **Compute from native bounds** automatisch berechnen lässt.
 

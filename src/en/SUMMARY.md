@@ -18,3 +18,5 @@
 * [Layer groups](group/README.md)
 * [Styling](styling/README.md)
     * [SLD](styling/README.md)
+        * [Key Elements](styling/README.md#sld-key-elements)
+        * [Supported Data Formats](styling/README.md#supported-data-formats)
