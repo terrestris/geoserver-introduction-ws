@@ -60,7 +60,7 @@ A detailed description of all functionalities as well as some example SLDs can b
 
 3. Bonus: Have all states colored according to their population. Select your own class boundaries for this.
 
-![Eigener GeoServer-Style](../assets/style1.png)
+![Example GeoServer-Style](../assets/style1.png)
 
 **Results:**
   * [Task 1](../assets/style-example-1.sld)
