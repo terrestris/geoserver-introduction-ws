@@ -22,4 +22,4 @@ Die Oberfläche des GeoServers ist in zwei Bereiche aufgeteilt:
 Links das Navigationsmenü, in dem sortiert nach Subkategorie alle Einstellungsmöglichkeiten und
 Listen erscheinen. Im zentralen Bereich erscheinen je nach Auswahl der Kategorie die zugehörigen
 Formularfelder. Je nach Auswahl können diese Formulare in mehrere Reiter unterteilt sein.
-Im Folgendem werden nun die wichtigsten Subkategorien und Anwendungsfälle aufgeführt und erläutert.
+Im Folgenden werden nun die wichtigsten Subkategorien und Anwendungsfälle aufgeführt und erläutert.
