@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.0.0...v1.1.0) (2024-03-07)
+
+
+### Bug Fixes
+
+* fix password section due to limitation ([bd990bf](https://github.com/terrestris/geoserver-introduction-ws/commit/bd990bfb54a04696cc129fdf452e67346633dc4d))
+* missing translation ([3100f74](https://github.com/terrestris/geoserver-introduction-ws/commit/3100f7486d25cb13b85a8e73eb34db47361c967c))
+
+
+### Features
+
+* adds more information to the styling section ([8143563](https://github.com/terrestris/geoserver-introduction-ws/commit/8143563ad77983ba4daa6e6dc8ac88e82af3e207))
+
 # 1.0.0 (2023-03-06)
 
 
