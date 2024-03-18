@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.1.0...v1.2.0) (2024-03-18)
+
+
+### Bug Fixes
+
+* open links in new tab ([373835b](https://github.com/terrestris/geoserver-introduction-ws/commit/373835b0214686c1ed994996a28f659ee382b0b6))
+
+
+### Features
+
+* update to OSGeoLive 16 ([7ef14de](https://github.com/terrestris/geoserver-introduction-ws/commit/7ef14defe1c96dac4c74d5788e171e9c17870cbb))
+
 # [1.1.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.0.0...v1.1.0) (2024-03-07)
 
 
