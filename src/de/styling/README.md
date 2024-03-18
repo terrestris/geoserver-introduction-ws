@@ -65,7 +65,7 @@ eigenen Stil, der:
 ![Eigener GeoServer-Style](../assets/style1.png)
 
 Lösungen:
-  * [Aufgabe 1](../assets/style-example-1.sld)
-  * [Aufgabe 2](../assets/style-example-2.sld)
-  * [Aufgabe 3 (Möglichkeit A)](../assets/style-example-3a.sld)
-  * [Aufgabe 3 (Möglichkeit B)](../assets/style-example-3b.sld)
+  * <a href="../assets/style-example-1.sld" target="_blank">Aufgabe 1</a>
+  * <a href="../assets/style-example-2.sld" target="_blank">Aufgabe 2</a>
+  * <a href="../assets/style-example-3a.sld" target="_blank">Aufgabe 3 (Möglichkeit A)</a>
+  * <a href="../assets/style-example-3b.sld" target="_blank">Aufgabe 3 (Möglichkeit B)</a>

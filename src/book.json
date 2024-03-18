@@ -7,12 +7,12 @@
     "workshopName": "GeoServer introduction",
     "workshopPdfNameDe": "geoserver-introduction-ws_de.pdf",
     "workshopPdfNameEn": "geoserver-introduction-ws_en.pdf",
-    "geoServerPhysicalPath": "/usr/local/lib/geoserver-2.21.0/",
+    "geoServerPhysicalPath": "/usr/local/lib/geoserver-2.22.2/",
     "geoServerBaseUrl": "http://localhost:8082/geoserver",
     "geoServerUser": "admin",
     "geoServerPassword": "geoserver",
-    "geoServerVersion": "2.21.0",
-    "osGeoLiveVersion": "15.0",
+    "geoServerVersion": "2.22.2",
+    "osGeoLiveVersion": "16.0",
     "authors": [
       {
         "name": "Nils Bühner",
