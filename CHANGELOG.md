@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.3.0...v1.3.1) (2026-03-13)
+
+
+### Bug Fixes
+
+* set correct build path ([c7526d5](https://github.com/terrestris/geoserver-introduction-ws/commit/c7526d55e73adad6799be3a5bdfd1675bb46ab00))
+
 # [1.3.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.2.0...v1.3.0) (2026-03-13)
 
 
