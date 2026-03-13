@@ -42,4 +42,5 @@ den Zugriff auf Datenspeicher für bestimmte User einzuschränken.
 
 **Aufgabe:**
 
-1. Bitte ändern Sie das Standard-Passwort für den Benutzer `admin` von `geoserver` zu einem Passwort ihrer Wahl.
+1. Legen Sie einen neuen Benutzer `fossgis` mit dem Passwort `fossgis` an.
+2. Loggen Sie sich nun mit diesem Nutzer an, was fällt Ihnen auf?
