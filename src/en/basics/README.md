@@ -1,6 +1,6 @@
 # Basic knowledge about GeoServer
 
-[GeoServer](http://geoserver.org/) is an open, Java-based server,
+[GeoServer](https://geoserver.org/) is an open, Java-based server,
 which allows to display and edit geodata based on the standards of the [Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/)
 (in particular WMS and WFS). A strength of GeoServer is its flexibility with which it can be extended by additional functionality.
 
@@ -14,7 +14,7 @@ The *stable* in the respective URL can also be replaced by a version number, if 
 
 ![GeoServer web interface after successful login.](../assets/geoserver_login_gui_en.png)
 
-Usually, GeoServer is provided for productive operation as a (Java-)standalone servlet in the form of a `.war` - file, which can be downloaded from <http://geoserver.org/download/>.
+Usually, GeoServer is provided for productive operation as a (Java-)standalone servlet in the form of a `.war` - file, which can be downloaded from <https://geoserver.org/download/>.
 The `.war` - file must then be published (often called *deploy*) to a
 servlet container (for example [Tomcat](https://tomcat.apache.org/) or
 [Jetty](https://eclipse.org/jetty/)) afterwards. The web interface of GeoServer can then be called from the browser.

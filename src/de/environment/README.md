@@ -37,6 +37,11 @@ der GeoServer Nutzeroberfläche öffnen:
 > ```
 > sudo /usr/local/lib/geoserver/bin/startup.sh
 > ```
+> Wurde der GeoServer zuvor über den obigen Weg gestartet, muss er zunächst über den
+> folgenden Befehl gestoppt werden:
+> ```
+> /usr/local/lib/geoserver/bin/shutdown.sh
+> ```
 > Das Terminal bzw. der Prozess muss dabei während des Workshops geöffnet bleiben!
 
 Im [folgenden Abschnitt](../basics/README.md) werden wir mit GeoServer-Basiswissen fortfahren.

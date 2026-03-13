@@ -27,7 +27,7 @@ eingerichtet.
 
 **Aufgabe:**
 
-1. Legen Sie einen neuen Datenspeicher an, über den eine Tabelle einer PostgreSQL/PostGIS Tabelle veröffentlicht
+1. Legen Sie einen neuen Datenspeicher `natural_earth` an, über den eine Tabelle einer PostgreSQL/PostGIS Tabelle veröffentlicht
 werden kann. Nutzen Sie hierzu die folgenden Verbindungsparameter:
 
   * host: <code>localhost</code>
@@ -40,7 +40,8 @@ werden kann. Nutzen Sie hierzu die folgenden Verbindungsparameter:
   Nun haben Sie erfolgreich eine Verbindung zu einer PostGIS Datenbank aufgebaut, die Geodaten aus dem *Natural Earth*
   Datensatz enthält.
 
-2. Veröffentlichen Sie eine Tabelle Ihrer Wahl über den GeoServer! Bitte geben Sie als Standard-Ausgabe SRS `EPSG:54009` an.
+2. Veröffentlichen Sie eine Tabelle Ihrer Wahl (z.B. `ne_10m_admin_0_countries`) über den GeoServer! Bitte geben Sie
+als Standard-Ausgabe SRS `EPSG:54009` an.
 
 3. Öffnen Sie den neu angelegten Layer in der Layer-Vorschau!
 
@@ -52,14 +53,16 @@ Zugriff ermöglicht, bietet der *Transaction WFS* auch einen schreibenden Zugrif
 
 **Aufgabe:**
 
-1. Legen Sie einen neuen Datenspeicher an, über den ein bereits existierender WFS
+1. Legen Sie einen neuen Datenspeicher `wfs_nrw` an, über den ein bereits existierender WFS
 über den GeoServer kaskadiert veröffentlicht werden kann. Nutzen Sie hierfür z.B.
 den folgenden Dienst: https://www.wfs.nrw.de/geobasis/wfs_nw_dvg?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetCapabilities
 
-2. Veröffentlichen Sie einen Dienst Ihrer Wahl über den GeoServer!
+2. Veröffentlichen Sie einen Dienst Ihrer Wahl (z.B. `dvg_nw_dvg2_krs`) über den GeoServer!
 
 3. Öffnen Sie den neu angelegen Layer in der Layer-Vorschau!
 
 4. Falls die Darstellung mit OpenLayers nicht funktioniert, prüfen Sie die Einstellungen des Layers im Reiter `Publishing`.
 GeoServer ist nicht immer in der Lage den passenden Stil für die Geodaten automatisch zu erkennen. Falls der *Default Style*
 auf *generic* voreingestellt ist, ändern sie diesen in *Polygon*, *Point* oder *Line* (ja nach Art der Geodaten des WFS).
+
+5. Welche Vor- und Nachteile könnte die Veröffentlichung eines Layers auf Basis eines WFS besitzen?

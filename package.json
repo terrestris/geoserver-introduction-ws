@@ -22,14 +22,14 @@
     "clean": "rm -rf src/_book build",
     "dev": "honkit serve src",
     "doc:build": "honkit build src build/geoserver-introduction-ws",
-    "doc:pdf": "honkit pdf src ./build/geoserver-introduction-ws/geoserver-introduction-ws.pdf"
+    "doc:pdf": "honkit pdf src src/build/geoserver-introduction-ws/geoserver-introduction-ws.pdf"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.0",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "honkit": "^5.1.4",
-    "semantic-release": "^23.0.4"
+    "honkit": "^6.1.6",
+    "semantic-release": "^25.0.3"
   }
 }

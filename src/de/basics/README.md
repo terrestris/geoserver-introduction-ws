@@ -1,6 +1,6 @@
 # Basiswissen GeoServer
 
-Der [GeoServer](http://geoserver.org/) ist ein offener, Java-basierter Server,
+Der [GeoServer](https://geoserver.org/) ist ein offener, Java-basierter Server,
 der es ermöglicht Geodaten auf Basis der Standards des [Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/)
 (insb. WMS und WFS) anzuzeigen und zu editieren. Eine besondere Stärke des GeoServers
 ist die Flexibilität, mit der er sich um zusätzliche Funktionalität erweitern lässt.
@@ -14,25 +14,26 @@ in eine Benutzer- und eine Entwicklerdokumentation:
 Die beiden Links verweisen auf die Dokumentationen der letzten stabilen Version.
 Das *stable* in der URL kann auch durch eine Versionsnummer (der minor Versionsreihe) ersetzt
 werden, falls man die Dokumentation einer bestimmten GeoServer-Version aufrufen möchte. Beispielsweise
-würde die URL für die Benutzerdokumentation der Version 2.22.2 [https://docs.geoserver.org/2.22.x/en/user/](https://docs.geoserver.org/2.22.x/en/user/) lauten.
+würde die URL für die Benutzerdokumentation der Version 2.28.2 [https://docs.geoserver.org/2.28.x/en/user/](https://docs.geoserver.org/2.28.x/en/user/) lauten.
 
 Alternativ kann die Dokumentation auch für die gewünschte Version heruntergeladen werden. Der
-Download findet sich jeweils auf der Download-Seite des GeoServers, für Version 2.22.2
-beispielsweise unter [https://geoserver.org/release/2.22.2/](https://geoserver.org/release/2.22.2/).
+Download findet sich jeweils auf der Download-Seite des GeoServers, für Version 2.28.2
+beispielsweise unter [https://geoserver.org/release/2.28.2/](https://geoserver.org/release/2.28.2/).
 
 Die Entwicklung von GeoServer verläuft in einen 6-monatigen Release Zyklus,
-der in der [Roadmap](http://geoserver.org/roadmap/) gut beschrieben ist.
+der in der [Roadmap](https://geoserver.org/roadmap/) gut beschrieben ist.
 
 Üblicherweise wird der GeoServer für einen Produktivbetrieb als (Java-)Standalone-Servlet
-in Form einer `.war` - Datei bereitgestellt, welche unter <http://geoserver.org/download/>
+in Form einer `.war` - Datei bereitgestellt, welche unter <https://geoserver.org/download/>
 heruntergeladen werden kann. Die `.war` - Datei muss anschließend in einem
 Servlet-Container (bspw. [Tomcat](https://tomcat.apache.org/) oder
 [Jetty](https://eclipse.org/jetty/)) veröffentlicht werden (häufig auch *deploy* genannt). Anschließend
-kann die Weboberfläche des GeoServers über den Browser aufgerufen werden.
+kann die Weboberfläche des GeoServers über den Browser aufgerufen werden. Weitere Details
+zur klassischen WAR-Installation finden sich [hier](https://docs.geoserver.org/stable/en/user/installation/war.html).
 
-Weitere Details zur klassischen WAR-Installation finden sich
-[hier](https://docs.geoserver.org/stable/en/user/installation/war.html).
-
+Absolut empfehlenswert ist jedoch die Installation über das offizielle Docker-Image des GeoServers,
+alle notwendingen Information hierzu sind [hier](https://docs.geoserver.org/latest/en/user/installation/docker.html)
+gelistet.
 
 > ℹ️ **Information**
 >
