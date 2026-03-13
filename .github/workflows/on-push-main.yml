@@ -40,12 +40,12 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          folder: build/geoserver-introduction-ws
+          folder: src/build/geoserver-introduction-ws
           target-folder: v${{ env.VERSION }}
 
       - name: Deploy (to latest) 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          folder: build/geoserver-introduction-ws
+          folder: src/build/geoserver-introduction-ws
           target-folder: latest
