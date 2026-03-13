@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.2.0...v1.3.0) (2026-03-13)
+
+
+### Bug Fixes
+
+* pdf output path ([aac702a](https://github.com/terrestris/geoserver-introduction-ws/commit/aac702ad19e6da667e64afa5e5ac813defa9d823))
+
+
+### Features
+
+* adjust to osgeo live 17 ([e3b99da](https://github.com/terrestris/geoserver-introduction-ws/commit/e3b99dafc6d0c8defd561767f0eb18a2fa4ff54d))
+* update tasks ([9da0a59](https://github.com/terrestris/geoserver-introduction-ws/commit/9da0a596a024219755dbc29c40f5bbb6d7dfda1d))
+
 # [1.2.0](https://github.com/terrestris/geoserver-introduction-ws/compare/v1.1.0...v1.2.0) (2024-03-18)
 
 
