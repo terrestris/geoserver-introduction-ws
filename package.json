@@ -22,7 +22,7 @@
     "clean": "rm -rf src/_book build",
     "dev": "honkit serve src",
     "doc:build": "honkit build src build/geoserver-introduction-ws",
-    "doc:pdf": "honkit pdf src build/geoserver-introduction-ws/geoserver-introduction-ws.pdf"
+    "doc:pdf": "honkit pdf src src/build/geoserver-introduction-ws/geoserver-introduction-ws.pdf"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.4",
