@@ -31,6 +31,9 @@ Servlet-Container (bspw. [Tomcat](https://tomcat.apache.org/) oder
 kann die Weboberfläche des GeoServers über den Browser aufgerufen werden. Weitere Details
 zur klassischen WAR-Installation finden sich [hier](https://docs.geoserver.org/stable/en/user/installation/war.html).
 
+Absolut empfehlenswert ist jedoch die Installation über das offizielle Docker-Image des GeoServers,
+alle notwendingen Information hierzu sind [hier](https://docs.geoserver.org/latest/en/user/installation/docker.html)
+gelistet.
 
 > ℹ️ **Information**
 >
