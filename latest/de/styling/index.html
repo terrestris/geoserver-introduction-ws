@@ -6,7 +6,7 @@
         <title>Styling · GeoServer introduction</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 5.1.4">
+        <meta name="generator" content="HonKit 6.1.6">
         
         
         
@@ -24,7 +24,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -446,7 +446,7 @@
 <h2 id="einführung-in-sld">Einführung in SLD</h2>
 <p>In den vorangehenden Kapiteln wurde bereits deutlich, dass den Geodaten eigene Stile hinzugefügt werden können.
 Hierzu bietet GeoServer verschiedene Style-Formate an: <em>SLD, CSS, YSLD und MBStyle</em>.</p>
-<p><a href="https://docs.geoserver.org/stable/en/user/styling/sld/reference/index.html#sld-reference" target="_blank">SLD</a> steht für &quot;Styled Layer Descriptor&quot; und ist ein Standard, der von der Open Geospatial Consortium (<a href="https://www.ogc.org/" target="_blank">OGC</a>) entwickelt wurde. Es handelt sich dabei um ein XML-basiertes Schema, das dazu dient, die visuelle Darstellung von Geodaten in Geoinformationssystemen (GIS) zu beschreiben und zu standardisieren.</p>
+<p><a href="https://docs.geoserver.org/stable/en/user/styling/sld/reference/index.html#sld-reference" target="_blank">SLD</a> steht für "Styled Layer Descriptor" und ist ein Standard, der von der Open Geospatial Consortium (<a href="https://www.ogc.org/" target="_blank">OGC</a>) entwickelt wurde. Es handelt sich dabei um ein XML-basiertes Schema, das dazu dient, die visuelle Darstellung von Geodaten in Geoinformationssystemen (GIS) zu beschreiben und zu standardisieren.</p>
 <p>Mit SLD können Benutzer festlegen, wie geographische Daten auf Karten dargestellt werden sollen. Das Schema bietet Möglichkeiten zur Definition von Stilen für verschiedene Arten von Geodaten, einschließlich <strong>Punkte</strong>, <strong>Linien</strong>, <strong>Polygone</strong> und <strong>Rasterdaten</strong>. SLD ermöglicht es, <strong>Farben</strong>, <strong>Transparenz</strong>, <strong>Linienstärken</strong>, <strong>Füllmuster</strong> und andere visuelle Eigenschaften festzulegen.</p>
 <p>Der GeoServer verwendet SLD als eines der <a href="https://docs.geoserver.org/latest/en/user/styling/sld/introduction.html" target="_blank">Hauptformate</a> für die Definition von Stilen. Durch die Verwendung von SLD kann die Darstellung von Geodaten standardisiert und interoperabel gestaltet werden, unabhängig von der GIS-Software oder der verwendeten Plattform.</p>
 <h2 id="sld-schlüsselelemente">SLD Schlüsselelemente</h2>
@@ -484,7 +484,7 @@ Hierzu bietet GeoServer verschiedene Style-Formate an: <em>SLD, CSS, YSLD und MB
 </ul>
 <p>Die Möglichkeiten hängen auch von den Fähigkeiten und Erweiterungen des GeoServers ab. Es ist wichtig, die Dokumentation des GeoServers und die spezifischen Versionen der unterstützten SLD-Funktionen zu überprüfen, um sicherzustellen, dass die gewünschten Datentypen und Stile unterstützt werden.</p>
 <p><strong>Aufgaben:</strong></p>
-<p>Eine detaillierte Beschreibung aller Funktionalitäten, sowie einige Beispiel-SLD&apos;s sind im <a href="https://docs.geoserver.org/stable/en/user/styling/sld/index.html" target="_blank">GeoServer User Manual</a> zu finden. Versuchen Sie die folgenden Aufgaben mit Hilfe des Handbuchs zu lösen.</p>
+<p>Eine detaillierte Beschreibung aller Funktionalitäten, sowie einige Beispiel-SLD's sind im <a href="https://docs.geoserver.org/stable/en/user/styling/sld/index.html" target="_blank">GeoServer User Manual</a> zu finden. Versuchen Sie die folgenden Aufgaben mit Hilfe des Handbuchs zu lösen.</p>
 <ol>
 <li><p>Definieren Sie für den States Layer (siehe <a href="../data/vector/#shapefile">Aufgabe Vector -&gt; Shape</a>) einen
 eigenen Stil, der:</p>
@@ -499,7 +499,7 @@ eigenen Stil, der:</p>
 <li><p>Bonus: Lassen Sie alle Staaten in Abhängigkeit ihrer Bevölkerungsanzahl einfärben. Wählen Sie hierfür eigene Klassengrenzen.</p>
 </li>
 </ol>
-<p><img src="../assets/style1.png" alt="Eigener GeoServer-Style"></p>
+<p><img src="../assets/style1.png" alt="Eigener GeoServer-Style"></img></p>
 <p>Lösungen:</p>
 <ul>
 <li><a href="../assets/style-example-1.sld" target="_blank">Aufgabe 1</a></li>
@@ -550,7 +550,7 @@ eigenen Stil, der:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Styling","level":"1.7","depth":1,"next":{"title":"SLD","level":"1.7.1","depth":2,"path":"styling/README.md","ref":"styling/README.md","articles":[{"title":"Schlüssel Elemente","level":"1.7.1.1","depth":3,"anchor":"#sld-schlüsselelemente","path":"styling/README.md","ref":"styling/README.md#sld-schlüsselelemente","articles":[]},{"title":"Unterstützte Datentypen","level":"1.7.1.2","depth":3,"anchor":"#styling-von-unterschiedlichen-datentypen","path":"styling/README.md","ref":"styling/README.md#styling-von-unterschiedlichen-datentypen","articles":[]}]},"previous":{"title":"Gruppenlayer","level":"1.6","depth":1,"path":"group/README.md","ref":"group/README.md","articles":[]},"articles":[{"title":"SLD","level":"1.7.1","depth":2,"path":"styling/README.md","ref":"styling/README.md","articles":[{"title":"Schlüssel Elemente","level":"1.7.1.1","depth":3,"anchor":"#sld-schlüsselelemente","path":"styling/README.md","ref":"styling/README.md#sld-schlüsselelemente","articles":[]},{"title":"Unterstützte Datentypen","level":"1.7.1.2","depth":3,"anchor":"#styling-von-unterschiedlichen-datentypen","path":"styling/README.md","ref":"styling/README.md#styling-von-unterschiedlichen-datentypen","articles":[]}]}],"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"geoServerVersion":"2.22.2","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"},{"name":"Fritz Höing","mail":"hoeing@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.22.2/","workshopName":"GeoServer introduction","workshopPdfNameDe":"geoserver-introduction-ws_de.pdf","osGeoLiveVersion":"16.0","workshopPdfNameEn":"geoserver-introduction-ws_en.pdf","geoServerUser":"admin"},"title":"GeoServer introduction","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"styling/README.md","mtime":"2024-03-18T13:37:58.493Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-03-18T13:39:22.275Z"},"basePath":"..","book":{"language":"de"}});
+            gitbook.page.hasChanged({"page":{"title":"Styling","level":"1.7","depth":1,"next":{"title":"SLD","level":"1.7.1","depth":2,"path":"styling/README.md","ref":"styling/README.md","articles":[{"title":"Schlüssel Elemente","level":"1.7.1.1","depth":3,"anchor":"#sld-schlüsselelemente","path":"styling/README.md","ref":"styling/README.md#sld-schlüsselelemente","articles":[]},{"title":"Unterstützte Datentypen","level":"1.7.1.2","depth":3,"anchor":"#styling-von-unterschiedlichen-datentypen","path":"styling/README.md","ref":"styling/README.md#styling-von-unterschiedlichen-datentypen","articles":[]}]},"previous":{"title":"Gruppenlayer","level":"1.6","depth":1,"path":"group/README.md","ref":"group/README.md","articles":[]},"articles":[{"title":"SLD","level":"1.7.1","depth":2,"path":"styling/README.md","ref":"styling/README.md","articles":[{"title":"Schlüssel Elemente","level":"1.7.1.1","depth":3,"anchor":"#sld-schlüsselelemente","path":"styling/README.md","ref":"styling/README.md#sld-schlüsselelemente","articles":[]},{"title":"Unterstützte Datentypen","level":"1.7.1.2","depth":3,"anchor":"#styling-von-unterschiedlichen-datentypen","path":"styling/README.md","ref":"styling/README.md#styling-von-unterschiedlichen-datentypen","articles":[]}]}],"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"geoServerVersion":"2.28.2","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"},{"name":"Fritz Höing","mail":"hoeing@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.28.2/","workshopName":"GeoServer introduction","workshopPdfNameDe":"geoserver-introduction-ws_de.pdf","osGeoLiveVersion":"17.0","workshopPdfNameEn":"geoserver-introduction-ws_en.pdf","geoServerUser":"admin"},"title":"GeoServer introduction","language":"de","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"styling/README.md","mtime":"2026-03-13T14:06:43.807Z","type":"markdown"},"gitbook":{"version":"6.1.6","time":"2026-03-13T14:07:50.041Z"},"basePath":"..","book":{"language":"de"}});
         });
     </script>
 </div>
@@ -620,7 +620,7 @@ eigenen Stil, der:</p>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

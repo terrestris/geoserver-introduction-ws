@@ -6,7 +6,7 @@
         <title>Data · GeoServer introduction</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 5.1.4">
+        <meta name="generator" content="HonKit 6.1.6">
         
         
         
@@ -24,7 +24,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -445,7 +445,7 @@
                                 <h3 id="data">Data</h3>
 <p>The following sections describe the most comprehensive configuration area of GeoServer, the steps for publishing a service.</p>
 <h4 id="layer-preview">Layer preview</h4>
-<p><img src="../../assets/ui_layer_preview.png" alt="Layer preview."></p>
+<p><img src="../../assets/ui_layer_preview.png" alt="Layer preview."></img></p>
 <p>The <strong>layer preview</strong> provides an overview of all layers published on this GeoServer. For a layer to appear in this overview (and also in the GetCapabilities document of the instance), it must be marked as <code>prefigured</code>.
 Each layer has a specification of the type (see table below), a internal layer name
 (including name of the work space), a layer title (short description) and a selection box of possible preview formats.</p>
@@ -459,41 +459,41 @@ Each layer has a specification of the type (see table below), a internal layer n
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_unknown.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_unknown.png" alt=""></img></td>
 <td>vector layer (type unknown)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_point.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_point.png" alt=""></img></td>
 <td>vector layer ((Multi-)Point)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_line.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_line.png" alt=""></img></td>
 <td>vector layer ((Multi-)Line)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_polygon.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_polygon.png" alt=""></img></td>
 <td>vector layer ((Multi-)Polygon)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_raster.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_raster.png" alt=""></img></td>
 <td>raster layer</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_group.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_group.png" alt=""></img></td>
 <td>layer group</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_type_wms.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_type_wms.png" alt=""></img></td>
 <td>cascaded WMS</td>
 </tr>
 </tbody>
 </table>
 <p>The layer list can be sorted ascending and descending by left-clicking on the column names <code>type</code>, <code>name</code>
-or <code>title</code>. In addition to an overview of all available layers, a preview of a layer can be displayed in various formats. This is recommended in particular for a quick and easy comfortable checking of a new created layer. The fastest way to get a preview is to use the &quot;Format&quot; OpenLayers, which creates a new window with a preview map of the selected layer.</p>
-<p><img src="../../assets/ui_layer_preview_openlayers.png" alt="Layer preview with OpenLayers."></p>
+or <code>title</code>. In addition to an overview of all available layers, a preview of a layer can be displayed in various formats. This is recommended in particular for a quick and easy comfortable checking of a new created layer. The fastest way to get a preview is to use the "Format" OpenLayers, which creates a new window with a preview map of the selected layer.</p>
+<p><img src="../../assets/ui_layer_preview_openlayers.png" alt="Layer preview with OpenLayers."></img></p>
 <p>The OpenLayers map allows a free navigation within the layer and a GetFeatureInfo query by a left click inside the layer.
 The button <strong>toggle options toolbar</strong> above the navigation allows you to display a toolbar with the options to manipulate the GetMap call (format and size, Antialiasing etc.).
-Further formats are listed below the selection box <strong>All formats</strong>. They are structured according to WMS and WFS. For the preview of a WMS „OpenLayers“ is recommended, while for a preview of a WFS you should choose the &quot;GML2&quot; format.
+Further formats are listed below the selection box <strong>All formats</strong>. They are structured according to WMS and WFS. For the preview of a WMS „OpenLayers“ is recommended, while for a preview of a WFS you should choose the "GML2" format.
 <strong>Hint:</strong> Via the selection box the export as Shapefile is also possible. Shapefiles can be integrated into any standard desktop GIS for further processing.</p>
 <p><strong>Task:</strong></p>
 <ol>
@@ -502,7 +502,7 @@ Further formats are listed below the selection box <strong>All formats</strong>.
 <h4 id="workspaces">Workspaces</h4>
 <p>The menu item <strong>Workspaces</strong> provides an overview of all available workspaces of GeoServer. The GUI can be used to create new workspaces or to edit
 existing ones.</p>
-<p><img src="../../assets/ui_workspaces.png" alt="Workspaces."></p>
+<p><img src="../../assets/ui_workspaces.png" alt="Workspaces."></img></p>
 <p>The GeoServer stores layers using the following hierarchy:</p>
 <pre><code>Workspace
  └ store
@@ -522,7 +522,7 @@ of GeoServer like contact information or global WMS-settings.
 <code>http://geoserver.org/fossgis</code>. Select this workspace as the default workspace.</li>
 </ol>
 <h4 id="store">store</h4>
-<p><img src="../../assets/ui_datastores.png" alt="store."></p>
+<p><img src="../../assets/ui_datastores.png" alt="store."></img></p>
 <p>The <strong>(data) store</strong> is a reference to a data source, which contains vector or raster data for publication. Each store is assigned to exactly one workspace. A store includes connection parameters to a database or the path to a shapefile for example.
 The figure above shows an overview of all available stores, which can be accessed via the store field in the left-hand navigation menu. The overview contains the columns <em>data type, workspace, store name,
 type</em> and <em>enabled</em>. The <em>data type</em> describes the type of the store, which can be one of the data types listed in the following table. <em>Workspace</em> contains the superior name of the workspace, <em>store name</em> the name of the store, <em>type</em> the concrete storage type (for example, the database) and
@@ -536,36 +536,36 @@ type</em> and <em>enabled</em>. The <em>data type</em> describes the type of the
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_datastore_type_shape.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_shape.png" alt=""></img></td>
 <td>single file/directory (vector data)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_datastore_type_raster.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_raster.png" alt=""></img></td>
 <td>single file/directory (raster data)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_datastore_type_db.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_db.png" alt=""></img></td>
 <td>database (vector data)</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_datastore_type_wms.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_wms.png" alt=""></img></td>
 <td>WMS</td>
 </tr>
 <tr>
-<td style="text-align:center"><img src="../../assets/ui_datastore_type_wfs.png" alt></td>
+<td style="text-align:center"><img src="../../assets/ui_datastore_type_wfs.png" alt=""></img></td>
 <td>WFS</td>
 </tr>
 </tbody>
 </table>
 <p>The form can be either used to create a new store or to edit an existing one.</p>
 <h4 id="layers">Layers</h4>
-<p><img src="../../assets/ui_layers.png" alt="Layers."></p>
+<p><img src="../../assets/ui_layers.png" alt="Layers."></img></p>
 <p>Layers are the representations of geodata (vector or raster). Each layer contains several map elements (Features), which can be retrieved as rendered raster data (WMS) or as raw data (WFS or WCS). Each layer in GeoServer has in common that it has exactly one workspace and exactly one store.
 <strong>Important Hint:</strong> GeoServer automatically creates a WMS and WFS for each layer, a seperate creation is not possible. You can only define in the workspace, if all layers in the current workspace can be received as WMS and WFS, only as WMS or only as WFS.</p>
-<p>The overview has columns for specifying the respective type, name of the workspace, store and the layer&apos;s name, status and the
+<p>The overview has columns for specifying the respective type, name of the workspace, store and the layer's name, status and the
 coordinate reference system as EPSG Code. Like all types of lists, you can sort the list ascending and descending by the corresponding columns by left-clicking each columns title. You can also call the parameters of the workspace and of the store directly from the list by left-clicking the corresponding title.</p>
 <h4 id="layer-groups"><a name="group-layer"></a>Layer groups</h4>
-<p><img src="../../assets/ui_layer_groups.png" alt="Layer groups."></p>
+<p><img src="../../assets/ui_layer_groups.png" alt="Layer groups."></img></p>
 <p>Layer groups are a collection of layers already published in the GeoServer,
 which are requested together via only one layer.</p>
 <p>For creating a layer group using the form. <strong>Add new layer group</strong> at least the following settings are necessary:</p>
@@ -579,18 +579,18 @@ which are requested together via only one layer.</p>
 <li><code>Coordinate Reference System</code>: Coordinate Reference System as EPSG-Code.</li>
 <li><code>Layer</code>: The buttons <strong>Add Layer</strong> or <strong>Add Layer Group</strong> can be used to add individual  layers or other grouped layers to the layer group.
 A click on the corresponding button opens the <em>Select Layer</em> window, in which all available layers of the GeoServer instance appear.
-A layer can be selected from the window by clicking on the layer&apos;s name and is then passed to the layer group. Each selected layer then appears in the table below the layer form element.</li>
+A layer can be selected from the window by clicking on the layer's name and is then passed to the layer group. Each selected layer then appears in the table below the layer form element.</li>
 </ul>
 <p>In the overview table the order of the layers can be determined by the arrow symbols, where the uppermost layer is drawn as the lowest layer in this layer group. You can also assign a different style to the layer or remove the layer from the group.</p>
 <h4 id="layer-style">Layer style</h4>
-<p><img src="../../assets/ui_styles.png" alt="Layer style."></p>
+<p><img src="../../assets/ui_styles.png" alt="Layer style."></img></p>
 <p>The drawing rule determines the appearance of a layer depending on attribute properties. GeoServer displays the symbology of a layer with the help of SLD
 (Styled Layer Descriptor, a XML based dialect), which can be created or changed in the styles dialog.</p>
 <p>The list contains all available styles of this GeoServer and allows you to either create a new style by clicking the <em>Add new Style</em> button,
-delete an existing style (Select the style using the checkbox and click <em>Delete selected styles</em>) or changing an existing style by clicking on the style&apos;s name.</p>
+delete an existing style (Select the style using the checkbox and click <em>Delete selected styles</em>) or changing an existing style by clicking on the style's name.</p>
 <p>When creating a new style or editing an existing style, the form <em>New style</em> respective <em>Style Editor</em>. The form offers the following options:</p>
 <ul>
-<li><code>Name</code>: Name of the style. If the style is used by exactly one layer, the style&apos;s name should reflect this (e.g. same name as layer).</li>
+<li><code>Name</code>: Name of the style. If the style is used by exactly one layer, the style's name should reflect this (e.g. same name as layer).</li>
 <li><code>Workspace</code>: Workspace of the style.</li>
 <li><code>Copy from an existing style</code>: If elements of the styles are used by other styles, an existing style can be chosen as a template.</li>
 <li><p><code>SLD input field</code>: The layer style is entered in the input field. A full explanation of the SLD syntax would go beyond the scope of this workshop,
@@ -649,7 +649,7 @@ therefore the GeoServer documentation will be referred to here, structured accor
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Data","level":"1.4.2","depth":2,"next":{"title":"Settings and Security","level":"1.4.3","depth":2,"path":"ui/settings/README.md","ref":"ui/settings/README.md","articles":[]},"previous":{"title":"Server status","level":"1.4.1","depth":2,"path":"ui/server/README.md","ref":"ui/server/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"geoServerVersion":"2.22.2","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"},{"name":"Fritz Höing","mail":"hoeing@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.22.2/","workshopName":"GeoServer introduction","workshopPdfNameDe":"geoserver-introduction-ws_de.pdf","osGeoLiveVersion":"16.0","workshopPdfNameEn":"geoserver-introduction-ws_en.pdf","geoServerUser":"admin"},"title":"GeoServer introduction","language":"en","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"ui/data/README.md","mtime":"2024-03-18T13:37:58.513Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-03-18T13:39:22.275Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Data","level":"1.4.2","depth":2,"next":{"title":"Settings and Security","level":"1.4.3","depth":2,"path":"ui/settings/README.md","ref":"ui/settings/README.md","articles":[]},"previous":{"title":"Server status","level":"1.4.1","depth":2,"path":"ui/server/README.md","ref":"ui/server/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"geoServerVersion":"2.28.2","authors":[{"name":"Nils Bühner","mail":"buehner@terrestris.de"},{"name":"André Henn","mail":"henn@terrestris.de"},{"name":"Daniel Koch","mail":"koch@terrestris.de"},{"name":"Fabian Schmidt","mail":"fschmidt@terrestris.de"},{"name":"Fritz Höing","mail":"hoeing@terrestris.de"}],"geoServerBaseUrl":"http://localhost:8082/geoserver","geoServerPassword":"geoserver","geoServerPhysicalPath":"/usr/local/lib/geoserver-2.28.2/","workshopName":"GeoServer introduction","workshopPdfNameDe":"geoserver-introduction-ws_de.pdf","osGeoLiveVersion":"17.0","workshopPdfNameEn":"geoserver-introduction-ws_en.pdf","geoServerUser":"admin"},"title":"GeoServer introduction","language":"en","gitbook":"*","description":"GeoServer introduction workshop materials"},"file":{"path":"ui/data/README.md","mtime":"2026-03-13T14:06:43.827Z","type":"markdown"},"gitbook":{"version":"6.1.6","time":"2026-03-13T14:07:50.041Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -719,7 +719,7 @@ therefore the GeoServer documentation will be referred to here, structured accor
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 
